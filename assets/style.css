@@ -1,0 +1,78 @@
+
+.page {
+    width: 210mm;  /* width of A4 paper */
+    height: 297mm;  /* height of A4 paper */
+    margin: auto;  /* center the page */
+    font-family: 'Tahoma', sans-serif;
+}
+
+
+.header-section {
+    display: flex;
+    align-items: flex-start; 
+    background-color:#221161; 
+    padding: 5mm 5mm; 
+    justify-content: space-between; 
+}
+
+.logo-container {
+    flex: 0; 
+    align-self: flex-start; 
+    padding: 0mm 0mm;  
+}
+
+.logo {
+    max-height: 20mm; 
+    width: auto; 
+    display: block;
+}
+
+.header-text-line1 {
+    font-size: 16pt;
+    text-align: right;
+    padding: 2mm 5mm;
+    flex: 1 1 auto;
+    color: #FFFFFF;
+    font-style: italic;
+}
+
+.header-text-line2 {
+    font-size: 18pt;
+    text-align: right;
+    padding: 2mm 5mm;
+    flex: 1 1 auto;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.content-section {
+    display: flex;  
+}
+
+.wait-turn-section {
+    padding: 5mm 10mm;
+    height: 242mm;
+    width: 50%;
+    background-color: #FFFFFF; 
+}
+
+.wait-turn-section, .priority-section {
+    flex: 1;
+    box-sizing: border-box; 
+    padding: 5mm 10mm;
+    height: 242mm;
+    background-color: #FFFFFF; 
+}
+
+.section-title {
+    height: 16pt;
+    text-align: left;
+    padding: 15mm;
+}
+
+.charts {
+    height: 25%;
+    text-align: center;
+    padding: 15mm;
+}
+

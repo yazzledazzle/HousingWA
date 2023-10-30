@@ -1,0 +1,190 @@
+Date,Category,Subcategory,Detail,Item,Region,Value
+2021-12-31,Total Waitlist,Applications,Singles 1 bedroom,Dwelling need,WA,8936.0
+2021-12-31,Total Waitlist,Applications,Singles 2 bedroom,Dwelling need,WA,484.0
+2021-12-31,Total Waitlist,Applications,Seniors 1 bedroom,Dwelling need,WA,2875.0
+2021-12-31,Total Waitlist,Applications,Seniors 2 bedroom,Dwelling need,WA,247.0
+2021-12-31,Total Waitlist,Applications,Family 2 bedroom,Dwelling need,WA,2975.0
+2021-12-31,Total Waitlist,Applications,Family 3 bedroom,Dwelling need,WA,1951.0
+2021-12-31,Total Waitlist,Applications,Family 4 bedroom,Dwelling need,WA,787.0
+2021-12-31,Total Waitlist,Applications,Family 5 bedroom,Dwelling need,WA,173.0
+2021-12-31,Total Waitlist,Applications,Family 6plus bedroom,Dwelling need,WA,41.0
+2021-12-31,Total Waitlist,Applications,TBD,Dwelling need,WA,517.0
+2021-12-31,Priority Waitlist,Applications,Singles 1 bedroom,Dwelling need,WA,1808.0
+2021-12-31,Priority Waitlist,Applications,Singles 2 bedroom,Dwelling need,WA,151.0
+2021-12-31,Priority Waitlist,Applications,Seniors 1 bedroom,Dwelling need,WA,401.0
+2021-12-31,Priority Waitlist,Applications,Seniors 2 bedroom,Dwelling need,WA,78.0
+2021-12-31,Priority Waitlist,Applications,Family 2 bedroom,Dwelling need,WA,963.0
+2021-12-31,Priority Waitlist,Applications,Family 3 bedroom,Dwelling need,WA,641.0
+2021-12-31,Priority Waitlist,Applications,Family 4 bedroom,Dwelling need,WA,287.0
+2021-12-31,Priority Waitlist,Applications,Family 5 bedroom,Dwelling need,WA,52.0
+2021-12-31,Priority Waitlist,Applications,Family 6plus bedroom,Dwelling need,WA,6.0
+2021-12-31,Priority Waitlist,Applications,TBD,Dwelling need,WA,64.0
+2022-12-31,Wait Turn waiting time,Average wait last 12 months,,Waiting time,WA,124.0
+2022-12-31,Priority waitlist waiting time,Average wait last 12 months,,Waiting time,WA,70.0
+2023-05-31,Wait Turn waitlist,Applications,,Region need,North Metro,5834.0
+2023-05-31,Wait Turn waitlist,Applications,,Region need,South Metro,3946.0
+2023-05-31,Wait Turn waitlist,Applications,,Region need,East Metro,3517.0
+2023-05-31,Wait Turn waitlist,Applications,,Region need,Great Southern,585.0
+2023-05-31,Wait Turn waitlist,Applications,,Region need,Southwest,1283.0
+2023-05-31,Wait Turn waitlist,Applications,,Region need,Goldfields,574.0
+2023-05-31,Wait Turn waitlist,Applications,,Region need,Midwest/Gascoyne,1021.0
+2023-05-31,Wait Turn waitlist,Applications,,Region need,Pilbara,654.0
+2023-05-31,Wait Turn waitlist,Applications,,Region need,West Kimberley,897.0
+2023-05-31,Wait Turn waitlist,Applications,,Region need,Wheatbelt,399.0
+2023-05-31,Wait Turn waitlist,Applications,,Region need,East Kimberley,371.0
+2023-05-31,Wait Turn waitlist,Individuals,,Region need,North Metro,10308.0
+2023-05-31,Wait Turn waitlist,Individuals,,Region need,South Metro,6682.0
+2023-05-31,Wait Turn waitlist,Individuals,,Region need,East Metro,6651.0
+2023-05-31,Wait Turn waitlist,Individuals,,Region need,Great Southern,995.0
+2023-05-31,Wait Turn waitlist,Individuals,,Region need,Southwest,2036.0
+2023-05-31,Wait Turn waitlist,Individuals,,Region need,Goldfields,1026.0
+2023-05-31,Wait Turn waitlist,Individuals,,Region need,Midwest/Gascoyne,1983.0
+2023-05-31,Wait Turn waitlist,Individuals,,Region need,Pilbara,1297.0
+2023-05-31,Wait Turn waitlist,Individuals,,Region need,West Kimberley,1515.0
+2023-05-31,Wait Turn waitlist,Individuals,,Region need,Wheatbelt,800.0
+2023-05-31,Wait Turn waitlist,Individuals,,Region need,East Kimberley,694.0
+2023-05-31,Priority Waitlist,Applications,,Region need,North Metro,1474.0
+2023-05-31,Priority Waitlist,Applications,,Region need,South Metro,989.0
+2023-05-31,Priority Waitlist,Applications,,Region need,East Metro,872.0
+2023-05-31,Priority Waitlist,Applications,,Region need,Great Southern,194.0
+2023-05-31,Priority Waitlist,Applications,,Region need,Southwest,236.0
+2023-05-31,Priority Waitlist,Applications,,Region need,Goldfields,122.0
+2023-05-31,Priority Waitlist,Applications,,Region need,Midwest/Gascoyne,190.0
+2023-05-31,Priority Waitlist,Applications,,Region need,Pilbara,215.0
+2023-05-31,Priority Waitlist,Applications,,Region need,West Kimberley,182.0
+2023-05-31,Priority Waitlist,Applications,,Region need,Wheatbelt,120.0
+2023-05-31,Priority Waitlist,Applications,,Region need,East Kimberley,123.0
+2023-05-31,Priority Waitlist,Individuals,,Region need,North Metro,2737.0
+2023-05-31,Priority Waitlist,Individuals,,Region need,South Metro,1773.0
+2023-05-31,Priority Waitlist,Individuals,,Region need,East Metro,1881.0
+2023-05-31,Priority Waitlist,Individuals,,Region need,Great Southern,374.0
+2023-05-31,Priority Waitlist,Individuals,,Region need,Southwest,434.0
+2023-05-31,Priority Waitlist,Individuals,,Region need,Goldfields,260.0
+2023-05-31,Priority Waitlist,Individuals,,Region need,Midwest/Gascoyne,418.0
+2023-05-31,Priority Waitlist,Individuals,,Region need,Pilbara,500.0
+2023-05-31,Priority Waitlist,Individuals,,Region need,West Kimberley,366.0
+2023-05-31,Priority Waitlist,Individuals,,Region need,Wheatbelt,292.0
+2023-05-31,Priority Waitlist,Individuals,,Region need,East Kimberley,275.0
+2023-05-31,Total new tenancies last 12 months,Applications,,New tenancies by region,North Metro,864.0
+2023-05-31,Total new tenancies last 12 months,Applications,,New tenancies by region,South Metro,548.0
+2023-05-31,Total new tenancies last 12 months,Applications,,New tenancies by region,East Metro,457.0
+2023-05-31,Total new tenancies last 12 months,Applications,,New tenancies by region,Great Southern,70.0
+2023-05-31,Total new tenancies last 12 months,Applications,,New tenancies by region,Southwest,132.0
+2023-05-31,Total new tenancies last 12 months,Applications,,New tenancies by region,Goldfields,81.0
+2023-05-31,Total new tenancies last 12 months,Applications,,New tenancies by region,Midwest/Gascoyne,97.0
+2023-05-31,Total new tenancies last 12 months,Applications,,New tenancies by region,Pilbara,155.0
+2023-05-31,Total new tenancies last 12 months,Applications,,New tenancies by region,West Kimberley,70.0
+2023-05-31,Total new tenancies last 12 months,Applications,,New tenancies by region,Wheatbelt,64.0
+2023-05-31,Total new tenancies last 12 months,Applications,,New tenancies by region,East Kimberley,38.0
+2023-05-31,Total waitlist waiting time,Average wait last 12 months,,Waiting time by region,North Metro,134.296130952381
+2023-05-31,Total waitlist waiting time,Average wait last 12 months,,Waiting time by region,South Metro,141.18430656934305
+2023-05-31,Total waitlist waiting time,Average wait last 12 months,,Waiting time by region,East Metro,119.31947483588621
+2023-05-31,Total waitlist waiting time,Average wait last 12 months,,Waiting time by region,Great Southern,94.04081632653062
+2023-05-31,Total waitlist waiting time,Average wait last 12 months,,Waiting time by region,Southwest,137.35281385281385
+2023-05-31,Total waitlist waiting time,Average wait last 12 months,,Waiting time by region,Goldfields,109.6931216931217
+2023-05-31,Total waitlist waiting time,Average wait last 12 months,,Waiting time by region,Midwest/Gascoyne,119.60382916053018
+2023-05-31,Total waitlist waiting time,Average wait last 12 months,,Waiting time by region,Pilbara,131.13456221198157
+2023-05-31,Total waitlist waiting time,Average wait last 12 months,,Waiting time by region,West Kimberley,225.46938775510202
+2023-05-31,Total waitlist waiting time,Average wait last 12 months,,Waiting time by region,Wheatbelt,80.67410714285714
+2023-05-31,Total waitlist waiting time,Average wait last 12 months,,Waiting time by region,East Kimberley,134.03383458646616
+2023-05-31,Priority new tenancies last 12 months,Applications,,New tenancies by region,North Metro,616.0
+2023-05-31,Priority new tenancies last 12 months,Applications,,New tenancies by region,South Metro,362.0
+2023-05-31,Priority new tenancies last 12 months,Applications,,New tenancies by region,East Metro,366.0
+2023-05-31,Priority new tenancies last 12 months,Applications,,New tenancies by region,Great Southern,56.0
+2023-05-31,Priority new tenancies last 12 months,Applications,,New tenancies by region,Southwest,74.0
+2023-05-31,Priority new tenancies last 12 months,Applications,,New tenancies by region,Goldfields,56.0
+2023-05-31,Priority new tenancies last 12 months,Applications,,New tenancies by region,Midwest/Gascoyne,67.0
+2023-05-31,Priority new tenancies last 12 months,Applications,,New tenancies by region,Pilbara,100.0
+2023-05-31,Priority new tenancies last 12 months,Applications,,New tenancies by region,West Kimberley,31.0
+2023-05-31,Priority new tenancies last 12 months,Applications,,New tenancies by region,Wheatbelt,27.0
+2023-05-31,Priority new tenancies last 12 months,Applications,,New tenancies by region,East Kimberley,16.0
+2023-05-31,Priority waitlist waiting time,Average wait last 12 months,,Waiting time by region,North Metro,73.21660482374769
+2023-05-31,Priority Waitlist,Average wait last 12 months,,Waiting time by region,South Metro,79.74585635359117
+2023-05-31,Priority Waitlist,Average wait last 12 months,,Waiting time by region,East Metro,66.41451990632319
+2023-05-31,Priority Waitlist,Average wait last 12 months,,Waiting time by region,Great Southern,57.767857142857146
+2023-05-31,Priority Waitlist,Average wait last 12 months,,Waiting time by region,Southwest,50.52895752895753
+2023-05-31,Priority Waitlist,Average wait last 12 months,,Waiting time by region,Goldfields,57.35204081632653
+2023-05-31,Priority Waitlist,Average wait last 12 months,,Waiting time by region,Midwest/Gascoyne,61.23667377398721
+2023-05-31,Priority Waitlist,Average wait last 12 months,,Waiting time by region,Pilbara,92.45714285714287
+2023-05-31,Priority Waitlist,Average wait last 12 months,,Waiting time by region,West Kimberley,106.45161290322581
+2023-05-31,Priority Waitlist,Average wait last 12 months,,Waiting time by region,Wheatbelt,50.93650793650794
+2023-05-31,Priority Waitlist,Average wait last 12 months,,Waiting time by region,East Kimberley,100.51785714285714
+2023-05-31,Priority Waitlist,Average wait last 12 months,,Waiting time by region,WA,72.0
+2023-05-31,Total waitlist waiting time,Average wait last 12 months,,Waiting time by region,WA,132.0
+2023-05-31,Total Waitlist,Applications,Singles 1 bedroom,Dwelling need,WA,8795.0
+2023-05-31,Total Waitlist,Applications,Singles 2 bedroom,Dwelling need,WA,458.0
+2023-05-31,Total Waitlist,Applications,Seniors 1 bedroom,Dwelling need,WA,2993.0
+2023-05-31,Total Waitlist,Applications,Seniors 2 bedroom,Dwelling need,WA,270.0
+2023-05-31,Total Waitlist,Applications,Family 2 bedroom,Dwelling need,WA,3108.0
+2023-05-31,Total Waitlist,Applications,Family 3 bedroom,Dwelling need,WA,2007.0
+2023-05-31,Total Waitlist,Applications,Family 4 bedroom,Dwelling need,WA,765.0
+2023-05-31,Total Waitlist,Applications,Family 5 bedroom,Dwelling need,WA,153.0
+2023-05-31,Total Waitlist,Applications,Family 6plus bedroom,Dwelling need,WA,40.0
+2023-05-31,Total Waitlist,Applications,To Be Determined,Dwelling need,WA,492.0
+2023-05-31,Total Waitlist,Individuals,Singles 1 bedroom,Dwelling need,WA,9028.0
+2023-05-31,Total Waitlist,Individuals,Singles 2 bedroom,Dwelling need,WA,837.0
+2023-05-31,Total Waitlist,Individuals,Seniors 1 bedroom,Dwelling need,WA,3223.0
+2023-05-31,Total Waitlist,Individuals,Seniors 2 bedroom,Dwelling need,WA,432.0
+2023-05-31,Total Waitlist,Individuals,Family 2 bedroom,Dwelling need,WA,7003.0
+2023-05-31,Total Waitlist,Individuals,Family 3 bedroom,Dwelling need,WA,7200.0
+2023-05-31,Total Waitlist,Individuals,Family 4 bedroom,Dwelling need,WA,3927.0
+2023-05-31,Total Waitlist,Individuals,Family 5 bedroom,Dwelling need,WA,1007.0
+2023-05-31,Total Waitlist,Individuals,Family 6plus bedroom,Dwelling need,WA,333.0
+2023-05-31,Total Waitlist,Individuals,To Be Determined,Dwelling need,WA,997.0
+2023-05-31,Priority Waitlist,Applications,Singles 1 bedroom,Dwelling need,WA,1906.0
+2023-05-31,Priority Waitlist,Applications,Singles 2 bedroom,Dwelling need,WA,158.0
+2023-05-31,Priority Waitlist,Applications,Seniors 1 bedroom,Dwelling need,WA,467.0
+2023-05-31,Priority Waitlist,Applications,Seniors 2 bedroom,Dwelling need,WA,96.0
+2023-05-31,Priority Waitlist,Applications,Family 2 bedroom,Dwelling need,WA,1035.0
+2023-05-31,Priority Waitlist,Applications,Family 3 bedroom,Dwelling need,WA,636.0
+2023-05-31,Priority Waitlist,Applications,Family 4 bedroom,Dwelling need,WA,279.0
+2023-05-31,Priority Waitlist,Applications,Family 5 bedroom,Dwelling need,WA,44.0
+2023-05-31,Priority Waitlist,Applications,Family 6plus bedroom,Dwelling need,WA,10.0
+2023-05-31,Priority Waitlist,Applications,To Be Determined,Dwelling need,WA,86.0
+2023-05-31,Priority Waitlist,Individuals,Singles 1 bedroom,Dwelling need,WA,1970.0
+2023-05-31,Priority Waitlist,Individuals,Singles 2 bedroom,Dwelling need,WA,273.0
+2023-05-31,Priority Waitlist,Individuals,Seniors 1 bedroom,Dwelling need,WA,498.0
+2023-05-31,Priority Waitlist,Individuals,Seniors 2 bedroom,Dwelling need,WA,145.0
+2023-05-31,Priority Waitlist,Individuals,Family 2 bedroom,Dwelling need,WA,2242.0
+2023-05-31,Priority Waitlist,Individuals,Family 3 bedroom,Dwelling need,WA,2225.0
+2023-05-31,Priority Waitlist,Individuals,Family 4 bedroom,Dwelling need,WA,1409.0
+2023-05-31,Priority Waitlist,Individuals,Family 5 bedroom,Dwelling need,WA,298.0
+2023-05-31,Priority Waitlist,Individuals,Family 6plus bedroom,Dwelling need,WA,86.0
+2023-05-31,Priority Waitlist,Individuals,To Be Determined,Dwelling need,WA,164.0
+2023-05-31,Total new tenancies last 12 months,Applications,Singles 2 bedroom,New tenancies by dwelling need,WA,80.0
+2023-05-31,Total new tenancies last 12 months,Applications,Seniors 1 bedroom,New tenancies by dwelling need,WA,401.0
+2023-05-31,Total new tenancies last 12 months,Applications,Seniors 2 bedroom,New tenancies by dwelling need,WA,274.0
+2023-05-31,Total new tenancies last 12 months,Applications,Family 2 bedroom,New tenancies by dwelling need,WA,461.0
+2023-05-31,Total new tenancies last 12 months,Applications,Family 3 bedroom,New tenancies by dwelling need,WA,783.0
+2023-05-31,Total new tenancies last 12 months,Applications,Family 4 bedroom,New tenancies by dwelling need,WA,158.0
+2023-05-31,Total new tenancies last 12 months,Applications,Family 5 bedroom,New tenancies by dwelling need,WA,28.0
+2023-05-31,Total new tenancies last 12 months,Applications,Family 6plus bedroom,New tenancies by dwelling need,WA,4.0
+2023-05-31,Total new tenancies last 12 months,Average wait last 12 months in weeks,Singles 1 bedroom,New tenancies by dwelling need,WA,209.97231450719823
+2023-05-31,Total new tenancies last 12 months,Average wait last 12 months in weeks,Singles 2 bedroom,New tenancies by dwelling need,WA,151.42499999999998
+2023-05-31,Total new tenancies last 12 months,Average wait last 12 months in weeks,Seniors 1 bedroom,New tenancies by dwelling need,WA,102.33024581403633
+2023-05-31,Total new tenancies last 12 months,Average wait last 12 months in weeks,Seniors 2 bedroom,New tenancies by dwelling need,WA,88.33420229405631
+2023-05-31,Total new tenancies last 12 months,Average wait last 12 months in weeks,Family 2 bedroom,New tenancies by dwelling need,WA,143.25472575147197
+2023-05-31,Total new tenancies last 12 months,Average wait last 12 months in weeks,Family 3 bedroom,New tenancies by dwelling need,WA,117.17588031381135
+2023-05-31,Total new tenancies last 12 months,Average wait last 12 months in weeks,Family 4 bedroom,New tenancies by dwelling need,WA,121.43580470162749
+2023-05-31,Total new tenancies last 12 months,Average wait last 12 months in weeks,Family 5 bedroom,New tenancies by dwelling need,WA,129.56122448979593
+2023-05-31,Total new tenancies last 12 months,Average wait last 12 months in weeks,Family 6plus bedroom,New tenancies by dwelling need,WA,70.03571428571429
+2023-05-31,Priority new tenancies last 12 months,Applications,Singles 1 bedroom,New tenancies by dwelling need,WA,276.0
+2023-05-31,Priority new tenancies last 12 months,Applications,Singles 2 bedroom,New tenancies by dwelling need,WA,63.0
+2023-05-31,Priority new tenancies last 12 months,Applications,Seniors 1 bedroom,New tenancies by dwelling need,WA,272.0
+2023-05-31,Priority new tenancies last 12 months,Applications,Seniors 2 bedroom,New tenancies by dwelling need,WA,143.0
+2023-05-31,Priority new tenancies last 12 months,Applications,Family 2 bedroom,New tenancies by dwelling need,WA,333.0
+2023-05-31,Priority new tenancies last 12 months,Applications,Family 3 bedroom,New tenancies by dwelling need,WA,548.0
+2023-05-31,Priority new tenancies last 12 months,Applications,Family 4 bedroom,New tenancies by dwelling need,WA,117.0
+2023-05-31,Priority new tenancies last 12 months,Applications,Family 5 bedroom,New tenancies by dwelling need,WA,18.0
+2023-05-31,Priority new tenancies last 12 months,Applications,Family 6plus bedroom,New tenancies by dwelling need,WA,1.0
+2023-05-31,Priority waitlist waiting time,Average wait last 12 months in weeks,Singles 1 bedroom,Waiting time by dwelling need,WA,108.08695652173913
+2023-05-31,Priority waitlist waiting time,Average wait last 12 months,Singles 2 bedroom,Waiting time by dwelling need,WA,86.02947845804988
+2023-05-31,Priority waitlist waiting time,Average wait last 12 months,Seniors 1 bedroom,Waiting time by dwelling need,WA,46.8623949579832
+2023-05-31,Priority waitlist waiting time,Average wait last 12 months,Seniors 2 bedroom,Waiting time by dwelling need,WA,38.2997002997003
+2023-05-31,Priority waitlist waiting time,Average wait last 12 months,Family 2 bedroom,Waiting time by dwelling need,WA,84.59759759759758
+2023-05-31,Priority waitlist waiting time,Average wait last 12 months,Family 3 bedroom,Waiting time by dwelling need,WA,66.22080291970802
+2023-05-31,Priority waitlist waiting time,Average wait last 12 months,Family 4 bedroom,Waiting time by dwelling need,WA,76.66910866910868
+2023-05-31,Priority waitlist waiting time,Average wait last 12 months,Family 5 bedroom,Waiting time by dwelling need,WA,60.57142857142857
+2023-05-31,Priority waitlist waiting time,Average wait last 12 months,Family 6plus bedroom,Waiting time by dwelling need,WA,99.28571428571429
+2023-05-31,Total waitlist waiting time,Average wait last 12 months,,Waiting time,WA,132.0
+2023-05-31,Total waitlist waiting time,Average wait last 12 months,,Waiting time,WA,72.0

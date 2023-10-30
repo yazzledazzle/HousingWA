@@ -1,0 +1,14 @@
+# Second release (R2) of IP contains the following amendments
+
+Note - The R3 data content is the same as R2, so also applies to the impacted data items listed below between R1 and R3 data tables although the geography is only for Remoteness Areas in R3 and is not comparable against Geography outputs for R1 and R2.
+
+Following amendments to R1 tables in R2 re-release (Dec 22) from original R2 release (Oct 12, 2022) are as follows:
+
+Table I11: A perturbed total has been introduced for this table for Indigenous / Non Indigenous cohorts for 'Total responses', replacing the summed total from what was supplied in the original R2 release.  Impact is slight differences to the aggregated data in this total field for all geography levels as supplied in original R2 release.
+
+Table I12: A perturbed total has been introduced for this table for totalling age cohorts for 'Total responses', replacing the summed total from what was supplied in the original R2 release.  Impact is slight differences to the aggregated data in this total field for all geography levels as supplied in original R2 release.
+
+Table I16: A perturbed total has been introduced for this table for totalling Indigenous dwelling cohorts for 'Total responses', replacing the summed total from what was supplied in the original R2 release.  Impact is slight differences to the aggregated data in this total field for all geography levels as supplied in original R2 release.
+
+
+The changes between ASGS 2016 and ASGS 2021 are recorded in the "changes from the previous edition of the ASGS" section of ASGS 2021 Edition 3 publication from https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/main-structure-and-greater-capital-city-statistical-areas/changes-previous-edition-asgs

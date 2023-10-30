@@ -1,0 +1,5 @@
+,Group,Count,Date,#,Change,Annual change,Rolling average delta,Prior year end delta,Note Monthly,Note Annual,Note Rolling average,Note prior year end,Note annual
+0,Total,Applications,31 Jul 2023,18984,-78,-119,-36,-2,,,Note: Rolling average calculated based on last 10 data points (monthly values) for the past 12 month period.,,
+1,Total,Individuals,31 Jul 2023,33943,-43,299,115,165,,,Note: Rolling average calculated based on last 10 data points (monthly values) for the past 12 month period.,,
+2,Priority,Applications,31 Jul 2023,4768,-2,556,264,317,,,Note: Rolling average calculated based on last 10 data points (monthly values) for the past 12 month period.,,
+3,Priority,Individuals,31 Jul 2023,9447,24,928,400,478,,,Note: Rolling average calculated based on last 10 data points (monthly values) for the past 12 month period.,,
