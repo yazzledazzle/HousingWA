@@ -1,13 +1,19 @@
 
-.page {
-    width: 210mm;  /* width of A4 paper */
-    height: 297mm;  /* height of A4 paper */
-    margin: auto;  /* center the page */
+.page-portrait {
+    width: 210mm;  
+    height: 297mm; 
+    margin: auto;  
     font-family: 'Tahoma', sans-serif;
 }
 
+.page-landscape {
+    width: 297mm;  
+    height: 210mm; 
+    margin: auto;  
+    font-family: 'Tahoma', sans-serif;
+}
 
-.header-section {
+.header-first-page-container {
     display: flex;
     align-items: flex-start; 
     background-color:#221161; 
@@ -15,19 +21,19 @@
     justify-content: space-between; 
 }
 
-.logo-container {
+.logo-header-container {
     flex: 0; 
     align-self: flex-start; 
     padding: 0mm 0mm;  
 }
 
-.logo {
+.logo-header {
     max-height: 20mm; 
     width: auto; 
     display: block;
 }
 
-.header-text-line1 {
+.H2-right {
     font-size: 16pt;
     text-align: right;
     padding: 2mm 5mm;
@@ -36,7 +42,7 @@
     font-style: italic;
 }
 
-.header-text-line2 {
+.H1-right {
     font-size: 18pt;
     text-align: right;
     padding: 2mm 5mm;
@@ -49,14 +55,7 @@
     display: flex;  
 }
 
-.wait-turn-section {
-    padding: 5mm 10mm;
-    height: 242mm;
-    width: 50%;
-    background-color: #FFFFFF; 
-}
-
-.wait-turn-section, .priority-section {
+.vertical-split-portrait {
     flex: 1;
     box-sizing: border-box; 
     padding: 5mm 10mm;
@@ -64,15 +63,80 @@
     background-color: #FFFFFF; 
 }
 
-.section-title {
+.H3 {
     height: 16pt;
     text-align: left;
     padding: 15mm;
 }
 
-.charts {
+.quarter-container {
     height: 25%;
     text-align: center;
     padding: 15mm;
+    background-color: #FFFFFF;
 }
 
+.notes {
+    font-size: 10pt;
+    text-align: left;
+    padding: 15mm;
+    font-style: italic;
+}
+
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+table {
+border-collapse: collapse;
+width: 100%;
+}
+
+th,
+td {
+border: 1px solid black;
+padding: 5px;
+text-align: center;
+}
+
+/* Table header styling */
+
+th {
+background-color: #ccc;
+font-weight: bold;
+}
+
+/* Table row styling */
+
+tr:nth-child(even) {
+background-color: #eee;
+}
+
+/* Specific styling for the "Change from" header row */
+
+th:first-child {
+text-align: left;
+font-size: 120%;
+font-weight: bold;
+}
+
+th:nth-child(2),
+th:nth-child(3),
+th:nth-child(4),
+th:nth-child(5) {
+background-color: #ccc;
+font-weight: bold;
+text-align: center;
+border-left: none;
+}
+
+/* Specific styling for the "Applications" and "Individuals" rows */
+
+tr:nth-child(2),
+tr:nth-child(3) td:first-child {
+text-align: right;
+}
+
+/* Specific styling for the "Prior month", "Prior year", "Rolling average", and "Prior year end" columns */

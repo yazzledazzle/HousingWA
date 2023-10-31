@@ -1,15 +1,77 @@
 import dash
 from dash import dcc, html
 from dash.dependencies import Input, Output
+from dash import dash_table as dt
 import pandas as pd
-import plotly.graph_objects as go
+import plotly.graph_objects as go   
 from Waitlist_data import *
+from Waitlist_latest_report import *
 from assets import *
+
+
 
 # Initialize the Dash app
 app = dash.Dash(__name__)
 
-def format_ticks(data, step=250):
+Waitlist_latest_report, Waitlist_latest_report_pc_pt = Create_waitlist_latest_reports()
+Waitlist_total_report = Waitlist_latest_report[Waitlist_latest_report['Group'] == 'Total']
+Waitlist_priority_report = Waitlist_latest_report[Waitlist_latest_report['Group'] == 'Priority']
+
+def get_notes(df):
+    df = df.dropna(axis=1, how='all')
+    notecheckdf = df
+    notecheckdf = notecheckdf.drop(columns=['Date', '#', 'Prior month', 'Prior year', 'Rolling average', 'Prior year end'])
+    note_print = []
+    note_columns = [col for col in notecheckdf.columns if 'Note' in col]
+    for col in note_columns:
+        for i in range(len(notecheckdf)):
+            if notecheckdf['Group'][i] == 'Total':
+                notecheckdf[col][i] = notecheckdf[col][i].replace('for total_applications ', '*')
+                notecheckdf[col][i] = notecheckdf[col][i].replace('for total_individuals ', '*')
+            else:
+                notecheckdf[col][i] = notecheckdf[col][i].replace('for priority_applications ', '*')
+                notecheckdf[col][i] = notecheckdf[col][i].replace('for priority_individuals ', '*')
+        if len(notecheckdf[col].unique()) == 1:
+            note_print.append(notecheckdf[col].unique()[0])
+        else:
+            for i in range(len(notecheckdf)):
+                notecheckdf[col][i] = notecheckdf[col][i].replace('*', ' for ' + notecheckdf['Count'][i])
+                note_print.append(notecheckdf[col][i])
+    note_print = [i.replace('*', '') for i in note_print]
+    
+    if len(note_print) == 0:
+        return df
+    elif len(note_print) == 1:
+        notes = html.Div("Notes: </b>" + note_print[0], className="notes")
+        return df, notes 
+    else:
+        #as above but with /b line breaks after each note
+        notes = html.Div([html.Div("Notes: </b>" + note_print[i] + "</b>", className="notes") for i in range(len(note_print))])
+        return df, notes 
+
+def table(df):
+    note_columns = [col for col in df.columns if 'Note' in col]
+    unique_dates = df['Date'].unique()
+    if len(unique_dates) == 1:
+        date = unique_dates[0]
+        df = df.rename(columns={'Count': f'At {date}'})
+        df = df.drop(columns=['Date', 'Group'])
+        df = df.drop(columns=note_columns)
+    else:
+        df[''] = df['Count'] + ' - at ' + df['Date']
+        df = df.drop(columns=['Count', 'Date', 'Group'])
+        df = df.drop(columns=note_columns)
+    columns = [col for col in df.columns]
+    return dt.DataTable(
+      id='table',
+      columns=[{"name": i, "id": i} for i in columns],
+      data=df.to_dict(orient='records'),
+      style_cell={'textAlign': 'center'},
+      style_header={'backgroundColor': '#ccc', 'fontWeight': 'bold'},
+      style_data={'backgroundColor': '#fff'},
+    )
+
+def format_yticks(data, step=250):
     max_val = max(data)
     min_val = (min(data) // step) * step  
     
@@ -25,38 +87,56 @@ def format_ticks(data, step=250):
             ticktext.append(f"{val / 1000:.2f}k")
     return tickvals, ticktext
 
+def get_xticks(data):
+    dates = data.unique()
+    tickvals = []
+    for date in dates:
+        if date == dates.min():
+            tickvals.append(date)
+        elif date.month == 3:
+            tickvals.append(date)
+        elif date.month == 6:
+            tickvals.append(date)
+        elif date.month == 9:
+            tickvals.append(date)
+        elif date.month == 12:
+            tickvals.append(date)
+        elif date == dates.max():
+            tickvals.append(date)
+        else:
+            continue
+    return tickvals
+
 
 
 def plot_waitlist():
-    Waitlist_trend, Waitlist_latest, Waitlist_1m_ago, Waitlist_12m_ago = Waitlist_data()
-    #create table Latest_total with columns RowName, Value, MonthChange, YearChange, 12mAverageChange
-    Latest_total = pd.DataFrame(columns=['AtDate', 'Value', 'MonthChange', 'YearChange'])
-    Latest_total_pc = pd.DataFrame(columns=['AtDate', 'Value', 'MonthChange%', 'YearChange%'])
-    #create table Latest_priority with columns RowName, Value, MonthChange, YearChange, 12mAverageChange
-    Latest_priority = pd.DataFrame(columns=['AtDate', 'Value', 'MonthChange', 'YearChange'])
-
+    Waitlist_trend, Waitlist_trend_rolling_average, Waitlist_trend_monthly_change, Waitlist_trend_yearly_change, Waitlist_trend_end_last_year = Waitlist_data()
     Waitlist_trend['Date'] = pd.to_datetime(Waitlist_trend['Date'], format='%b %y')
-    filtered_data = Waitlist_trend[Waitlist_trend['Date'] > Waitlist_trend['Date'].max() - pd.DateOffset(months=12)]
+    filtered_data = Waitlist_trend[Waitlist_trend['Date'] > '2021-08-01']
     charts = [
         {
             'series': 'priority_applications',
             'label': 'Priority Applications',
             'color': 'maroon',
+            'fillcolor': 'rgb(245, 66, 66)'
         },
         {
             'series': 'total_applications',
             'label': 'Total Applications',
             'color': 'navy',
+            'fillcolor': 'rgb(66, 194, 245)'
         },
         {
             'series': 'priority_individuals',
             'label': 'Priority Individuals',
             'color': 'violet',
+            'fillcolor': 'rgb(245, 66, 245)'
         },
         {
             'series': 'total_individuals',
             'label': 'Total Individuals',
             'color': 'darkseagreen',
+            'fillcolor': 'rgb(31, 222, 168)'
         }
     ]
 
@@ -64,19 +144,19 @@ def plot_waitlist():
 
     for chart in charts:
         fig = go.Figure()
-        
+
         hover_text = '%{x} ' + chart['label'] + '<br>' + '<b> %{y:,.0f}'
-        fig.add_trace(go.Bar(
+        fig.add_trace(go.Scatter(
             x=filtered_data['Date'],
             y=filtered_data[chart['series']],
             name=chart['label'],
             marker_color=chart['color'],
+            line=dict(width=3),
+            fillcolor=chart['fillcolor'],
+            mode='lines',
             hovertemplate=hover_text + '<extra></extra>'
         ))
         
-        min_y_value = (filtered_data[chart['series']].min() // 250) * 250
-        max_y_value = ((filtered_data[chart['series']].max() + 149) // 250) * 250
-        tickvals, ticktext = format_ticks(filtered_data[chart['series']])
 
         
         fig.update_layout(
@@ -87,20 +167,20 @@ def plot_waitlist():
                 xanchor="right",
                 x=1
             ), 
-            barmode='stack', 
             xaxis=dict(
                 tickvals=filtered_data['Date'],
                 tickformat="%b %y", showline=True
             ),
+            
             yaxis=dict(
-                range=[min_y_value, max_y_value], tickvals=tickvals, ticktext=ticktext, showline=True
+                #range=[min_y_value, max_y_value], tickvals=tickvals, ticktext=ticktext, 
+                showline=True
                 ),
             margin=dict(
                 l=50,
                 r=20,
                 pad=4
             ),
-            #add axis lines and grid lines
         )
         
         figs[chart['series']] = fig
@@ -108,39 +188,27 @@ def plot_waitlist():
     return figs['priority_applications'], figs['total_applications'], figs['priority_individuals'], figs['total_individuals']
 
 priority_applicationsFig, total_applicationsFig, priority_individualsFig, total_individualsFig = plot_waitlist()
+wait_turn_df, wait_turn_notes = get_notes(Waitlist_total_report)
 
 
-app.layout = html.Div(className='page', children=[
-    html.Div(className="header-section", children=[
-        html.Div(className="logo-container", children=[
-            html.Img(src='assets/Logo.png', className='logo')
+
+
+app.layout = html.Div(className='page-portrait', children=[
+    html.Div(className="header-first-page-container", children=[
+        html.Div(className="logo-header-container", children=[
+            html.Img(src='assets/Logo.png', className='logo-header')
         ]),
         html.Div(children=[
-            html.Div("DATA UPDATE", className="header-text-line1"),
-            html.Div("Waitlist Data", className="header-text-line2"),
+            html.Div("DATA UPDATE", className="H2-right"),
+            html.Div("Waitlist Data", className="H1-right"),
         ])
     ]),
-    
-    html.Div(className="content-section", children=[
-        # Wait Turn section
-        html.Div(className="wait-turn-section chart-section", children=[
-            html.Div("Wait Turn", className="section-title"),
-            html.Div(className='chart-containers', children=[
-                dcc.Graph(figure=total_applicationsFig),
-                dcc.Graph(figure=total_individualsFig)
-            ]),
-        ]),
-        
-        # Priority section
-        html.Div(className='priority-section chart-section', children=[
-            html.Div('Priority', className='section-title'),
-            html.Div(className='chart-containers', children=[
-                dcc.Graph(figure=priority_applicationsFig),
-                dcc.Graph(figure=priority_individualsFig),
-            ]),
-        ]),
-    ])
+    html.Div(table(Waitlist_total_report), className="table-container"),
+    dcc.Graph(id='total_applicationsFig', figure=total_applicationsFig),
+    dcc.Graph(id='total_individualsFig', figure=total_individualsFig),
 ])
+
+
 
 if __name__ == '__main__':
     app.run_server(debug=True)
