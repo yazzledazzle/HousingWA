@@ -184,6 +184,7 @@ def plot_waitlist():
         )
         
         figs[chart['series']] = fig
+        fig.write_image(f"assets/{chart['series']}.png", width=1000, height=500, scale=2)
 
     return figs['priority_applications'], figs['total_applications'], figs['priority_individuals'], figs['total_individuals']
 

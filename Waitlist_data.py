@@ -130,3 +130,6 @@ def Waitlist_data():
         Waitlist_trend_end_last_year = pd.concat([Waitlist_trend_end_last_year, YE_df], ignore_index=True)
 
     return Waitlist_trend, Waitlist_trend_rolling_average, Waitlist_trend_monthly_change, Waitlist_trend_yearly_change, Waitlist_trend_end_last_year
+
+
+    

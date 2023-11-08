@@ -92,38 +92,15 @@ def Create_waitlist_latest_reports():
     Waitlist_latest_report_pc_pt['Prior year end'] = Waitlist_latest_report_pc_pt['Prior year end'].astype(float).round(2)
     Waitlist_latest_report_pc_pt.to_csv('Waitlist_latest_report_pc_pt.csv')
 
-    return Waitlist_latest_report, Waitlist_latest_report_pc_pt
+    #create Waitlist_latest_report_full, which is Waitlist_latest_report + columns 'Prior month (%)', 'Prior year', 'Rolling average', 'Prior year end' from Waitlist_latest_report_pc_pt
+    Waitlist_latest_report_full = Waitlist_latest_report
+    Waitlist_latest_report_full['Prior month %'] = Waitlist_latest_report_pc_pt['Prior month (%)']
+    Waitlist_latest_report_full['Prior year %'] = Waitlist_latest_report_pc_pt['Prior year']
+    Waitlist_latest_report_full['Rolling average %'] = Waitlist_latest_report_pc_pt['Rolling average']
+    Waitlist_latest_report_full['Prior year end %'] = Waitlist_latest_report_pc_pt['Prior year end']
 
-def generate_table(df):
-    df = df.dropna(axis=1, how='all')
-    notecheckdf = df
-    notecheckdf = notecheckdf.drop(columns=['Date', '#', 'Prior month', 'Prior year', 'Rolling average', 'Prior year end'])
-    note_print = []
-    note_columns = [col for col in notecheckdf.columns if 'Note' in col]
-    for col in note_columns:
-        for i in range(len(notecheckdf)):
-            notecheckdf[col][i] = notecheckdf[col][i].replace('for total_applications ', '*')
-            notecheckdf[col][i] = notecheckdf[col][i].replace('for total_individuals ', '*')
-            notecheckdf[col][i] = notecheckdf[col][i].replace('for priority_applications ', '*')
-            notecheckdf[col][i] = notecheckdf[col][i].replace('for priority_individuals ', '*')
-        if len(notecheckdf[col].unique()) == 1:
-            note_print.append(notecheckdf[col].unique()[0])
-        else:
-            for i in range(len(notecheckdf)):
-                notecheckdf[col][i] = notecheckdf[col][i].replace('*', ' for ' + notecheckdf['Count'][i])
-                note_print.append(notecheckdf[col][i])
-    note_print = [i.replace('*', '') for i in note_print]
-    
-    df = df.drop(columns=note_columns)
+    #reorder columns so Prior month % before Prior month, Prior year % before Prior year, etc.
+    Waitlist_latest_report_full = Waitlist_latest_report_full[['Group', 'Count', 'Date', '#', 'Prior month %', 'Prior month', 'Prior year %', 'Prior year', 'Rolling average %', 'Rolling average', 'Prior year end %', 'Prior year end', 'Note Monthly', 'Note Annual', 'Note Rolling average', 'Note prior year end']]
+    Waitlist_latest_report_full.to_csv('Waitlist_latest_report_full.csv')
 
-    unique_dates = df['Date'].unique()
-    if len(unique_dates) == 1:
-        date = unique_dates[0]
-        df = df.rename(columns={'Count': f'At {date}'})
-        df = df.drop(columns=['Date'])
-    else:
-        df[''] = df['Count'] + ' - at ' + df['Date']  # merging the columns and using an empty header
-        df = df.drop(columns=['Count', 'Date'])
-    
-
-
+    return Waitlist_latest_report, Waitlist_latest_report_pc_pt, Waitlist_latest_report_full
