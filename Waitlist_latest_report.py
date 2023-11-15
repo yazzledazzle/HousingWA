@@ -53,6 +53,7 @@ def Create_waitlist_latest_reports():
         else:
             df.loc[index, 'Note annual'] = 'Approximate prior year comparison only for ' + category + ' data not available for same month prior year, nearby data point used as proxy (from ' + str(Waitlist_trend_yearly_change_latest[Waitlist_trend_yearly_change_latest['Category'] == category]['MonthsElapsed'].values[0]) + ' months ago).'
             df_pc.loc[index, 'Note annual'] = 'Approximate prior year comparison only for ' + category + ' data not available for same month prior year, nearby data point used as proxy (from ' + str(Waitlist_trend_yearly_change_latest[Waitlist_trend_yearly_change_latest['Category'] == category]['MonthsElapsed'].values[0]) + ' months ago).'
+        
         df.loc[index, 'Rolling average'] = Waitlist_trend_rolling_average_latest[Waitlist_trend_rolling_average_latest['Category'] == category]['Delta'].values[0]
         df_pc.loc[index, 'Rolling average'] = Waitlist_trend_rolling_average_latest[Waitlist_trend_rolling_average_latest['Category'] == category]['Delta pc pt'].values[0]
         Waitlist_trend_rolling_average_latest['RecordsInYear'] = Waitlist_trend_rolling_average_latest['RecordsInYear'].astype(int)

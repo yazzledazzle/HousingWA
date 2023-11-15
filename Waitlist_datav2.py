@@ -6,6 +6,7 @@ def Waitlist_datav2():
     Waitlist_trend = pd.read_csv('/Users/yhanalucas/Desktop/Dash/Data/Public_housing/Waitlist_trend.csv')
     Waitlist_trend['Date'] = pd.to_datetime(Waitlist_trend['Date'], format='%Y-%m-%d')
     Waitlist_trend = Waitlist_trend.sort_values(by='Date', ascending=True)
+
     
     Waitlist_categories = Waitlist_trend.columns
     Waitlist_categories = Waitlist_categories.drop('Date').to_list()
@@ -20,6 +21,8 @@ def Waitlist_datav2():
         category_df = category_df.dropna().reset_index(drop=True)
         category_df = category_df.rename(columns={category: 'Value'})
         category_df['Category'] = category
+        #set Value to numeric, float ,.0f
+        category_df['Value'] = category_df['Value'].astype(float)   
     
 
         category_df['M MonthsElapsed'] = np.nan
@@ -61,6 +64,11 @@ def Waitlist_datav2():
                 category_df.at[category_df.index[ind], 'Previous monthly value'] = category_df.at[category_df.index[ind-1], 'Value']
                 category_df.at[category_df.index[ind], 'M Delta'] = category_df.at[category_df.index[ind], 'Value'] - category_df.at[category_df.index[ind-1], 'Value']
                 category_df.at[category_df.index[ind], 'M Delta pc pt'] = (category_df.at[category_df.index[ind], 'M Delta'] / category_df.at[category_df.index[ind-1], 'Value']) * 100
+                #set M Delta pc pt to .1f 
+                category_df['M Delta pc pt'] = category_df['M Delta pc pt'].apply(lambda x: round(x, 1))
+                #as float
+                category_df['M Delta pc pt'] = category_df['M Delta pc pt'].astype(float)
+
                 current_date = category_df.at[category_df.index[ind], 'Date']
                 prior_year_date = current_date - pd.DateOffset(days=366) + pd.offsets.MonthEnd(0)
                 prior_year_proxy_date_1 = prior_year_date + pd.DateOffset(days=1) + pd.offsets.MonthEnd(0)
@@ -120,7 +128,10 @@ def Waitlist_datav2():
                         category_df.at[category_df.index[ind], 'Y Delta pc pt'] = (category_df.at[category_df.index[ind], 'Y Delta'] / category_df.at[category_df.index[ind], 'Prior year value']) * 100
                     else:
                         category_df.at[category_df.index[ind], 'Prior year value'] = np.nan
-            
+            #set Y Delta pc pt to .1f
+            category_df['Y Delta pc pt'] = category_df['Y Delta pc pt'].apply(lambda x: round(x, 1))
+            #as float
+            category_df['Y Delta pc pt'] = category_df['Y Delta pc pt'].astype(float)
         for ind in range(len(category_df)):
             if category_df.loc[category_df.index[ind], 'Date'].year == years_in_df.min():
                 continue
@@ -129,7 +140,11 @@ def Waitlist_datav2():
                 category_df.at[ind, 'Value end last year'] = last_date_prior_year_value[category_df.loc[category_df.index[ind], 'Date'].year]
                 category_df.at[ind, 'YE Delta'] = category_df.loc[category_df.index[ind], 'Value'] - category_df.loc[category_df.index[ind], 'Value end last year']
                 category_df.at[ind, 'YE Delta pc pt'] = (category_df.loc[category_df.index[ind], 'YE Delta'] / category_df.loc[category_df.index[ind], 'Value end last year']) * 100
-
+            #set YE Delta pc pt to .1f
+            category_df['YE Delta pc pt'] = category_df['YE Delta pc pt'].apply(lambda x: round(x, 1))
+            #as float
+            category_df['YE Delta pc pt'] = category_df['YE Delta pc pt'].astype(float)
+            
         Waitlist_trend_monthly_change = pd.concat([Waitlist_trend_monthly_change, category_df], ignore_index=True)
         Waitlist_trend_yearly_change = pd.concat([Waitlist_trend_yearly_change, category_df], ignore_index=True)
         Waitlist_trend_end_last_year = pd.concat([Waitlist_trend_end_last_year, category_df], ignore_index=True)

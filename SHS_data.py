@@ -1,7 +1,7 @@
 import pandas as pd
 from os import listdir
 
-path_to_dir = '/Users/yhanalucas/Desktop/Dashv1/Data/CSV/SHS/'
+path_to_dir = '/Users/yhanalucas/Desktop/Dash/Data/SHS/'
 prefix = 'SHS_'
 suffix = '.csv'
 
@@ -46,12 +46,14 @@ def identify_ignore_columns(dataframes_dict):
 
 def load_and_preprocess_data():
     # Import Population.csv
-    Population = pd.read_csv('Data/CSV/Population/Population_State_Sex_Age_to_65+.csv')
+    Population = pd.read_csv('/Users/yhanalucas/Desktop/Dash/Data/Population/Population_State_Sex_Age_to_65+.csv')
     Population = convert_case(Population)
     # date is dd-mm-yyyy
     Population['DATE'] = pd.to_datetime(Population['DATE'], format='%Y-%m-%d')
     # sort by Date ascending
     Population = Population.sort_values(by='DATE', ascending=True)
+
+
     Population_all_ages = Population[Population['AGE GROUP'] == 'All ages']
     Population_all_ages = Population_all_ages.drop(['AGE GROUP'], axis=1)
     # sort by Date ascending
@@ -83,9 +85,21 @@ def load_and_preprocess_data():
         df = df.dropna(subset=check_for_nan_cols)
 
         if 'AGE GROUP' in df.columns:
+            df['AGE GROUP'] = df['AGE GROUP'].str.replace(chr(45), " to ").str.replace(chr(8211), " to ")
             if 'All females' in df['AGE GROUP'].unique() or 'All males' in df['AGE GROUP'].unique():
                 df = df[~df['AGE GROUP'].isin(['All females', 'All males'])]
                 df['AGE GROUP'] = df['AGE GROUP'].str.replace(" years", "")
+
+                #group 15-17 and 18-19 into 15-19
+                df.loc[df['AGE GROUP'] == '15 to 17', 'AGE GROUP'] = '15 to 19'
+                df.loc[df['AGE GROUP'] == '18 to 19', 'AGE GROUP'] = '15 to 19'
+                #sum 15 to 19 numerical columns, retain datetime and object columns
+                object_cols = [col for col in df.columns if df[col].dtype == 'object']
+                datetime_cols = [col for col in df.columns if 'datetime64' in str(df[col].dtype)]
+                numeric_cols = [col for col in df.columns if df[col].dtype in ['int64', 'float64']]
+                df = df.groupby(object_cols + datetime_cols)[numeric_cols].sum().reset_index()
+                
+
         
         # Convert Month column to a Date format
         if 'MONTH' in df.columns:
@@ -110,17 +124,29 @@ def load_and_preprocess_data():
         filters_dict[df_name] = filters
         total_df_name = df_name.replace('SHS_', 'SHS_Total_')
 
-        # Filter 'Total' and 'All ages' rows
-        for filter in filters:
-            if df[filter].str.contains('Total|All ages').any():
-                total_df = df[df[filter].str.contains('Total|All ages')]
-                df = df[~df[filter].str.contains('Total|All ages')]
-                processed_dataframes[total_df_name] = total_df
-                processed_dataframes[df_name] = df
+        if 'AGE GROUP' in df.columns:
+            if len(df['AGE GROUP'].unique()) > 1:
+                if 'All ages' in df['AGE GROUP'].unique():
+                    df = df[df['AGE GROUP'] != 'All ages']
+                    processed_dataframes[df_name] = df
+                    
 
-        # This df will not contain rows with 'Total' or 'All ages' anymore
-    processed_dataframes[df_name] = df
+        if 'SEX' in df.columns:
+            if len(df['SEX'].unique()) > 1:
+            #check if Total is in the unique values
+                if 'Total' in df['SEX'].unique():
+                    total_df = df[df['SEX'] == 'Total']
+                    total_df = total_df.drop(['SEX'], axis=1)
+                    df = df[df['SEX'] != 'Total']
+                    processed_dataframes[df_name] = df
+            object_cols = [col for col in total_df.columns if total_df[col].dtype == 'object']
+            datetime_cols = [col for col in total_df.columns if 'datetime64' in str(total_df[col].dtype)]
+            numeric_cols = [col for col in total_df.columns if total_df[col].dtype in ['int64', 'float64']]
+            total_df = total_df.groupby(object_cols + datetime_cols)[numeric_cols].sum().reset_index()
+            total_df.to_csv(f'/Users/yhanalucas/Desktop/Dash/Data/SHS/DropSex/{total_df_name}.csv', index=False)
+            processed_dataframes[total_df_name] = total_df
 
+        processed_dataframes[df_name] = df
 
     # Separate loop for collecting unique values
     for df_name, df in processed_dataframes.items():
@@ -131,15 +157,21 @@ def load_and_preprocess_data():
             filter_select[df_name][filter] = unique_values
     processed_dataframes[df_name] = df
 
+
     return processed_dataframes, Population, Population_all_ages, filters_dict, filter_select
+
 
 def merge_and_calculate(processed_dataframes, Population, Population_all_ages):
 
     # Convert the 'Date' columns to datetime format for Population DataFrames
     Population['DATE'] = pd.to_datetime(Population['DATE'], format='%Y-%m-%d')
     Population_all_ages['DATE'] = pd.to_datetime(Population_all_ages['DATE'], format='%Y-%m-%d')
+    
+    #replace ['-' or '–' with space in AGE GROUP column
+    Population['AGE GROUP'] = Population['AGE GROUP'].str.replace(chr(45), " to ").str.replace(chr(8211), " to ")
 
     regions = ['NSW', 'VIC', 'QLD', 'WA', 'SA', 'TAS', 'ACT', 'NT']
+    SHS_with_population_calcs = {}
 
     for df_name, df in processed_dataframes.items():
 
@@ -147,34 +179,91 @@ def merge_and_calculate(processed_dataframes, Population, Population_all_ages):
         df['DATE'] = pd.to_datetime(df['DATE'])
         df['QUARTER'] = df['DATE'].apply(date_to_quarter)
 
-        if 'AGE GROUP' in df.columns:
-            merged_df = pd.merge(df, Population, left_on=['QUARTER', 'SEX', 'AGE GROUP'], right_on=['DATE', 'SEX', 'AGE GROUP'], how='left')
+        if 'SEX' in df.columns:
+            if 'AGE GROUP' in df.columns:
+                merged_df = pd.merge(df, Population, left_on=['QUARTER', 'SEX', 'AGE GROUP'], right_on=['DATE', 'SEX', 'AGE GROUP'], how='left')
+            else:
+                merged_df = pd.merge(df, Population_all_ages, left_on=['QUARTER', 'SEX'], right_on = ['DATE', 'SEX'], how='left')
         else:
-            merged_df = pd.merge(df, Population_all_ages, left_on=['QUARTER', 'SEX'], right_on = ['DATE', 'SEX'], how='left')
+            #filter population SEX = 'Total'
+            PopulationNoSex = Population[Population['SEX'] == 'Total']
+            PopulationNoSex = PopulationNoSex.drop(['SEX'], axis=1)
+            PopulationNoSex = PopulationNoSex.groupby(['DATE', 'AGE GROUP']).sum().reset_index()
+            #to csv in Population folder
+            PopulationNoSex.to_csv(f'/Users/yhanalucas/Desktop/Dash/Data/Population/PopulationNoSex.csv', index=False)
+            Population_all_agesNoSex = Population_all_ages[Population_all_ages['SEX']=='Total']
+            Population_all_agesNoSex = Population_all_agesNoSex.drop(['SEX'], axis=1)
+            Population_all_agesNoSex = Population_all_agesNoSex.groupby(['DATE']).sum().reset_index()
+            #to csv in Population folder
+            Population_all_agesNoSex.to_csv(f'/Users/yhanalucas/Desktop/Dash/Data/Population/Population_all_agesNoSex.csv', index=False)
+
+
+            if 'AGE GROUP' in df.columns:
+                merged_df = pd.merge(df, PopulationNoSex, left_on=['QUARTER', 'AGE GROUP'], right_on=['DATE', 'AGE GROUP'], how='left')
+            else:
+                merged_df = pd.merge(df, Population_all_agesNoSex, left_on=['QUARTER'], right_on = ['DATE'], how='left')
 
         # Drop columns Quarter, Date_y, rename Date_x to Date
         merged_df = merged_df.drop(['QUARTER', 'DATE_y'], axis=1)
         merged_df = merged_df.rename(columns={'DATE_x': 'DATE'})
+        #move Date column to front
+        cols = list(merged_df.columns)
+        cols.insert(0, cols.pop(cols.index('DATE')))
+        merged_df = merged_df[cols]
 
         # Calculation for National and each region
         merged_df['NATIONAL_PER_10,000'] = merged_df['NATIONAL'] / merged_df['NATIONAL_POPULATION'] * 10000
         for region in regions:
-            population_column = f"{region}_POPULATION"
-            per_10000_column = f"{region}_PER_10,000"
-            merged_df[per_10000_column] = merged_df[region] / merged_df[population_column] * 10000
+            population_column_name = f"{region}_POPULATION"
+            per_10000_column = f"{region}_PER_10k"
+            merged_df[per_10000_column] = merged_df[region] / merged_df[population_column_name] * 10000
 
             proportion_of_national_column = f"{region}_PROPORTION_OF_NATIONAL"
             merged_df[proportion_of_national_column] = merged_df[region] / merged_df['NATIONAL']
 
-            proportion_of_national_per_10000_column = f"{region}_PROPORTION_OF_NATIONAL_PER_10,000"
+            proportion_of_national_per_10000_column = f"{region}_PROPORTION_OF_NATIONAL_PER_10k"
             merged_df[proportion_of_national_per_10000_column] = merged_df[per_10000_column] / merged_df['NATIONAL_PER_10,000']
 
         # Store processed DataFrame back in the dictionary
-        processed_dataframes[df_name] = merged_df
+        SHS_with_population_calcs[df_name] = merged_df
+        #save to csv
+        merged_df.to_csv(f'/Users/yhanalucas/Desktop/Dash/Data/SHS/WithPopulation/{df_name}_WithPopulation.csv', index=False)
 
-    return processed_dataframes
+    return SHS_with_population_calcs
 
+def long_formSHS(SHS_with_population_calcs):
+    long_form_dfs = {}
+    for df_name, df in SHS_with_population_calcs.items():
+        id_vars = ['DATE'] + [col for col in df.columns if df[col].dtype == 'object']
+        value_vars = [col for col in df.columns if df[col].dtype in ['int64', 'float64']]
+        long_form_dfs[df_name] = pd.melt(df, id_vars=id_vars, value_vars=value_vars, var_name='MEASURE', value_name='VALUE')
+        long_form_dfs[df_name]['MEASURE'] = long_form_dfs[df_name]['MEASURE'].str.replace('_', ' ')
+        long_form_dfs[df_name]['MEASURE'] = long_form_dfs[df_name]['MEASURE'].str.lower()
+        long_form_dfs[df_name]['MEASURE'] = long_form_dfs[df_name]['MEASURE'].str.capitalize()
+            #replace Wa with WA, Nsw with NSW, Sa with SA, Nt with NT, Act with ACT
+
+        #create column State, which is measure before first space
+        long_form_dfs[df_name]['STATE'] = long_form_dfs[df_name]['MEASURE'].str.split(' ').str[0]
+        #create column Measure, which is remaining measure after moving State to its own column
+        long_form_dfs[df_name]['MEASURE'] = long_form_dfs[df_name]['MEASURE'].str.split(' ').str[1:].str.join(' ')
+        long_form_dfs[df_name]['STATE'] = long_form_dfs[df_name]['STATE'].str.replace('Wa', 'WA').str.replace('Nsw', 'NSW').str.replace('Sa', 'SA').str.replace('Nt', 'NT').str.replace('Act', 'ACT')
+        #move State column to second column
+        cols = list(long_form_dfs[df_name].columns)
+        cols.insert(1, cols.pop(cols.index('STATE')))
+        long_form_dfs[df_name] = long_form_dfs[df_name][cols]
+                
+        long_form_dfs[df_name].to_csv(f'/Users/yhanalucas/Desktop/Dash/Data/SHS/Long_Form/{df_name}_Long_Form.csv', index=False)
+        WA_only_df = long_form_dfs[df_name][long_form_dfs[df_name]['STATE'] == 'WA']
+        WA_only_df = WA_only_df.drop(['STATE'], axis=1)
+        WA_name = df_name.replace('SHS_', 'SHS_WA_')
+        long_form_dfs[WA_name] = WA_only_df
+
+        WA_only_df.to_csv(f'/Users/yhanalucas/Desktop/Dash/Data/SHS/Long_Form/{df_name}_WA_Long_Form.csv', index=False)
+    
+    return long_form_dfs
 
 processsed_dataframes, Population, Population_all_ages, filters_dict, filter_select = load_and_preprocess_data()
-processed_dataframes = merge_and_calculate(processsed_dataframes, Population, Population_all_ages)
+SHS_with_population_calcs = merge_and_calculate(processsed_dataframes, Population, Population_all_ages)
+long_form_dfs = long_formSHS(SHS_with_population_calcs)
+
 
