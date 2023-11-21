@@ -1,5 +1,0 @@
-,Group,Count,Date,#,Prior month (%),Prior year,Rolling average,Prior year end,Note Monthly,Note Annual,Note Rolling average,Note prior year end,Prior month,Note annual
-0,Total,Applications,31 Jul 2023,18984,-0.41,-0.62,-0.19,-0.01,,,Insufficient data for true 12-month rolling average for; proxy figure total_applications calculated using 10 values only.,,,
-1,Total,Individuals,31 Jul 2023,33943,-0.13,0.89,0.34,0.49,,,Insufficient data for true 12-month rolling average for; proxy figure total_individuals calculated using 10 values only.,,,
-2,Priority,Applications,31 Jul 2023,4768,-0.04,13.2,5.86,7.12,,,Insufficient data for true 12-month rolling average for; proxy figure priority_applications calculated using 10 values only.,,,
-3,Priority,Individuals,31 Jul 2023,9447,0.25,10.89,4.43,5.33,,,Insufficient data for true 12-month rolling average for; proxy figure priority_individuals calculated using 10 values only.,,,

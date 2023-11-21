@@ -3239,3 +3239,1299 @@ DATE,MONTH,CLIENT GROUP,MEASURE,VALUE
 2022-09-30,Sep22,Number of clients with problematic drug or alcohol issues,proportion of national per 10k,0.9463046658266268
 2022-09-30,Sep22,Number of indigenous clients,proportion of national per 10k,1.186422730620753
 2022-09-30,Sep22,Number of nights in short-term/emergency accommodation,proportion of national per 10k,0.8096973818545984
+2018-04-30,Apr18,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10490901544670228
+2018-04-30,Apr18,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10490901544670228
+2018-04-30,Apr18,Number of clients who are at risk of homelessness,proportion of national population,0.10490901544670228
+2018-04-30,Apr18,Number of clients who are homeless,proportion of national population,0.10490901544670228
+2018-04-30,Apr18,Number of clients who have experienced family and domestic violence,proportion of national population,0.10490901544670228
+2018-04-30,Apr18,Number of clients with a current mental health issue,proportion of national population,0.10490901544670228
+2018-04-30,Apr18,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10490901544670228
+2018-04-30,Apr18,Number of indigenous clients,proportion of national population,0.10490901544670228
+2018-04-30,Apr18,Number of nights in short-term/emergency accommodation,proportion of national population,0.10490901544670228
+2019-04-30,Apr19,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10487425812189005
+2019-04-30,Apr19,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10487425812189005
+2019-04-30,Apr19,Number of clients who are at risk of homelessness,proportion of national population,0.10487425812189005
+2019-04-30,Apr19,Number of clients who are homeless,proportion of national population,0.10487425812189005
+2019-04-30,Apr19,Number of clients who have experienced family and domestic violence,proportion of national population,0.10487425812189005
+2019-04-30,Apr19,Number of clients with a current mental health issue,proportion of national population,0.10487425812189005
+2019-04-30,Apr19,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10487425812189005
+2019-04-30,Apr19,Number of indigenous clients,proportion of national population,0.10487425812189005
+2019-04-30,Apr19,Number of nights in short-term/emergency accommodation,proportion of national population,0.10487425812189005
+2020-04-30,Apr20,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10560160862034709
+2020-04-30,Apr20,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10560160862034709
+2020-04-30,Apr20,Number of clients who are at risk of homelessness,proportion of national population,0.10560160862034709
+2020-04-30,Apr20,Number of clients who are homeless,proportion of national population,0.10560160862034709
+2020-04-30,Apr20,Number of clients who have experienced family and domestic violence,proportion of national population,0.10560160862034709
+2020-04-30,Apr20,Number of clients with a current mental health issue,proportion of national population,0.10560160862034709
+2020-04-30,Apr20,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10560160862034709
+2020-04-30,Apr20,Number of indigenous clients,proportion of national population,0.10560160862034709
+2020-04-30,Apr20,Number of nights in short-term/emergency accommodation,proportion of national population,0.10560160862034709
+2021-04-30,Apr21,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10677521015569132
+2021-04-30,Apr21,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10677521015569132
+2021-04-30,Apr21,Number of clients who are at risk of homelessness,proportion of national population,0.10677521015569132
+2021-04-30,Apr21,Number of clients who are homeless,proportion of national population,0.10677521015569132
+2021-04-30,Apr21,Number of clients who have experienced family and domestic violence,proportion of national population,0.10677521015569132
+2021-04-30,Apr21,Number of clients with a current mental health issue,proportion of national population,0.10677521015569132
+2021-04-30,Apr21,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10677521015569132
+2021-04-30,Apr21,Number of indigenous clients,proportion of national population,0.10677521015569132
+2021-04-30,Apr21,Number of nights in short-term/emergency accommodation,proportion of national population,0.10677521015569132
+2022-04-30,Apr22,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10718904200526055
+2022-04-30,Apr22,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10718904200526055
+2022-04-30,Apr22,Number of clients who are at risk of homelessness,proportion of national population,0.10718904200526055
+2022-04-30,Apr22,Number of clients who are homeless,proportion of national population,0.10718904200526055
+2022-04-30,Apr22,Number of clients who have experienced family and domestic violence,proportion of national population,0.10718904200526055
+2022-04-30,Apr22,Number of clients with a current mental health issue,proportion of national population,0.10718904200526055
+2022-04-30,Apr22,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10718904200526055
+2022-04-30,Apr22,Number of indigenous clients,proportion of national population,0.10718904200526055
+2022-04-30,Apr22,Number of nights in short-term/emergency accommodation,proportion of national population,0.10718904200526055
+2023-04-30,Apr23,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10786794346175763
+2023-04-30,Apr23,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10786794346175763
+2023-04-30,Apr23,Number of clients who are at risk of homelessness,proportion of national population,0.10786794346175763
+2023-04-30,Apr23,Number of clients who are homeless,proportion of national population,0.10786794346175763
+2023-04-30,Apr23,Number of clients who have experienced family and domestic violence,proportion of national population,0.10786794346175763
+2023-04-30,Apr23,Number of clients with a current mental health issue,proportion of national population,0.10786794346175763
+2023-04-30,Apr23,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10786794346175763
+2023-04-30,Apr23,Number of indigenous clients,proportion of national population,0.10786794346175763
+2023-04-30,Apr23,Number of nights in short-term/emergency accommodation,proportion of national population,0.10786794346175763
+2017-08-31,Aug17,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10514224855066087
+2017-08-31,Aug17,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10514224855066087
+2017-08-31,Aug17,Number of clients who are at risk of homelessness,proportion of national population,0.10514224855066087
+2017-08-31,Aug17,Number of clients who are homeless,proportion of national population,0.10514224855066087
+2017-08-31,Aug17,Number of clients who have experienced family and domestic violence,proportion of national population,0.10514224855066087
+2017-08-31,Aug17,Number of clients with a current mental health issue,proportion of national population,0.10514224855066087
+2017-08-31,Aug17,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10514224855066087
+2017-08-31,Aug17,Number of indigenous clients,proportion of national population,0.10514224855066087
+2017-08-31,Aug17,Number of nights in short-term/emergency accommodation,proportion of national population,0.10514224855066087
+2018-08-31,Aug18,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10486579916772082
+2018-08-31,Aug18,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10486579916772082
+2018-08-31,Aug18,Number of clients who are at risk of homelessness,proportion of national population,0.10486579916772082
+2018-08-31,Aug18,Number of clients who are homeless,proportion of national population,0.10486579916772082
+2018-08-31,Aug18,Number of clients who have experienced family and domestic violence,proportion of national population,0.10486579916772082
+2018-08-31,Aug18,Number of clients with a current mental health issue,proportion of national population,0.10486579916772082
+2018-08-31,Aug18,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10486579916772082
+2018-08-31,Aug18,Number of indigenous clients,proportion of national population,0.10486579916772082
+2018-08-31,Aug18,Number of nights in short-term/emergency accommodation,proportion of national population,0.10486579916772082
+2019-08-31,Aug19,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.104979011894536
+2019-08-31,Aug19,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.104979011894536
+2019-08-31,Aug19,Number of clients who are at risk of homelessness,proportion of national population,0.104979011894536
+2019-08-31,Aug19,Number of clients who are homeless,proportion of national population,0.104979011894536
+2019-08-31,Aug19,Number of clients who have experienced family and domestic violence,proportion of national population,0.104979011894536
+2019-08-31,Aug19,Number of clients with a current mental health issue,proportion of national population,0.104979011894536
+2019-08-31,Aug19,Number of clients with problematic drug or alcohol issues,proportion of national population,0.104979011894536
+2019-08-31,Aug19,Number of indigenous clients,proportion of national population,0.104979011894536
+2019-08-31,Aug19,Number of nights in short-term/emergency accommodation,proportion of national population,0.104979011894536
+2020-08-31,Aug20,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.1057696506345917
+2020-08-31,Aug20,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.1057696506345917
+2020-08-31,Aug20,Number of clients who are at risk of homelessness,proportion of national population,0.1057696506345917
+2020-08-31,Aug20,Number of clients who are homeless,proportion of national population,0.1057696506345917
+2020-08-31,Aug20,Number of clients who have experienced family and domestic violence,proportion of national population,0.1057696506345917
+2020-08-31,Aug20,Number of clients with a current mental health issue,proportion of national population,0.1057696506345917
+2020-08-31,Aug20,Number of clients with problematic drug or alcohol issues,proportion of national population,0.1057696506345917
+2020-08-31,Aug20,Number of indigenous clients,proportion of national population,0.1057696506345917
+2020-08-31,Aug20,Number of nights in short-term/emergency accommodation,proportion of national population,0.1057696506345917
+2021-08-31,Aug21,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10703994158240483
+2021-08-31,Aug21,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10703994158240483
+2021-08-31,Aug21,Number of clients who are at risk of homelessness,proportion of national population,0.10703994158240483
+2021-08-31,Aug21,Number of clients who are homeless,proportion of national population,0.10703994158240483
+2021-08-31,Aug21,Number of clients who have experienced family and domestic violence,proportion of national population,0.10703994158240483
+2021-08-31,Aug21,Number of clients with a current mental health issue,proportion of national population,0.10703994158240483
+2021-08-31,Aug21,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10703994158240483
+2021-08-31,Aug21,Number of indigenous clients,proportion of national population,0.10703994158240483
+2021-08-31,Aug21,Number of nights in short-term/emergency accommodation,proportion of national population,0.10703994158240483
+2022-08-31,Aug22,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10730886303614942
+2022-08-31,Aug22,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10730886303614942
+2022-08-31,Aug22,Number of clients who are at risk of homelessness,proportion of national population,0.10730886303614942
+2022-08-31,Aug22,Number of clients who are homeless,proportion of national population,0.10730886303614942
+2022-08-31,Aug22,Number of clients who have experienced family and domestic violence,proportion of national population,0.10730886303614942
+2022-08-31,Aug22,Number of clients with a current mental health issue,proportion of national population,0.10730886303614942
+2022-08-31,Aug22,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10730886303614942
+2022-08-31,Aug22,Number of indigenous clients,proportion of national population,0.10730886303614942
+2022-08-31,Aug22,Number of nights in short-term/emergency accommodation,proportion of national population,0.10730886303614942
+2017-12-31,Dec17,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10500933437667036
+2017-12-31,Dec17,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10500933437667036
+2017-12-31,Dec17,Number of clients who are at risk of homelessness,proportion of national population,0.10500933437667036
+2017-12-31,Dec17,Number of clients who are homeless,proportion of national population,0.10500933437667036
+2017-12-31,Dec17,Number of clients who have experienced family and domestic violence,proportion of national population,0.10500933437667036
+2017-12-31,Dec17,Number of clients with a current mental health issue,proportion of national population,0.10500933437667036
+2017-12-31,Dec17,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10500933437667036
+2017-12-31,Dec17,Number of indigenous clients,proportion of national population,0.10500933437667036
+2017-12-31,Dec17,Number of nights in short-term/emergency accommodation,proportion of national population,0.10500933437667036
+2018-12-31,Dec18,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10484328807522746
+2018-12-31,Dec18,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10484328807522746
+2018-12-31,Dec18,Number of clients who are at risk of homelessness,proportion of national population,0.10484328807522746
+2018-12-31,Dec18,Number of clients who are homeless,proportion of national population,0.10484328807522746
+2018-12-31,Dec18,Number of clients who have experienced family and domestic violence,proportion of national population,0.10484328807522746
+2018-12-31,Dec18,Number of clients with a current mental health issue,proportion of national population,0.10484328807522746
+2018-12-31,Dec18,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10484328807522746
+2018-12-31,Dec18,Number of indigenous clients,proportion of national population,0.10484328807522746
+2018-12-31,Dec18,Number of nights in short-term/emergency accommodation,proportion of national population,0.10484328807522746
+2019-12-31,Dec19,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10535853025892786
+2019-12-31,Dec19,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10535853025892786
+2019-12-31,Dec19,Number of clients who are at risk of homelessness,proportion of national population,0.10535853025892786
+2019-12-31,Dec19,Number of clients who are homeless,proportion of national population,0.10535853025892786
+2019-12-31,Dec19,Number of clients who have experienced family and domestic violence,proportion of national population,0.10535853025892786
+2019-12-31,Dec19,Number of clients with a current mental health issue,proportion of national population,0.10535853025892786
+2019-12-31,Dec19,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10535853025892786
+2019-12-31,Dec19,Number of indigenous clients,proportion of national population,0.10535853025892786
+2019-12-31,Dec19,Number of nights in short-term/emergency accommodation,proportion of national population,0.10535853025892786
+2020-12-31,Dec20,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10644216556256096
+2020-12-31,Dec20,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10644216556256096
+2020-12-31,Dec20,Number of clients who are at risk of homelessness,proportion of national population,0.10644216556256096
+2020-12-31,Dec20,Number of clients who are homeless,proportion of national population,0.10644216556256096
+2020-12-31,Dec20,Number of clients who have experienced family and domestic violence,proportion of national population,0.10644216556256096
+2020-12-31,Dec20,Number of clients with a current mental health issue,proportion of national population,0.10644216556256096
+2020-12-31,Dec20,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10644216556256096
+2020-12-31,Dec20,Number of indigenous clients,proportion of national population,0.10644216556256096
+2020-12-31,Dec20,Number of nights in short-term/emergency accommodation,proportion of national population,0.10644216556256096
+2021-12-31,Dec21,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10721263144971373
+2021-12-31,Dec21,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10721263144971373
+2021-12-31,Dec21,Number of clients who are at risk of homelessness,proportion of national population,0.10721263144971373
+2021-12-31,Dec21,Number of clients who are homeless,proportion of national population,0.10721263144971373
+2021-12-31,Dec21,Number of clients who have experienced family and domestic violence,proportion of national population,0.10721263144971373
+2021-12-31,Dec21,Number of clients with a current mental health issue,proportion of national population,0.10721263144971373
+2021-12-31,Dec21,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10721263144971373
+2021-12-31,Dec21,Number of indigenous clients,proportion of national population,0.10721263144971373
+2021-12-31,Dec21,Number of nights in short-term/emergency accommodation,proportion of national population,0.10721263144971373
+2022-12-31,Dec22,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10762400933018894
+2022-12-31,Dec22,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10762400933018894
+2022-12-31,Dec22,Number of clients who are at risk of homelessness,proportion of national population,0.10762400933018894
+2022-12-31,Dec22,Number of clients who are homeless,proportion of national population,0.10762400933018894
+2022-12-31,Dec22,Number of clients who have experienced family and domestic violence,proportion of national population,0.10762400933018894
+2022-12-31,Dec22,Number of clients with a current mental health issue,proportion of national population,0.10762400933018894
+2022-12-31,Dec22,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10762400933018894
+2022-12-31,Dec22,Number of indigenous clients,proportion of national population,0.10762400933018894
+2022-12-31,Dec22,Number of nights in short-term/emergency accommodation,proportion of national population,0.10762400933018894
+2018-02-28,Feb18,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10500933437667036
+2018-02-28,Feb18,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10500933437667036
+2018-02-28,Feb18,Number of clients who are at risk of homelessness,proportion of national population,0.10500933437667036
+2018-02-28,Feb18,Number of clients who are homeless,proportion of national population,0.10500933437667036
+2018-02-28,Feb18,Number of clients who have experienced family and domestic violence,proportion of national population,0.10500933437667036
+2018-02-28,Feb18,Number of clients with a current mental health issue,proportion of national population,0.10500933437667036
+2018-02-28,Feb18,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10500933437667036
+2018-02-28,Feb18,Number of indigenous clients,proportion of national population,0.10500933437667036
+2018-02-28,Feb18,Number of nights in short-term/emergency accommodation,proportion of national population,0.10500933437667036
+2019-02-28,Feb19,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10484328807522746
+2019-02-28,Feb19,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10484328807522746
+2019-02-28,Feb19,Number of clients who are at risk of homelessness,proportion of national population,0.10484328807522746
+2019-02-28,Feb19,Number of clients who are homeless,proportion of national population,0.10484328807522746
+2019-02-28,Feb19,Number of clients who have experienced family and domestic violence,proportion of national population,0.10484328807522746
+2019-02-28,Feb19,Number of clients with a current mental health issue,proportion of national population,0.10484328807522746
+2019-02-28,Feb19,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10484328807522746
+2019-02-28,Feb19,Number of indigenous clients,proportion of national population,0.10484328807522746
+2019-02-28,Feb19,Number of nights in short-term/emergency accommodation,proportion of national population,0.10484328807522746
+2020-02-29,Feb20,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10535853025892786
+2020-02-29,Feb20,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10535853025892786
+2020-02-29,Feb20,Number of clients who are at risk of homelessness,proportion of national population,0.10535853025892786
+2020-02-29,Feb20,Number of clients who are homeless,proportion of national population,0.10535853025892786
+2020-02-29,Feb20,Number of clients who have experienced family and domestic violence,proportion of national population,0.10535853025892786
+2020-02-29,Feb20,Number of clients with a current mental health issue,proportion of national population,0.10535853025892786
+2020-02-29,Feb20,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10535853025892786
+2020-02-29,Feb20,Number of indigenous clients,proportion of national population,0.10535853025892786
+2020-02-29,Feb20,Number of nights in short-term/emergency accommodation,proportion of national population,0.10535853025892786
+2021-02-28,Feb21,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10644216556256096
+2021-02-28,Feb21,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10644216556256096
+2021-02-28,Feb21,Number of clients who are at risk of homelessness,proportion of national population,0.10644216556256096
+2021-02-28,Feb21,Number of clients who are homeless,proportion of national population,0.10644216556256096
+2021-02-28,Feb21,Number of clients who have experienced family and domestic violence,proportion of national population,0.10644216556256096
+2021-02-28,Feb21,Number of clients with a current mental health issue,proportion of national population,0.10644216556256096
+2021-02-28,Feb21,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10644216556256096
+2021-02-28,Feb21,Number of indigenous clients,proportion of national population,0.10644216556256096
+2021-02-28,Feb21,Number of nights in short-term/emergency accommodation,proportion of national population,0.10644216556256096
+2022-02-28,Feb22,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10721263144971373
+2022-02-28,Feb22,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10721263144971373
+2022-02-28,Feb22,Number of clients who are at risk of homelessness,proportion of national population,0.10721263144971373
+2022-02-28,Feb22,Number of clients who are homeless,proportion of national population,0.10721263144971373
+2022-02-28,Feb22,Number of clients who have experienced family and domestic violence,proportion of national population,0.10721263144971373
+2022-02-28,Feb22,Number of clients with a current mental health issue,proportion of national population,0.10721263144971373
+2022-02-28,Feb22,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10721263144971373
+2022-02-28,Feb22,Number of indigenous clients,proportion of national population,0.10721263144971373
+2022-02-28,Feb22,Number of nights in short-term/emergency accommodation,proportion of national population,0.10721263144971373
+2023-02-28,Feb23,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10762400933018894
+2023-02-28,Feb23,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10762400933018894
+2023-02-28,Feb23,Number of clients who are at risk of homelessness,proportion of national population,0.10762400933018894
+2023-02-28,Feb23,Number of clients who are homeless,proportion of national population,0.10762400933018894
+2023-02-28,Feb23,Number of clients who have experienced family and domestic violence,proportion of national population,0.10762400933018894
+2023-02-28,Feb23,Number of clients with a current mental health issue,proportion of national population,0.10762400933018894
+2023-02-28,Feb23,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10762400933018894
+2023-02-28,Feb23,Number of indigenous clients,proportion of national population,0.10762400933018894
+2023-02-28,Feb23,Number of nights in short-term/emergency accommodation,proportion of national population,0.10762400933018894
+2018-01-31,Jan18,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10500933437667036
+2018-01-31,Jan18,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10500933437667036
+2018-01-31,Jan18,Number of clients who are at risk of homelessness,proportion of national population,0.10500933437667036
+2018-01-31,Jan18,Number of clients who are homeless,proportion of national population,0.10500933437667036
+2018-01-31,Jan18,Number of clients who have experienced family and domestic violence,proportion of national population,0.10500933437667036
+2018-01-31,Jan18,Number of clients with a current mental health issue,proportion of national population,0.10500933437667036
+2018-01-31,Jan18,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10500933437667036
+2018-01-31,Jan18,Number of indigenous clients,proportion of national population,0.10500933437667036
+2018-01-31,Jan18,Number of nights in short-term/emergency accommodation,proportion of national population,0.10500933437667036
+2019-01-31,Jan19,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10484328807522746
+2019-01-31,Jan19,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10484328807522746
+2019-01-31,Jan19,Number of clients who are at risk of homelessness,proportion of national population,0.10484328807522746
+2019-01-31,Jan19,Number of clients who are homeless,proportion of national population,0.10484328807522746
+2019-01-31,Jan19,Number of clients who have experienced family and domestic violence,proportion of national population,0.10484328807522746
+2019-01-31,Jan19,Number of clients with a current mental health issue,proportion of national population,0.10484328807522746
+2019-01-31,Jan19,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10484328807522746
+2019-01-31,Jan19,Number of indigenous clients,proportion of national population,0.10484328807522746
+2019-01-31,Jan19,Number of nights in short-term/emergency accommodation,proportion of national population,0.10484328807522746
+2020-01-31,Jan20,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10535853025892786
+2020-01-31,Jan20,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10535853025892786
+2020-01-31,Jan20,Number of clients who are at risk of homelessness,proportion of national population,0.10535853025892786
+2020-01-31,Jan20,Number of clients who are homeless,proportion of national population,0.10535853025892786
+2020-01-31,Jan20,Number of clients who have experienced family and domestic violence,proportion of national population,0.10535853025892786
+2020-01-31,Jan20,Number of clients with a current mental health issue,proportion of national population,0.10535853025892786
+2020-01-31,Jan20,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10535853025892786
+2020-01-31,Jan20,Number of indigenous clients,proportion of national population,0.10535853025892786
+2020-01-31,Jan20,Number of nights in short-term/emergency accommodation,proportion of national population,0.10535853025892786
+2021-01-31,Jan21,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10644216556256096
+2021-01-31,Jan21,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10644216556256096
+2021-01-31,Jan21,Number of clients who are at risk of homelessness,proportion of national population,0.10644216556256096
+2021-01-31,Jan21,Number of clients who are homeless,proportion of national population,0.10644216556256096
+2021-01-31,Jan21,Number of clients who have experienced family and domestic violence,proportion of national population,0.10644216556256096
+2021-01-31,Jan21,Number of clients with a current mental health issue,proportion of national population,0.10644216556256096
+2021-01-31,Jan21,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10644216556256096
+2021-01-31,Jan21,Number of indigenous clients,proportion of national population,0.10644216556256096
+2021-01-31,Jan21,Number of nights in short-term/emergency accommodation,proportion of national population,0.10644216556256096
+2022-01-31,Jan22,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10721263144971373
+2022-01-31,Jan22,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10721263144971373
+2022-01-31,Jan22,Number of clients who are at risk of homelessness,proportion of national population,0.10721263144971373
+2022-01-31,Jan22,Number of clients who are homeless,proportion of national population,0.10721263144971373
+2022-01-31,Jan22,Number of clients who have experienced family and domestic violence,proportion of national population,0.10721263144971373
+2022-01-31,Jan22,Number of clients with a current mental health issue,proportion of national population,0.10721263144971373
+2022-01-31,Jan22,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10721263144971373
+2022-01-31,Jan22,Number of indigenous clients,proportion of national population,0.10721263144971373
+2022-01-31,Jan22,Number of nights in short-term/emergency accommodation,proportion of national population,0.10721263144971373
+2023-01-31,Jan23,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10762400933018894
+2023-01-31,Jan23,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10762400933018894
+2023-01-31,Jan23,Number of clients who are at risk of homelessness,proportion of national population,0.10762400933018894
+2023-01-31,Jan23,Number of clients who are homeless,proportion of national population,0.10762400933018894
+2023-01-31,Jan23,Number of clients who have experienced family and domestic violence,proportion of national population,0.10762400933018894
+2023-01-31,Jan23,Number of clients with a current mental health issue,proportion of national population,0.10762400933018894
+2023-01-31,Jan23,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10762400933018894
+2023-01-31,Jan23,Number of indigenous clients,proportion of national population,0.10762400933018894
+2023-01-31,Jan23,Number of nights in short-term/emergency accommodation,proportion of national population,0.10762400933018894
+2017-07-31,Jul17,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10514224855066087
+2017-07-31,Jul17,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10514224855066087
+2017-07-31,Jul17,Number of clients who are at risk of homelessness,proportion of national population,0.10514224855066087
+2017-07-31,Jul17,Number of clients who are homeless,proportion of national population,0.10514224855066087
+2017-07-31,Jul17,Number of clients who have experienced family and domestic violence,proportion of national population,0.10514224855066087
+2017-07-31,Jul17,Number of clients with a current mental health issue,proportion of national population,0.10514224855066087
+2017-07-31,Jul17,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10514224855066087
+2017-07-31,Jul17,Number of indigenous clients,proportion of national population,0.10514224855066087
+2017-07-31,Jul17,Number of nights in short-term/emergency accommodation,proportion of national population,0.10514224855066087
+2018-07-31,Jul18,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10486579916772082
+2018-07-31,Jul18,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10486579916772082
+2018-07-31,Jul18,Number of clients who are at risk of homelessness,proportion of national population,0.10486579916772082
+2018-07-31,Jul18,Number of clients who are homeless,proportion of national population,0.10486579916772082
+2018-07-31,Jul18,Number of clients who have experienced family and domestic violence,proportion of national population,0.10486579916772082
+2018-07-31,Jul18,Number of clients with a current mental health issue,proportion of national population,0.10486579916772082
+2018-07-31,Jul18,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10486579916772082
+2018-07-31,Jul18,Number of indigenous clients,proportion of national population,0.10486579916772082
+2018-07-31,Jul18,Number of nights in short-term/emergency accommodation,proportion of national population,0.10486579916772082
+2019-07-31,Jul19,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.104979011894536
+2019-07-31,Jul19,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.104979011894536
+2019-07-31,Jul19,Number of clients who are at risk of homelessness,proportion of national population,0.104979011894536
+2019-07-31,Jul19,Number of clients who are homeless,proportion of national population,0.104979011894536
+2019-07-31,Jul19,Number of clients who have experienced family and domestic violence,proportion of national population,0.104979011894536
+2019-07-31,Jul19,Number of clients with a current mental health issue,proportion of national population,0.104979011894536
+2019-07-31,Jul19,Number of clients with problematic drug or alcohol issues,proportion of national population,0.104979011894536
+2019-07-31,Jul19,Number of indigenous clients,proportion of national population,0.104979011894536
+2019-07-31,Jul19,Number of nights in short-term/emergency accommodation,proportion of national population,0.104979011894536
+2020-07-31,Jul20,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.1057696506345917
+2020-07-31,Jul20,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.1057696506345917
+2020-07-31,Jul20,Number of clients who are at risk of homelessness,proportion of national population,0.1057696506345917
+2020-07-31,Jul20,Number of clients who are homeless,proportion of national population,0.1057696506345917
+2020-07-31,Jul20,Number of clients who have experienced family and domestic violence,proportion of national population,0.1057696506345917
+2020-07-31,Jul20,Number of clients with a current mental health issue,proportion of national population,0.1057696506345917
+2020-07-31,Jul20,Number of clients with problematic drug or alcohol issues,proportion of national population,0.1057696506345917
+2020-07-31,Jul20,Number of indigenous clients,proportion of national population,0.1057696506345917
+2020-07-31,Jul20,Number of nights in short-term/emergency accommodation,proportion of national population,0.1057696506345917
+2021-07-31,Jul21,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10703994158240483
+2021-07-31,Jul21,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10703994158240483
+2021-07-31,Jul21,Number of clients who are at risk of homelessness,proportion of national population,0.10703994158240483
+2021-07-31,Jul21,Number of clients who are homeless,proportion of national population,0.10703994158240483
+2021-07-31,Jul21,Number of clients who have experienced family and domestic violence,proportion of national population,0.10703994158240483
+2021-07-31,Jul21,Number of clients with a current mental health issue,proportion of national population,0.10703994158240483
+2021-07-31,Jul21,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10703994158240483
+2021-07-31,Jul21,Number of indigenous clients,proportion of national population,0.10703994158240483
+2021-07-31,Jul21,Number of nights in short-term/emergency accommodation,proportion of national population,0.10703994158240483
+2022-07-31,Jul22,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10730886303614942
+2022-07-31,Jul22,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10730886303614942
+2022-07-31,Jul22,Number of clients who are at risk of homelessness,proportion of national population,0.10730886303614942
+2022-07-31,Jul22,Number of clients who are homeless,proportion of national population,0.10730886303614942
+2022-07-31,Jul22,Number of clients who have experienced family and domestic violence,proportion of national population,0.10730886303614942
+2022-07-31,Jul22,Number of clients with a current mental health issue,proportion of national population,0.10730886303614942
+2022-07-31,Jul22,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10730886303614942
+2022-07-31,Jul22,Number of indigenous clients,proportion of national population,0.10730886303614942
+2022-07-31,Jul22,Number of nights in short-term/emergency accommodation,proportion of national population,0.10730886303614942
+2018-06-30,Jun18,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10486579916772082
+2018-06-30,Jun18,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10486579916772082
+2018-06-30,Jun18,Number of clients who are at risk of homelessness,proportion of national population,0.10486579916772082
+2018-06-30,Jun18,Number of clients who are homeless,proportion of national population,0.10486579916772082
+2018-06-30,Jun18,Number of clients who have experienced family and domestic violence,proportion of national population,0.10486579916772082
+2018-06-30,Jun18,Number of clients with a current mental health issue,proportion of national population,0.10486579916772082
+2018-06-30,Jun18,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10486579916772082
+2018-06-30,Jun18,Number of indigenous clients,proportion of national population,0.10486579916772082
+2018-06-30,Jun18,Number of nights in short-term/emergency accommodation,proportion of national population,0.10486579916772082
+2019-06-30,Jun19,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.104979011894536
+2019-06-30,Jun19,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.104979011894536
+2019-06-30,Jun19,Number of clients who are at risk of homelessness,proportion of national population,0.104979011894536
+2019-06-30,Jun19,Number of clients who are homeless,proportion of national population,0.104979011894536
+2019-06-30,Jun19,Number of clients who have experienced family and domestic violence,proportion of national population,0.104979011894536
+2019-06-30,Jun19,Number of clients with a current mental health issue,proportion of national population,0.104979011894536
+2019-06-30,Jun19,Number of clients with problematic drug or alcohol issues,proportion of national population,0.104979011894536
+2019-06-30,Jun19,Number of indigenous clients,proportion of national population,0.104979011894536
+2019-06-30,Jun19,Number of nights in short-term/emergency accommodation,proportion of national population,0.104979011894536
+2020-06-30,Jun20,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.1057696506345917
+2020-06-30,Jun20,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.1057696506345917
+2020-06-30,Jun20,Number of clients who are at risk of homelessness,proportion of national population,0.1057696506345917
+2020-06-30,Jun20,Number of clients who are homeless,proportion of national population,0.1057696506345917
+2020-06-30,Jun20,Number of clients who have experienced family and domestic violence,proportion of national population,0.1057696506345917
+2020-06-30,Jun20,Number of clients with a current mental health issue,proportion of national population,0.1057696506345917
+2020-06-30,Jun20,Number of clients with problematic drug or alcohol issues,proportion of national population,0.1057696506345917
+2020-06-30,Jun20,Number of indigenous clients,proportion of national population,0.1057696506345917
+2020-06-30,Jun20,Number of nights in short-term/emergency accommodation,proportion of national population,0.1057696506345917
+2021-06-30,Jun21,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10703994158240483
+2021-06-30,Jun21,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10703994158240483
+2021-06-30,Jun21,Number of clients who are at risk of homelessness,proportion of national population,0.10703994158240483
+2021-06-30,Jun21,Number of clients who are homeless,proportion of national population,0.10703994158240483
+2021-06-30,Jun21,Number of clients who have experienced family and domestic violence,proportion of national population,0.10703994158240483
+2021-06-30,Jun21,Number of clients with a current mental health issue,proportion of national population,0.10703994158240483
+2021-06-30,Jun21,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10703994158240483
+2021-06-30,Jun21,Number of indigenous clients,proportion of national population,0.10703994158240483
+2021-06-30,Jun21,Number of nights in short-term/emergency accommodation,proportion of national population,0.10703994158240483
+2022-06-30,Jun22,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10730886303614942
+2022-06-30,Jun22,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10730886303614942
+2022-06-30,Jun22,Number of clients who are at risk of homelessness,proportion of national population,0.10730886303614942
+2022-06-30,Jun22,Number of clients who are homeless,proportion of national population,0.10730886303614942
+2022-06-30,Jun22,Number of clients who have experienced family and domestic violence,proportion of national population,0.10730886303614942
+2022-06-30,Jun22,Number of clients with a current mental health issue,proportion of national population,0.10730886303614942
+2022-06-30,Jun22,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10730886303614942
+2022-06-30,Jun22,Number of indigenous clients,proportion of national population,0.10730886303614942
+2022-06-30,Jun22,Number of nights in short-term/emergency accommodation,proportion of national population,0.10730886303614942
+2023-06-30,Jun23,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,
+2023-06-30,Jun23,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,
+2023-06-30,Jun23,Number of clients who are at risk of homelessness,proportion of national population,
+2023-06-30,Jun23,Number of clients who are homeless,proportion of national population,
+2023-06-30,Jun23,Number of clients who have experienced family and domestic violence,proportion of national population,
+2023-06-30,Jun23,Number of clients with a current mental health issue,proportion of national population,
+2023-06-30,Jun23,Number of clients with problematic drug or alcohol issues,proportion of national population,
+2023-06-30,Jun23,Number of indigenous clients,proportion of national population,
+2023-06-30,Jun23,Number of nights in short-term/emergency accommodation,proportion of national population,
+2018-03-31,Mar18,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10490901544670228
+2018-03-31,Mar18,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10490901544670228
+2018-03-31,Mar18,Number of clients who are at risk of homelessness,proportion of national population,0.10490901544670228
+2018-03-31,Mar18,Number of clients who are homeless,proportion of national population,0.10490901544670228
+2018-03-31,Mar18,Number of clients who have experienced family and domestic violence,proportion of national population,0.10490901544670228
+2018-03-31,Mar18,Number of clients with a current mental health issue,proportion of national population,0.10490901544670228
+2018-03-31,Mar18,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10490901544670228
+2018-03-31,Mar18,Number of indigenous clients,proportion of national population,0.10490901544670228
+2018-03-31,Mar18,Number of nights in short-term/emergency accommodation,proportion of national population,0.10490901544670228
+2019-03-31,Mar19,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10487425812189005
+2019-03-31,Mar19,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10487425812189005
+2019-03-31,Mar19,Number of clients who are at risk of homelessness,proportion of national population,0.10487425812189005
+2019-03-31,Mar19,Number of clients who are homeless,proportion of national population,0.10487425812189005
+2019-03-31,Mar19,Number of clients who have experienced family and domestic violence,proportion of national population,0.10487425812189005
+2019-03-31,Mar19,Number of clients with a current mental health issue,proportion of national population,0.10487425812189005
+2019-03-31,Mar19,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10487425812189005
+2019-03-31,Mar19,Number of indigenous clients,proportion of national population,0.10487425812189005
+2019-03-31,Mar19,Number of nights in short-term/emergency accommodation,proportion of national population,0.10487425812189005
+2020-03-31,Mar20,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10560160862034709
+2020-03-31,Mar20,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10560160862034709
+2020-03-31,Mar20,Number of clients who are at risk of homelessness,proportion of national population,0.10560160862034709
+2020-03-31,Mar20,Number of clients who are homeless,proportion of national population,0.10560160862034709
+2020-03-31,Mar20,Number of clients who have experienced family and domestic violence,proportion of national population,0.10560160862034709
+2020-03-31,Mar20,Number of clients with a current mental health issue,proportion of national population,0.10560160862034709
+2020-03-31,Mar20,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10560160862034709
+2020-03-31,Mar20,Number of indigenous clients,proportion of national population,0.10560160862034709
+2020-03-31,Mar20,Number of nights in short-term/emergency accommodation,proportion of national population,0.10560160862034709
+2021-03-31,Mar21,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10677521015569132
+2021-03-31,Mar21,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10677521015569132
+2021-03-31,Mar21,Number of clients who are at risk of homelessness,proportion of national population,0.10677521015569132
+2021-03-31,Mar21,Number of clients who are homeless,proportion of national population,0.10677521015569132
+2021-03-31,Mar21,Number of clients who have experienced family and domestic violence,proportion of national population,0.10677521015569132
+2021-03-31,Mar21,Number of clients with a current mental health issue,proportion of national population,0.10677521015569132
+2021-03-31,Mar21,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10677521015569132
+2021-03-31,Mar21,Number of indigenous clients,proportion of national population,0.10677521015569132
+2021-03-31,Mar21,Number of nights in short-term/emergency accommodation,proportion of national population,0.10677521015569132
+2022-03-31,Mar22,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10718904200526055
+2022-03-31,Mar22,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10718904200526055
+2022-03-31,Mar22,Number of clients who are at risk of homelessness,proportion of national population,0.10718904200526055
+2022-03-31,Mar22,Number of clients who are homeless,proportion of national population,0.10718904200526055
+2022-03-31,Mar22,Number of clients who have experienced family and domestic violence,proportion of national population,0.10718904200526055
+2022-03-31,Mar22,Number of clients with a current mental health issue,proportion of national population,0.10718904200526055
+2022-03-31,Mar22,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10718904200526055
+2022-03-31,Mar22,Number of indigenous clients,proportion of national population,0.10718904200526055
+2022-03-31,Mar22,Number of nights in short-term/emergency accommodation,proportion of national population,0.10718904200526055
+2023-03-31,Mar23,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10786794346175763
+2023-03-31,Mar23,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10786794346175763
+2023-03-31,Mar23,Number of clients who are at risk of homelessness,proportion of national population,0.10786794346175763
+2023-03-31,Mar23,Number of clients who are homeless,proportion of national population,0.10786794346175763
+2023-03-31,Mar23,Number of clients who have experienced family and domestic violence,proportion of national population,0.10786794346175763
+2023-03-31,Mar23,Number of clients with a current mental health issue,proportion of national population,0.10786794346175763
+2023-03-31,Mar23,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10786794346175763
+2023-03-31,Mar23,Number of indigenous clients,proportion of national population,0.10786794346175763
+2023-03-31,Mar23,Number of nights in short-term/emergency accommodation,proportion of national population,0.10786794346175763
+2018-05-31,May18,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10490901544670228
+2018-05-31,May18,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10490901544670228
+2018-05-31,May18,Number of clients who are at risk of homelessness,proportion of national population,0.10490901544670228
+2018-05-31,May18,Number of clients who are homeless,proportion of national population,0.10490901544670228
+2018-05-31,May18,Number of clients who have experienced family and domestic violence,proportion of national population,0.10490901544670228
+2018-05-31,May18,Number of clients with a current mental health issue,proportion of national population,0.10490901544670228
+2018-05-31,May18,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10490901544670228
+2018-05-31,May18,Number of indigenous clients,proportion of national population,0.10490901544670228
+2018-05-31,May18,Number of nights in short-term/emergency accommodation,proportion of national population,0.10490901544670228
+2019-05-31,May19,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10487425812189005
+2019-05-31,May19,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10487425812189005
+2019-05-31,May19,Number of clients who are at risk of homelessness,proportion of national population,0.10487425812189005
+2019-05-31,May19,Number of clients who are homeless,proportion of national population,0.10487425812189005
+2019-05-31,May19,Number of clients who have experienced family and domestic violence,proportion of national population,0.10487425812189005
+2019-05-31,May19,Number of clients with a current mental health issue,proportion of national population,0.10487425812189005
+2019-05-31,May19,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10487425812189005
+2019-05-31,May19,Number of indigenous clients,proportion of national population,0.10487425812189005
+2019-05-31,May19,Number of nights in short-term/emergency accommodation,proportion of national population,0.10487425812189005
+2020-05-31,May20,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10560160862034709
+2020-05-31,May20,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10560160862034709
+2020-05-31,May20,Number of clients who are at risk of homelessness,proportion of national population,0.10560160862034709
+2020-05-31,May20,Number of clients who are homeless,proportion of national population,0.10560160862034709
+2020-05-31,May20,Number of clients who have experienced family and domestic violence,proportion of national population,0.10560160862034709
+2020-05-31,May20,Number of clients with a current mental health issue,proportion of national population,0.10560160862034709
+2020-05-31,May20,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10560160862034709
+2020-05-31,May20,Number of indigenous clients,proportion of national population,0.10560160862034709
+2020-05-31,May20,Number of nights in short-term/emergency accommodation,proportion of national population,0.10560160862034709
+2021-05-31,May21,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10677521015569132
+2021-05-31,May21,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10677521015569132
+2021-05-31,May21,Number of clients who are at risk of homelessness,proportion of national population,0.10677521015569132
+2021-05-31,May21,Number of clients who are homeless,proportion of national population,0.10677521015569132
+2021-05-31,May21,Number of clients who have experienced family and domestic violence,proportion of national population,0.10677521015569132
+2021-05-31,May21,Number of clients with a current mental health issue,proportion of national population,0.10677521015569132
+2021-05-31,May21,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10677521015569132
+2021-05-31,May21,Number of indigenous clients,proportion of national population,0.10677521015569132
+2021-05-31,May21,Number of nights in short-term/emergency accommodation,proportion of national population,0.10677521015569132
+2022-05-31,May22,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10718904200526055
+2022-05-31,May22,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10718904200526055
+2022-05-31,May22,Number of clients who are at risk of homelessness,proportion of national population,0.10718904200526055
+2022-05-31,May22,Number of clients who are homeless,proportion of national population,0.10718904200526055
+2022-05-31,May22,Number of clients who have experienced family and domestic violence,proportion of national population,0.10718904200526055
+2022-05-31,May22,Number of clients with a current mental health issue,proportion of national population,0.10718904200526055
+2022-05-31,May22,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10718904200526055
+2022-05-31,May22,Number of indigenous clients,proportion of national population,0.10718904200526055
+2022-05-31,May22,Number of nights in short-term/emergency accommodation,proportion of national population,0.10718904200526055
+2023-05-31,May23,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10786794346175763
+2023-05-31,May23,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10786794346175763
+2023-05-31,May23,Number of clients who are at risk of homelessness,proportion of national population,0.10786794346175763
+2023-05-31,May23,Number of clients who are homeless,proportion of national population,0.10786794346175763
+2023-05-31,May23,Number of clients who have experienced family and domestic violence,proportion of national population,0.10786794346175763
+2023-05-31,May23,Number of clients with a current mental health issue,proportion of national population,0.10786794346175763
+2023-05-31,May23,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10786794346175763
+2023-05-31,May23,Number of indigenous clients,proportion of national population,0.10786794346175763
+2023-05-31,May23,Number of nights in short-term/emergency accommodation,proportion of national population,0.10786794346175763
+2017-11-30,Nov17,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10506806562038642
+2017-11-30,Nov17,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10506806562038642
+2017-11-30,Nov17,Number of clients who are at risk of homelessness,proportion of national population,0.10506806562038642
+2017-11-30,Nov17,Number of clients who are homeless,proportion of national population,0.10506806562038642
+2017-11-30,Nov17,Number of clients who have experienced family and domestic violence,proportion of national population,0.10506806562038642
+2017-11-30,Nov17,Number of clients with a current mental health issue,proportion of national population,0.10506806562038642
+2017-11-30,Nov17,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10506806562038642
+2017-11-30,Nov17,Number of indigenous clients,proportion of national population,0.10506806562038642
+2017-11-30,Nov17,Number of nights in short-term/emergency accommodation,proportion of national population,0.10506806562038642
+2018-11-30,Nov18,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10484218965039013
+2018-11-30,Nov18,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10484218965039013
+2018-11-30,Nov18,Number of clients who are at risk of homelessness,proportion of national population,0.10484218965039013
+2018-11-30,Nov18,Number of clients who are homeless,proportion of national population,0.10484218965039013
+2018-11-30,Nov18,Number of clients who have experienced family and domestic violence,proportion of national population,0.10484218965039013
+2018-11-30,Nov18,Number of clients with a current mental health issue,proportion of national population,0.10484218965039013
+2018-11-30,Nov18,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10484218965039013
+2018-11-30,Nov18,Number of indigenous clients,proportion of national population,0.10484218965039013
+2018-11-30,Nov18,Number of nights in short-term/emergency accommodation,proportion of national population,0.10484218965039013
+2019-11-30,Nov19,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10512769579676888
+2019-11-30,Nov19,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10512769579676888
+2019-11-30,Nov19,Number of clients who are at risk of homelessness,proportion of national population,0.10512769579676888
+2019-11-30,Nov19,Number of clients who are homeless,proportion of national population,0.10512769579676888
+2019-11-30,Nov19,Number of clients who have experienced family and domestic violence,proportion of national population,0.10512769579676888
+2019-11-30,Nov19,Number of clients with a current mental health issue,proportion of national population,0.10512769579676888
+2019-11-30,Nov19,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10512769579676888
+2019-11-30,Nov19,Number of indigenous clients,proportion of national population,0.10512769579676888
+2019-11-30,Nov19,Number of nights in short-term/emergency accommodation,proportion of national population,0.10512769579676888
+2020-11-30,Nov20,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10611184082480704
+2020-11-30,Nov20,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10611184082480704
+2020-11-30,Nov20,Number of clients who are at risk of homelessness,proportion of national population,0.10611184082480704
+2020-11-30,Nov20,Number of clients who are homeless,proportion of national population,0.10611184082480704
+2020-11-30,Nov20,Number of clients who have experienced family and domestic violence,proportion of national population,0.10611184082480704
+2020-11-30,Nov20,Number of clients with a current mental health issue,proportion of national population,0.10611184082480704
+2020-11-30,Nov20,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10611184082480704
+2020-11-30,Nov20,Number of indigenous clients,proportion of national population,0.10611184082480704
+2020-11-30,Nov20,Number of nights in short-term/emergency accommodation,proportion of national population,0.10611184082480704
+2021-11-30,Nov21,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10711223657320394
+2021-11-30,Nov21,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10711223657320394
+2021-11-30,Nov21,Number of clients who are at risk of homelessness,proportion of national population,0.10711223657320394
+2021-11-30,Nov21,Number of clients who are homeless,proportion of national population,0.10711223657320394
+2021-11-30,Nov21,Number of clients who have experienced family and domestic violence,proportion of national population,0.10711223657320394
+2021-11-30,Nov21,Number of clients with a current mental health issue,proportion of national population,0.10711223657320394
+2021-11-30,Nov21,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10711223657320394
+2021-11-30,Nov21,Number of indigenous clients,proportion of national population,0.10711223657320394
+2021-11-30,Nov21,Number of nights in short-term/emergency accommodation,proportion of national population,0.10711223657320394
+2022-11-30,Nov22,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.1074579267069133
+2022-11-30,Nov22,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.1074579267069133
+2022-11-30,Nov22,Number of clients who are at risk of homelessness,proportion of national population,0.1074579267069133
+2022-11-30,Nov22,Number of clients who are homeless,proportion of national population,0.1074579267069133
+2022-11-30,Nov22,Number of clients who have experienced family and domestic violence,proportion of national population,0.1074579267069133
+2022-11-30,Nov22,Number of clients with a current mental health issue,proportion of national population,0.1074579267069133
+2022-11-30,Nov22,Number of clients with problematic drug or alcohol issues,proportion of national population,0.1074579267069133
+2022-11-30,Nov22,Number of indigenous clients,proportion of national population,0.1074579267069133
+2022-11-30,Nov22,Number of nights in short-term/emergency accommodation,proportion of national population,0.1074579267069133
+2017-10-31,Oct17,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10506806562038642
+2017-10-31,Oct17,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10506806562038642
+2017-10-31,Oct17,Number of clients who are at risk of homelessness,proportion of national population,0.10506806562038642
+2017-10-31,Oct17,Number of clients who are homeless,proportion of national population,0.10506806562038642
+2017-10-31,Oct17,Number of clients who have experienced family and domestic violence,proportion of national population,0.10506806562038642
+2017-10-31,Oct17,Number of clients with a current mental health issue,proportion of national population,0.10506806562038642
+2017-10-31,Oct17,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10506806562038642
+2017-10-31,Oct17,Number of indigenous clients,proportion of national population,0.10506806562038642
+2017-10-31,Oct17,Number of nights in short-term/emergency accommodation,proportion of national population,0.10506806562038642
+2018-10-31,Oct18,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10484218965039013
+2018-10-31,Oct18,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10484218965039013
+2018-10-31,Oct18,Number of clients who are at risk of homelessness,proportion of national population,0.10484218965039013
+2018-10-31,Oct18,Number of clients who are homeless,proportion of national population,0.10484218965039013
+2018-10-31,Oct18,Number of clients who have experienced family and domestic violence,proportion of national population,0.10484218965039013
+2018-10-31,Oct18,Number of clients with a current mental health issue,proportion of national population,0.10484218965039013
+2018-10-31,Oct18,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10484218965039013
+2018-10-31,Oct18,Number of indigenous clients,proportion of national population,0.10484218965039013
+2018-10-31,Oct18,Number of nights in short-term/emergency accommodation,proportion of national population,0.10484218965039013
+2019-10-31,Oct19,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10512769579676888
+2019-10-31,Oct19,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10512769579676888
+2019-10-31,Oct19,Number of clients who are at risk of homelessness,proportion of national population,0.10512769579676888
+2019-10-31,Oct19,Number of clients who are homeless,proportion of national population,0.10512769579676888
+2019-10-31,Oct19,Number of clients who have experienced family and domestic violence,proportion of national population,0.10512769579676888
+2019-10-31,Oct19,Number of clients with a current mental health issue,proportion of national population,0.10512769579676888
+2019-10-31,Oct19,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10512769579676888
+2019-10-31,Oct19,Number of indigenous clients,proportion of national population,0.10512769579676888
+2019-10-31,Oct19,Number of nights in short-term/emergency accommodation,proportion of national population,0.10512769579676888
+2020-10-31,Oct20,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10611184082480704
+2020-10-31,Oct20,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10611184082480704
+2020-10-31,Oct20,Number of clients who are at risk of homelessness,proportion of national population,0.10611184082480704
+2020-10-31,Oct20,Number of clients who are homeless,proportion of national population,0.10611184082480704
+2020-10-31,Oct20,Number of clients who have experienced family and domestic violence,proportion of national population,0.10611184082480704
+2020-10-31,Oct20,Number of clients with a current mental health issue,proportion of national population,0.10611184082480704
+2020-10-31,Oct20,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10611184082480704
+2020-10-31,Oct20,Number of indigenous clients,proportion of national population,0.10611184082480704
+2020-10-31,Oct20,Number of nights in short-term/emergency accommodation,proportion of national population,0.10611184082480704
+2021-10-31,Oct21,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10711223657320394
+2021-10-31,Oct21,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10711223657320394
+2021-10-31,Oct21,Number of clients who are at risk of homelessness,proportion of national population,0.10711223657320394
+2021-10-31,Oct21,Number of clients who are homeless,proportion of national population,0.10711223657320394
+2021-10-31,Oct21,Number of clients who have experienced family and domestic violence,proportion of national population,0.10711223657320394
+2021-10-31,Oct21,Number of clients with a current mental health issue,proportion of national population,0.10711223657320394
+2021-10-31,Oct21,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10711223657320394
+2021-10-31,Oct21,Number of indigenous clients,proportion of national population,0.10711223657320394
+2021-10-31,Oct21,Number of nights in short-term/emergency accommodation,proportion of national population,0.10711223657320394
+2022-10-31,Oct22,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.1074579267069133
+2022-10-31,Oct22,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.1074579267069133
+2022-10-31,Oct22,Number of clients who are at risk of homelessness,proportion of national population,0.1074579267069133
+2022-10-31,Oct22,Number of clients who are homeless,proportion of national population,0.1074579267069133
+2022-10-31,Oct22,Number of clients who have experienced family and domestic violence,proportion of national population,0.1074579267069133
+2022-10-31,Oct22,Number of clients with a current mental health issue,proportion of national population,0.1074579267069133
+2022-10-31,Oct22,Number of clients with problematic drug or alcohol issues,proportion of national population,0.1074579267069133
+2022-10-31,Oct22,Number of indigenous clients,proportion of national population,0.1074579267069133
+2022-10-31,Oct22,Number of nights in short-term/emergency accommodation,proportion of national population,0.1074579267069133
+2017-09-30,Sep17,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10506806562038642
+2017-09-30,Sep17,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10506806562038642
+2017-09-30,Sep17,Number of clients who are at risk of homelessness,proportion of national population,0.10506806562038642
+2017-09-30,Sep17,Number of clients who are homeless,proportion of national population,0.10506806562038642
+2017-09-30,Sep17,Number of clients who have experienced family and domestic violence,proportion of national population,0.10506806562038642
+2017-09-30,Sep17,Number of clients with a current mental health issue,proportion of national population,0.10506806562038642
+2017-09-30,Sep17,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10506806562038642
+2017-09-30,Sep17,Number of indigenous clients,proportion of national population,0.10506806562038642
+2017-09-30,Sep17,Number of nights in short-term/emergency accommodation,proportion of national population,0.10506806562038642
+2018-09-30,Sep18,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10484218965039013
+2018-09-30,Sep18,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10484218965039013
+2018-09-30,Sep18,Number of clients who are at risk of homelessness,proportion of national population,0.10484218965039013
+2018-09-30,Sep18,Number of clients who are homeless,proportion of national population,0.10484218965039013
+2018-09-30,Sep18,Number of clients who have experienced family and domestic violence,proportion of national population,0.10484218965039013
+2018-09-30,Sep18,Number of clients with a current mental health issue,proportion of national population,0.10484218965039013
+2018-09-30,Sep18,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10484218965039013
+2018-09-30,Sep18,Number of indigenous clients,proportion of national population,0.10484218965039013
+2018-09-30,Sep18,Number of nights in short-term/emergency accommodation,proportion of national population,0.10484218965039013
+2019-09-30,Sep19,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10512769579676888
+2019-09-30,Sep19,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10512769579676888
+2019-09-30,Sep19,Number of clients who are at risk of homelessness,proportion of national population,0.10512769579676888
+2019-09-30,Sep19,Number of clients who are homeless,proportion of national population,0.10512769579676888
+2019-09-30,Sep19,Number of clients who have experienced family and domestic violence,proportion of national population,0.10512769579676888
+2019-09-30,Sep19,Number of clients with a current mental health issue,proportion of national population,0.10512769579676888
+2019-09-30,Sep19,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10512769579676888
+2019-09-30,Sep19,Number of indigenous clients,proportion of national population,0.10512769579676888
+2019-09-30,Sep19,Number of nights in short-term/emergency accommodation,proportion of national population,0.10512769579676888
+2020-09-30,Sep20,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10611184082480704
+2020-09-30,Sep20,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10611184082480704
+2020-09-30,Sep20,Number of clients who are at risk of homelessness,proportion of national population,0.10611184082480704
+2020-09-30,Sep20,Number of clients who are homeless,proportion of national population,0.10611184082480704
+2020-09-30,Sep20,Number of clients who have experienced family and domestic violence,proportion of national population,0.10611184082480704
+2020-09-30,Sep20,Number of clients with a current mental health issue,proportion of national population,0.10611184082480704
+2020-09-30,Sep20,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10611184082480704
+2020-09-30,Sep20,Number of indigenous clients,proportion of national population,0.10611184082480704
+2020-09-30,Sep20,Number of nights in short-term/emergency accommodation,proportion of national population,0.10611184082480704
+2021-09-30,Sep21,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.10711223657320394
+2021-09-30,Sep21,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.10711223657320394
+2021-09-30,Sep21,Number of clients who are at risk of homelessness,proportion of national population,0.10711223657320394
+2021-09-30,Sep21,Number of clients who are homeless,proportion of national population,0.10711223657320394
+2021-09-30,Sep21,Number of clients who have experienced family and domestic violence,proportion of national population,0.10711223657320394
+2021-09-30,Sep21,Number of clients with a current mental health issue,proportion of national population,0.10711223657320394
+2021-09-30,Sep21,Number of clients with problematic drug or alcohol issues,proportion of national population,0.10711223657320394
+2021-09-30,Sep21,Number of indigenous clients,proportion of national population,0.10711223657320394
+2021-09-30,Sep21,Number of nights in short-term/emergency accommodation,proportion of national population,0.10711223657320394
+2022-09-30,Sep22,Number of clients accommodated in short-term/emergency accommodation,proportion of national population,0.1074579267069133
+2022-09-30,Sep22,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national population,0.1074579267069133
+2022-09-30,Sep22,Number of clients who are at risk of homelessness,proportion of national population,0.1074579267069133
+2022-09-30,Sep22,Number of clients who are homeless,proportion of national population,0.1074579267069133
+2022-09-30,Sep22,Number of clients who have experienced family and domestic violence,proportion of national population,0.1074579267069133
+2022-09-30,Sep22,Number of clients with a current mental health issue,proportion of national population,0.1074579267069133
+2022-09-30,Sep22,Number of clients with problematic drug or alcohol issues,proportion of national population,0.1074579267069133
+2022-09-30,Sep22,Number of indigenous clients,proportion of national population,0.1074579267069133
+2022-09-30,Sep22,Number of nights in short-term/emergency accommodation,proportion of national population,0.1074579267069133
+2018-04-30,Apr18,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.0097405235694514
+2018-04-30,Apr18,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.2892817035527868
+2018-04-30,Apr18,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7022390276617361
+2018-04-30,Apr18,Number of clients who are homeless,proportion of national compared to prop pop,0.578056800692021
+2018-04-30,Apr18,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.7630550699742468
+2018-04-30,Apr18,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.5847968913933733
+2018-04-30,Apr18,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.927339708408412
+2018-04-30,Apr18,Number of indigenous clients,proportion of national compared to prop pop,1.0557792415565217
+2018-04-30,Apr18,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.7381140567936749
+2019-04-30,Apr19,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.258475334354031
+2019-04-30,Apr19,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.21857256979601267
+2019-04-30,Apr19,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7779926293313488
+2019-04-30,Apr19,Number of clients who are homeless,proportion of national compared to prop pop,0.6246871411146072
+2019-04-30,Apr19,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.853726127863425
+2019-04-30,Apr19,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6088979674364781
+2019-04-30,Apr19,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.9719138467645528
+2019-04-30,Apr19,Number of indigenous clients,proportion of national compared to prop pop,1.1925750396236248
+2019-04-30,Apr19,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.8407295488648816
+2020-04-30,Apr20,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,0.9552237232233777
+2020-04-30,Apr20,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.22965770538252805
+2020-04-30,Apr20,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.653885901839855
+2020-04-30,Apr20,Number of clients who are homeless,proportion of national compared to prop pop,0.5660000637499067
+2020-04-30,Apr20,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.7323295843772757
+2020-04-30,Apr20,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.60096019279971
+2020-04-30,Apr20,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.9167332950991147
+2020-04-30,Apr20,Number of indigenous clients,proportion of national compared to prop pop,0.9568911859523651
+2020-04-30,Apr20,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.723980534198386
+2021-04-30,Apr21,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.1442348424587971
+2021-04-30,Apr21,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.327568099114129
+2021-04-30,Apr21,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.755266084363257
+2021-04-30,Apr21,Number of clients who are homeless,proportion of national compared to prop pop,0.647146080161286
+2021-04-30,Apr21,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.8678075539059618
+2021-04-30,Apr21,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6569457129925865
+2021-04-30,Apr21,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,1.0197255377706087
+2021-04-30,Apr21,Number of indigenous clients,proportion of national compared to prop pop,1.0895022760962076
+2021-04-30,Apr21,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.8681906142120204
+2022-04-30,Apr22,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.0250796917835483
+2022-04-30,Apr22,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.2957726828602873
+2022-04-30,Apr22,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.6917593380287061
+2022-04-30,Apr22,Number of clients who are homeless,proportion of national compared to prop pop,0.6613723928292821
+2022-04-30,Apr22,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.8466069788772851
+2022-04-30,Apr22,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6097704965502508
+2022-04-30,Apr22,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.9222945040728749
+2022-04-30,Apr22,Number of indigenous clients,proportion of national compared to prop pop,1.0741140322048814
+2022-04-30,Apr22,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.7370277395940651
+2023-04-30,Apr23,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.0775508759194035
+2023-04-30,Apr23,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.23184537285213547
+2023-04-30,Apr23,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7868911206408894
+2023-04-30,Apr23,Number of clients who are homeless,proportion of national compared to prop pop,0.6687914702645815
+2023-04-30,Apr23,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.9657778677402933
+2023-04-30,Apr23,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6549819894482275
+2023-04-30,Apr23,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.9702397609605002
+2023-04-30,Apr23,Number of indigenous clients,proportion of national compared to prop pop,1.1827625546082212
+2023-04-30,Apr23,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.7818288242342862
+2017-08-31,Aug17,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.0585514750504517
+2017-08-31,Aug17,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.3862535080855232
+2017-08-31,Aug17,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7532488969878135
+2017-08-31,Aug17,Number of clients who are homeless,proportion of national compared to prop pop,0.6117712917413957
+2017-08-31,Aug17,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.8238480821415161
+2017-08-31,Aug17,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6312913466427791
+2017-08-31,Aug17,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.9486665311100411
+2017-08-31,Aug17,Number of indigenous clients,proportion of national compared to prop pop,1.0482601806019485
+2017-08-31,Aug17,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.7220268771033408
+2018-08-31,Aug18,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.0453117568140546
+2018-08-31,Aug18,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.30291741272911304
+2018-08-31,Aug18,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7230770659011116
+2018-08-31,Aug18,Number of clients who are homeless,proportion of national compared to prop pop,0.5713075840577335
+2018-08-31,Aug18,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.8537730368366299
+2018-08-31,Aug18,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6186572222140172
+2018-08-31,Aug18,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.9275464314496955
+2018-08-31,Aug18,Number of indigenous clients,proportion of national compared to prop pop,1.0362350686390016
+2018-08-31,Aug18,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.7663089966354381
+2019-08-31,Aug19,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.420456488987853
+2019-08-31,Aug19,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.22022275292816584
+2019-08-31,Aug19,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7994953919377817
+2019-08-31,Aug19,Number of clients who are homeless,proportion of national compared to prop pop,0.6022587373390241
+2019-08-31,Aug19,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.8604023151433186
+2019-08-31,Aug19,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.60019740083475
+2019-08-31,Aug19,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.9036588371141874
+2019-08-31,Aug19,Number of indigenous clients,proportion of national compared to prop pop,1.226816277726777
+2019-08-31,Aug19,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.8214764052129885
+2020-08-31,Aug20,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.0714862093844306
+2020-08-31,Aug20,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.15056946925423945
+2020-08-31,Aug20,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7361899081941538
+2020-08-31,Aug20,Number of clients who are homeless,proportion of national compared to prop pop,0.5762524383034573
+2020-08-31,Aug20,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.7560359558692714
+2020-08-31,Aug20,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.5988695045631934
+2020-08-31,Aug20,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.9090214164967916
+2020-08-31,Aug20,Number of indigenous clients,proportion of national compared to prop pop,1.093585355590056
+2020-08-31,Aug20,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.6792914854611373
+2021-08-31,Aug21,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.1072411173943981
+2021-08-31,Aug21,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.26705810668461555
+2021-08-31,Aug21,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7396724987227506
+2021-08-31,Aug21,Number of clients who are homeless,proportion of national compared to prop pop,0.636698603956568
+2021-08-31,Aug21,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.830940218666046
+2021-08-31,Aug21,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6143518784274105
+2021-08-31,Aug21,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.9461006010201508
+2021-08-31,Aug21,Number of indigenous clients,proportion of national compared to prop pop,1.1299829649559339
+2021-08-31,Aug21,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.7438709252353846
+2022-08-31,Aug22,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.1646941166246612
+2022-08-31,Aug22,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.208631971936471
+2022-08-31,Aug22,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.720559700390122
+2022-08-31,Aug22,Number of clients who are homeless,proportion of national compared to prop pop,0.6873881278927738
+2022-08-31,Aug22,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.9046738221425248
+2022-08-31,Aug22,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6123138361120591
+2022-08-31,Aug22,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.9977806496247926
+2022-08-31,Aug22,Number of indigenous clients,proportion of national compared to prop pop,1.1886209844388325
+2022-08-31,Aug22,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.8348197575943987
+2017-12-31,Dec17,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.1613754310657258
+2017-12-31,Dec17,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.3399298722750415
+2017-12-31,Dec17,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7876432359826485
+2017-12-31,Dec17,Number of clients who are homeless,proportion of national compared to prop pop,0.5847504365055485
+2017-12-31,Dec17,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.8481439568838904
+2017-12-31,Dec17,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.594636221436072
+2017-12-31,Dec17,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.8474056880237352
+2017-12-31,Dec17,Number of indigenous clients,proportion of national compared to prop pop,1.084155800276546
+2017-12-31,Dec17,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.760716842559951
+2018-12-31,Dec18,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.2833569881918132
+2018-12-31,Dec18,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.39937626862886966
+2018-12-31,Dec18,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.8014931084014812
+2018-12-31,Dec18,Number of clients who are homeless,proportion of national compared to prop pop,0.5857660889490164
+2018-12-31,Dec18,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.8851300796048213
+2018-12-31,Dec18,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6101860200576559
+2018-12-31,Dec18,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.957928916540917
+2018-12-31,Dec18,Number of indigenous clients,proportion of national compared to prop pop,1.1871787207905677
+2018-12-31,Dec18,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.8301532840895065
+2019-12-31,Dec19,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.4222632055263698
+2019-12-31,Dec19,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.346204563498701
+2019-12-31,Dec19,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7549549045777114
+2019-12-31,Dec19,Number of clients who are homeless,proportion of national compared to prop pop,0.6360549643008998
+2019-12-31,Dec19,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.8222953496576847
+2019-12-31,Dec19,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6250230927022437
+2019-12-31,Dec19,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.9449748650971713
+2019-12-31,Dec19,Number of indigenous clients,proportion of national compared to prop pop,1.2636333676704674
+2019-12-31,Dec19,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.9087592501514393
+2020-12-31,Dec20,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.2169232775738394
+2020-12-31,Dec20,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.28972885847974644
+2020-12-31,Dec20,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7696181652681158
+2020-12-31,Dec20,Number of clients who are homeless,proportion of national compared to prop pop,0.6536503350557383
+2020-12-31,Dec20,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.8216186995444782
+2020-12-31,Dec20,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6432738125526928
+2020-12-31,Dec20,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,1.0011521830579602
+2020-12-31,Dec20,Number of indigenous clients,proportion of national compared to prop pop,1.2004054464259173
+2020-12-31,Dec20,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.7629472027070247
+2021-12-31,Dec21,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.2707800141053782
+2021-12-31,Dec21,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.2811662254125341
+2021-12-31,Dec21,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7549461572449586
+2021-12-31,Dec21,Number of clients who are homeless,proportion of national compared to prop pop,0.6662327979709536
+2021-12-31,Dec21,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.8763983462812212
+2021-12-31,Dec21,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6019458935324357
+2021-12-31,Dec21,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.9251552982141705
+2021-12-31,Dec21,Number of indigenous clients,proportion of national compared to prop pop,1.1704916935669483
+2021-12-31,Dec21,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.8645696689938857
+2022-12-31,Dec22,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.1354183571359657
+2022-12-31,Dec22,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.18100533144749814
+2022-12-31,Dec22,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7705851838834834
+2022-12-31,Dec22,Number of clients who are homeless,proportion of national compared to prop pop,0.6661049637971039
+2022-12-31,Dec22,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.9397247715842157
+2022-12-31,Dec22,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6132713960138385
+2022-12-31,Dec22,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.9676261709496726
+2022-12-31,Dec22,Number of indigenous clients,proportion of national compared to prop pop,1.1746949869349284
+2022-12-31,Dec22,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.7986487523908622
+2018-02-28,Feb18,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.0574336835229503
+2018-02-28,Feb18,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.26376879213379845
+2018-02-28,Feb18,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7247655344201972
+2018-02-28,Feb18,Number of clients who are homeless,proportion of national compared to prop pop,0.6063234106584656
+2018-02-28,Feb18,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.8220732551709641
+2018-02-28,Feb18,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6355147551697164
+2018-02-28,Feb18,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.9110601895964234
+2018-02-28,Feb18,Number of indigenous clients,proportion of national compared to prop pop,1.0198773890018897
+2018-02-28,Feb18,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.7799130786640199
+2019-02-28,Feb19,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.2739095374713172
+2019-02-28,Feb19,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.36896839276303023
+2019-02-28,Feb19,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7912826510627783
+2019-02-28,Feb19,Number of clients who are homeless,proportion of national compared to prop pop,0.5925277932716853
+2019-02-28,Feb19,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.8620140505319559
+2019-02-28,Feb19,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6183838139241679
+2019-02-28,Feb19,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,1.029618446755704
+2019-02-28,Feb19,Number of indigenous clients,proportion of national compared to prop pop,1.1436172312915802
+2019-02-28,Feb19,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.8588905418599254
+2020-02-29,Feb20,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.2957207146286394
+2020-02-29,Feb20,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.35241328275914396
+2020-02-29,Feb20,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7062663350069126
+2020-02-29,Feb20,Number of clients who are homeless,proportion of national compared to prop pop,0.6140857998192624
+2020-02-29,Feb20,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.7517541691824868
+2020-02-29,Feb20,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6215278895873135
+2020-02-29,Feb20,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.9848643143472093
+2020-02-29,Feb20,Number of indigenous clients,proportion of national compared to prop pop,1.1310709353878814
+2020-02-29,Feb20,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.8658216619113476
+2021-02-28,Feb21,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.0900825917547838
+2021-02-28,Feb21,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.2769685483159799
+2021-02-28,Feb21,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7416638987493338
+2021-02-28,Feb21,Number of clients who are homeless,proportion of national compared to prop pop,0.6452472577070858
+2021-02-28,Feb21,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.843106450337842
+2021-02-28,Feb21,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6533841869598518
+2021-02-28,Feb21,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,1.0075800131630406
+2021-02-28,Feb21,Number of indigenous clients,proportion of national compared to prop pop,1.1021627466628234
+2021-02-28,Feb21,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.805274359905725
+2022-02-28,Feb22,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.1160943082277326
+2022-02-28,Feb22,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.358740737368975
+2022-02-28,Feb22,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7065873273545172
+2022-02-28,Feb22,Number of clients who are homeless,proportion of national compared to prop pop,0.6709108057814253
+2022-02-28,Feb22,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.8447937107538893
+2022-02-28,Feb22,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6067957725260084
+2022-02-28,Feb22,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.9817486771930873
+2022-02-28,Feb22,Number of indigenous clients,proportion of national compared to prop pop,1.1316462760843489
+2022-02-28,Feb22,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.8173267336618372
+2023-02-28,Feb23,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.1137401287422561
+2023-02-28,Feb23,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.2273264026417118
+2023-02-28,Feb23,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7684724401057471
+2023-02-28,Feb23,Number of clients who are homeless,proportion of national compared to prop pop,0.6653013068362049
+2023-02-28,Feb23,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.9386629366255281
+2023-02-28,Feb23,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6248233514551093
+2023-02-28,Feb23,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,1.0831791872654357
+2023-02-28,Feb23,Number of indigenous clients,proportion of national compared to prop pop,1.1700915528708515
+2023-02-28,Feb23,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.8088542993299286
+2018-01-31,Jan18,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.1589217785466337
+2018-01-31,Jan18,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.30901753610367166
+2018-01-31,Jan18,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7333344701150437
+2018-01-31,Jan18,Number of clients who are homeless,proportion of national compared to prop pop,0.6333325576476296
+2018-01-31,Jan18,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.826494655266676
+2018-01-31,Jan18,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6096078390738717
+2018-01-31,Jan18,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.8598466201611435
+2018-01-31,Jan18,Number of indigenous clients,proportion of national compared to prop pop,1.0786574005661367
+2018-01-31,Jan18,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.8052904561828642
+2019-01-31,Jan19,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.3484846203095475
+2019-01-31,Jan19,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.3710098542777869
+2019-01-31,Jan19,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.8182086390611458
+2019-01-31,Jan19,Number of clients who are homeless,proportion of national compared to prop pop,0.5975671256845114
+2019-01-31,Jan19,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.883026443722064
+2019-01-31,Jan19,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6242824638379366
+2019-01-31,Jan19,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,1.013394052870095
+2019-01-31,Jan19,Number of indigenous clients,proportion of national compared to prop pop,1.2373703883763179
+2019-01-31,Jan19,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.8576495952919263
+2020-01-31,Jan20,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.363979997318887
+2020-01-31,Jan20,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.35153334946885895
+2020-01-31,Jan20,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7153520459148638
+2020-01-31,Jan20,Number of clients who are homeless,proportion of national compared to prop pop,0.6441060709440445
+2020-01-31,Jan20,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.7885774018900555
+2020-01-31,Jan20,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6037450948728712
+2020-01-31,Jan20,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.965476995267002
+2020-01-31,Jan20,Number of indigenous clients,proportion of national compared to prop pop,1.2266691224787702
+2020-01-31,Jan20,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.8786836484852729
+2021-01-31,Jan21,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.2741590806280614
+2021-01-31,Jan21,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.24104054781665446
+2021-01-31,Jan21,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7862823215012804
+2021-01-31,Jan21,Number of clients who are homeless,proportion of national compared to prop pop,0.6780698538678748
+2021-01-31,Jan21,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.8606331295160233
+2021-01-31,Jan21,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6537424560082047
+2021-01-31,Jan21,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,1.0452348437632601
+2021-01-31,Jan21,Number of indigenous clients,proportion of national compared to prop pop,1.223540436340332
+2021-01-31,Jan21,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.8074163214251555
+2022-01-31,Jan22,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.2778939593288567
+2022-01-31,Jan22,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.33494113884601806
+2022-01-31,Jan22,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7276138797071376
+2022-01-31,Jan22,Number of clients who are homeless,proportion of national compared to prop pop,0.6974378952944567
+2022-01-31,Jan22,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.8883659496786637
+2022-01-31,Jan22,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.5953122903786082
+2022-01-31,Jan22,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.9769426820757123
+2022-01-31,Jan22,Number of indigenous clients,proportion of national compared to prop pop,1.2107671091959298
+2022-01-31,Jan22,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.8574796338652678
+2023-01-31,Jan23,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.0237227318296338
+2023-01-31,Jan23,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.21124246589358758
+2023-01-31,Jan23,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.739406075392164
+2023-01-31,Jan23,Number of clients who are homeless,proportion of national compared to prop pop,0.6615154597307448
+2023-01-31,Jan23,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.9340768956179533
+2023-01-31,Jan23,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6031448539364125
+2023-01-31,Jan23,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.972301701875643
+2023-01-31,Jan23,Number of indigenous clients,proportion of national compared to prop pop,1.1252617870313515
+2023-01-31,Jan23,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.837295155034672
+2017-07-31,Jul17,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.0887742689397564
+2017-07-31,Jul17,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.326938033700478
+2017-07-31,Jul17,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7751540127039813
+2017-07-31,Jul17,Number of clients who are homeless,proportion of national compared to prop pop,0.5998936319992475
+2017-07-31,Jul17,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.8227466052272325
+2017-07-31,Jul17,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6163286757096944
+2017-07-31,Jul17,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.9053656027232614
+2017-07-31,Jul17,Number of indigenous clients,proportion of national compared to prop pop,1.0405694509286338
+2017-07-31,Jul17,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.6672166811873275
+2018-07-31,Jul18,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.0528405285898377
+2018-07-31,Jul18,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.2593225528714003
+2018-07-31,Jul18,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7173966260653966
+2018-07-31,Jul18,Number of clients who are homeless,proportion of national compared to prop pop,0.5993322106058494
+2018-07-31,Jul18,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.8118841062391337
+2018-07-31,Jul18,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6187420076596619
+2018-07-31,Jul18,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.9188330936434217
+2018-07-31,Jul18,Number of indigenous clients,proportion of national compared to prop pop,1.031122067245315
+2018-07-31,Jul18,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.7499242539090227
+2019-07-31,Jul19,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.3454647224419474
+2019-07-31,Jul19,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.18544836518761415
+2019-07-31,Jul19,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7988775669147
+2019-07-31,Jul19,Number of clients who are homeless,proportion of national compared to prop pop,0.6009936878567729
+2019-07-31,Jul19,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.8126494526279404
+2019-07-31,Jul19,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.5956538305071365
+2019-07-31,Jul19,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.8748482578685721
+2019-07-31,Jul19,Number of indigenous clients,proportion of national compared to prop pop,1.228852137463358
+2019-07-31,Jul19,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.8276619815077203
+2020-07-31,Jul20,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.1025798441581178
+2020-07-31,Jul20,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.15065126097462136
+2020-07-31,Jul20,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7289706666257926
+2020-07-31,Jul20,Number of clients who are homeless,proportion of national compared to prop pop,0.5710042276102596
+2020-07-31,Jul20,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.7410690101293487
+2020-07-31,Jul20,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6020378097166151
+2020-07-31,Jul20,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.8889342517701772
+2020-07-31,Jul20,Number of indigenous clients,proportion of national compared to prop pop,1.1069948011282016
+2020-07-31,Jul20,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.7244294102110246
+2021-07-31,Jul21,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.1191746389949
+2021-07-31,Jul21,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.28133634913024635
+2021-07-31,Jul21,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7403950291970998
+2021-07-31,Jul21,Number of clients who are homeless,proportion of national compared to prop pop,0.6479640581557119
+2021-07-31,Jul21,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.8280054173793655
+2021-07-31,Jul21,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6183714387233633
+2021-07-31,Jul21,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.9628332065262454
+2021-07-31,Jul21,Number of indigenous clients,proportion of national compared to prop pop,1.126216935937089
+2021-07-31,Jul21,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.7881076814042209
+2022-07-31,Jul22,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.2122585469652274
+2022-07-31,Jul22,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.32731004850913653
+2022-07-31,Jul22,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.726833570187208
+2022-07-31,Jul22,Number of clients who are homeless,proportion of national compared to prop pop,0.6649797559700411
+2022-07-31,Jul22,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.878510845541643
+2022-07-31,Jul22,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.599473316089061
+2022-07-31,Jul22,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.9760179455939791
+2022-07-31,Jul22,Number of indigenous clients,proportion of national compared to prop pop,1.2085724024041147
+2022-07-31,Jul22,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.7901703615336432
+2018-06-30,Jun18,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.0036308230020887
+2018-06-30,Jun18,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.2853355717068997
+2018-06-30,Jun18,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.6954497263736867
+2018-06-30,Jun18,Number of clients who are homeless,proportion of national compared to prop pop,0.5871242068480687
+2018-06-30,Jun18,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.7880459364425368
+2018-06-30,Jun18,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.601295006026676
+2018-06-30,Jun18,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.9108207242754747
+2018-06-30,Jun18,Number of indigenous clients,proportion of national compared to prop pop,1.007489840112322
+2018-06-30,Jun18,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.7385277826436937
+2019-06-30,Jun19,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.2168694721455535
+2019-06-30,Jun19,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.36055271055270516
+2019-06-30,Jun19,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7882986739641997
+2019-06-30,Jun19,Number of clients who are homeless,proportion of national compared to prop pop,0.5955092010748091
+2019-06-30,Jun19,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.8417532454502442
+2019-06-30,Jun19,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6100893709569737
+2019-06-30,Jun19,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.94654323785271
+2019-06-30,Jun19,Number of indigenous clients,proportion of national compared to prop pop,1.1726577808030973
+2019-06-30,Jun19,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.7944673319668006
+2020-06-30,Jun20,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.0987094071044683
+2020-06-30,Jun20,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.20052945222363036
+2020-06-30,Jun20,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7321514247549563
+2020-06-30,Jun20,Number of clients who are homeless,proportion of national compared to prop pop,0.5670307256868955
+2020-06-30,Jun20,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.7333534663164183
+2020-06-30,Jun20,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6081478236542883
+2020-06-30,Jun20,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.9036552994734801
+2020-06-30,Jun20,Number of indigenous clients,proportion of national compared to prop pop,1.088453729677151
+2020-06-30,Jun20,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.7216352258696979
+2021-06-30,Jun21,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.0942516523000163
+2021-06-30,Jun21,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.2587315572955763
+2021-06-30,Jun21,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7513561641906358
+2021-06-30,Jun21,Number of clients who are homeless,proportion of national compared to prop pop,0.6461662988183207
+2021-06-30,Jun21,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.8209248552037399
+2021-06-30,Jun21,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6182984554338053
+2021-06-30,Jun21,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,1.0124262256760914
+2021-06-30,Jun21,Number of indigenous clients,proportion of national compared to prop pop,1.1127935047197985
+2021-06-30,Jun21,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.7750545275126636
+2022-06-30,Jun22,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.131565625922266
+2022-06-30,Jun22,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.28739373562027437
+2022-06-30,Jun22,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7198617792678561
+2022-06-30,Jun22,Number of clients who are homeless,proportion of national compared to prop pop,0.6588022360477732
+2022-06-30,Jun22,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.8506511238455062
+2022-06-30,Jun22,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6055044667987278
+2022-06-30,Jun22,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.9619337873095054
+2022-06-30,Jun22,Number of indigenous clients,proportion of national compared to prop pop,1.1516750873923336
+2022-06-30,Jun22,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.7541015846359875
+2023-06-30,Jun23,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,
+2023-06-30,Jun23,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,
+2023-06-30,Jun23,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,
+2023-06-30,Jun23,Number of clients who are homeless,proportion of national compared to prop pop,
+2023-06-30,Jun23,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,
+2023-06-30,Jun23,Number of clients with a current mental health issue,proportion of national compared to prop pop,
+2023-06-30,Jun23,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,
+2023-06-30,Jun23,Number of indigenous clients,proportion of national compared to prop pop,
+2023-06-30,Jun23,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,
+2018-03-31,Mar18,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.08200678384719
+2018-03-31,Mar18,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.30296425029904656
+2018-03-31,Mar18,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7325356746610105
+2018-03-31,Mar18,Number of clients who are homeless,proportion of national compared to prop pop,0.5960638751026959
+2018-03-31,Mar18,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.7979320247279237
+2018-03-31,Mar18,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6062532976292955
+2018-03-31,Mar18,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.8922771427855503
+2018-03-31,Mar18,Number of indigenous clients,proportion of national compared to prop pop,1.0713169429817302
+2018-03-31,Mar18,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.7726392443787835
+2019-03-31,Mar19,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.280841066527339
+2019-03-31,Mar19,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.2963040318210081
+2019-03-31,Mar19,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7859910488742214
+2019-03-31,Mar19,Number of clients who are homeless,proportion of national compared to prop pop,0.6304071031772945
+2019-03-31,Mar19,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.8676876915354639
+2019-03-31,Mar19,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6224734281973628
+2019-03-31,Mar19,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,1.023382477941919
+2019-03-31,Mar19,Number of indigenous clients,proportion of national compared to prop pop,1.2003958912317594
+2019-03-31,Mar19,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.899805508578214
+2020-03-31,Mar20,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.229196622507687
+2020-03-31,Mar20,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.2895433602709866
+2020-03-31,Mar20,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.6998733687172536
+2020-03-31,Mar20,Number of clients who are homeless,proportion of national compared to prop pop,0.6001330804676965
+2020-03-31,Mar20,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.7447222026014534
+2020-03-31,Mar20,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6201694984286196
+2020-03-31,Mar20,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,1.0005995841677144
+2020-03-31,Mar20,Number of indigenous clients,proportion of national compared to prop pop,1.0766153666022045
+2020-03-31,Mar20,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.8616037047480046
+2021-03-31,Mar21,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.2151116380987397
+2021-03-31,Mar21,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.32724603094830806
+2021-03-31,Mar21,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7790977707380186
+2021-03-31,Mar21,Number of clients who are homeless,proportion of national compared to prop pop,0.675603333185095
+2021-03-31,Mar21,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.870914753083088
+2021-03-31,Mar21,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.670047182942549
+2021-03-31,Mar21,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,1.0536153460710707
+2021-03-31,Mar21,Number of indigenous clients,proportion of national compared to prop pop,1.1677614861751637
+2021-03-31,Mar21,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.8667390304373135
+2022-03-31,Mar22,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.1074579886247475
+2022-03-31,Mar22,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.3214008738635501
+2022-03-31,Mar22,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7045177724127061
+2022-03-31,Mar22,Number of clients who are homeless,proportion of national compared to prop pop,0.6647895196058571
+2022-03-31,Mar22,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.8332149006130659
+2022-03-31,Mar22,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6174397968508577
+2022-03-31,Mar22,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.9910813674909947
+2022-03-31,Mar22,Number of indigenous clients,proportion of national compared to prop pop,1.121793960067167
+2022-03-31,Mar22,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.7863259761552724
+2023-03-31,Mar23,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.1255771601766236
+2023-03-31,Mar23,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.2621150326633735
+2023-03-31,Mar23,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7839419125393264
+2023-03-31,Mar23,Number of clients who are homeless,proportion of national compared to prop pop,0.6712450064235694
+2023-03-31,Mar23,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.9635974826502574
+2023-03-31,Mar23,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6359471942870493
+2023-03-31,Mar23,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.9883547073935695
+2023-03-31,Mar23,Number of indigenous clients,proportion of national compared to prop pop,1.1831292194982963
+2023-03-31,Mar23,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.7968705485381087
+2018-05-31,May18,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,0.9627107003867121
+2018-05-31,May18,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.2698862446150266
+2018-05-31,May18,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.6762549302709752
+2018-05-31,May18,Number of clients who are homeless,proportion of national compared to prop pop,0.5706592541257799
+2018-05-31,May18,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.7402922958029371
+2018-05-31,May18,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.5870536950734105
+2018-05-31,May18,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.8895090322572905
+2018-05-31,May18,Number of indigenous clients,proportion of national compared to prop pop,0.9956735599116637
+2018-05-31,May18,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.7376113088764462
+2019-05-31,May19,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.2419504222674624
+2019-05-31,May19,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.2786824834657457
+2019-05-31,May19,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7713212875752978
+2019-05-31,May19,Number of clients who are homeless,proportion of national compared to prop pop,0.6230058114330305
+2019-05-31,May19,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.8420970644672018
+2019-05-31,May19,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6258008248347842
+2019-05-31,May19,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.9730073381256055
+2019-05-31,May19,Number of indigenous clients,proportion of national compared to prop pop,1.1974757401751712
+2019-05-31,May19,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.8307964960300235
+2020-05-31,May20,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.0084618674391734
+2020-05-31,May20,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.17047530171596934
+2020-05-31,May20,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7076783910131912
+2020-05-31,May20,Number of clients who are homeless,proportion of national compared to prop pop,0.564168053313172
+2020-05-31,May20,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.7574343884542493
+2020-05-31,May20,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.5959933994767026
+2020-05-31,May20,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.9222893927521367
+2020-05-31,May20,Number of indigenous clients,proportion of national compared to prop pop,1.0243517087596283
+2020-05-31,May20,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.71689633558111
+2021-05-31,May21,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.1379458413529446
+2021-05-31,May21,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.31075357270339227
+2021-05-31,May21,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7448850735241482
+2021-05-31,May21,Number of clients who are homeless,proportion of national compared to prop pop,0.6565185743604312
+2021-05-31,May21,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.8498985224669953
+2021-05-31,May21,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6395237305438971
+2021-05-31,May21,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,1.0105255168211895
+2021-05-31,May21,Number of indigenous clients,proportion of national compared to prop pop,1.1078250442697661
+2021-05-31,May21,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.8337105436716191
+2022-05-31,May22,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.0706758097693956
+2022-05-31,May22,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.3249163753730785
+2022-05-31,May22,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7183516292847927
+2022-05-31,May22,Number of clients who are homeless,proportion of national compared to prop pop,0.6570879807071219
+2022-05-31,May22,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.8672804721811078
+2022-05-31,May22,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6087007074006525
+2022-05-31,May22,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.9453633609199865
+2022-05-31,May22,Number of indigenous clients,proportion of national compared to prop pop,1.1411463941549476
+2022-05-31,May22,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.7598873209722036
+2023-05-31,May23,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.0750959112980891
+2023-05-31,May23,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.21343992965742137
+2023-05-31,May23,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.783858155246651
+2023-05-31,May23,Number of clients who are homeless,proportion of national compared to prop pop,0.6718947248454371
+2023-05-31,May23,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.9396469995691477
+2023-05-31,May23,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6618332567678359
+2023-05-31,May23,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,1.0039327566836782
+2023-05-31,May23,Number of indigenous clients,proportion of national compared to prop pop,1.1712601745572497
+2023-05-31,May23,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.7948907239064524
+2017-11-30,Nov17,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.080015860527529
+2017-11-30,Nov17,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.27206211827247784
+2017-11-30,Nov17,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7396474871112407
+2017-11-30,Nov17,Number of clients who are homeless,proportion of national compared to prop pop,0.6012445833781755
+2017-11-30,Nov17,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.8069316762311807
+2017-11-30,Nov17,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.5920752044926268
+2017-11-30,Nov17,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.8827620524648994
+2017-11-30,Nov17,Number of indigenous clients,proportion of national compared to prop pop,1.0427721706864477
+2017-11-30,Nov17,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.731352229439198
+2018-11-30,Nov18,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,0.9935720740961042
+2018-11-30,Nov18,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.2951264575745085
+2018-11-30,Nov18,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7220170672956077
+2018-11-30,Nov18,Number of clients who are homeless,proportion of national compared to prop pop,0.574529360498251
+2018-11-30,Nov18,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.8163465083083045
+2018-11-30,Nov18,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.613960672335049
+2018-11-30,Nov18,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.928286611504149
+2018-11-30,Nov18,Number of indigenous clients,proportion of national compared to prop pop,1.0321561780458328
+2018-11-30,Nov18,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.7435830794044811
+2019-11-30,Nov19,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.3731869361871298
+2019-11-30,Nov19,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.3236413428562845
+2019-11-30,Nov19,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7701434146674562
+2019-11-30,Nov19,Number of clients who are homeless,proportion of national compared to prop pop,0.6364355298992717
+2019-11-30,Nov19,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.8245301548753582
+2019-11-30,Nov19,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.62699279267019
+2019-11-30,Nov19,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.9522083153840425
+2019-11-30,Nov19,Number of indigenous clients,proportion of national compared to prop pop,1.238104012291416
+2019-11-30,Nov19,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.8775615479293968
+2020-11-30,Nov20,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.0666786093654086
+2020-11-30,Nov20,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.23352346247862865
+2020-11-30,Nov20,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7380057280335772
+2020-11-30,Nov20,Number of clients who are homeless,proportion of national compared to prop pop,0.6435958073653346
+2020-11-30,Nov20,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.7768594915993188
+2020-11-30,Nov20,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6276339570898188
+2020-11-30,Nov20,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,1.0062044026142691
+2020-11-30,Nov20,Number of indigenous clients,proportion of national compared to prop pop,1.149999759598171
+2020-11-30,Nov20,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.7011642088042817
+2021-11-30,Nov21,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.1736794097095147
+2021-11-30,Nov21,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.25973051612073084
+2021-11-30,Nov21,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7425837266685941
+2021-11-30,Nov21,Number of clients who are homeless,proportion of national compared to prop pop,0.6769732173105323
+2021-11-30,Nov21,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.8497494305225359
+2021-11-30,Nov21,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.5982467463472084
+2021-11-30,Nov21,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,1.0038970140220458
+2021-11-30,Nov21,Number of indigenous clients,proportion of national compared to prop pop,1.1850743169234534
+2021-11-30,Nov21,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.7550031234046477
+2022-11-30,Nov22,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.1244249840871674
+2022-11-30,Nov22,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.20912287069943833
+2022-11-30,Nov22,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7625148547655057
+2022-11-30,Nov22,Number of clients who are homeless,proportion of national compared to prop pop,0.6703927724399865
+2022-11-30,Nov22,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.8914527624391417
+2022-11-30,Nov22,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6200161631664785
+2022-11-30,Nov22,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.9627747316902988
+2022-11-30,Nov22,Number of indigenous clients,proportion of national compared to prop pop,1.1724082856091784
+2022-11-30,Nov22,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.7912599132858821
+2017-10-31,Oct17,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.0831487047546016
+2017-10-31,Oct17,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.2646323617987216
+2017-10-31,Oct17,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7514300651499666
+2017-10-31,Oct17,Number of clients who are homeless,proportion of national compared to prop pop,0.6178865898084083
+2017-10-31,Oct17,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.8282736332765924
+2017-10-31,Oct17,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6044603558852982
+2017-10-31,Oct17,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.942521022313058
+2017-10-31,Oct17,Number of indigenous clients,proportion of national compared to prop pop,1.065724554762748
+2017-10-31,Oct17,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.7405067924071399
+2018-10-31,Oct18,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.027865795321089
+2018-10-31,Oct18,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.24132179217151098
+2018-10-31,Oct18,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7245435289142375
+2018-10-31,Oct18,Number of clients who are homeless,proportion of national compared to prop pop,0.598628343088188
+2018-10-31,Oct18,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.8629563128974514
+2018-10-31,Oct18,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6209739492489275
+2018-10-31,Oct18,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.9077582195316897
+2018-10-31,Oct18,Number of indigenous clients,proportion of national compared to prop pop,1.082259465781485
+2018-10-31,Oct18,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.7229680396157943
+2019-10-31,Oct19,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.352119542940417
+2019-10-31,Oct19,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.3552815746660594
+2019-10-31,Oct19,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7448029718854764
+2019-10-31,Oct19,Number of clients who are homeless,proportion of national compared to prop pop,0.6250732243338
+2019-10-31,Oct19,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.7933408592363168
+2019-10-31,Oct19,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6033603598368703
+2019-10-31,Oct19,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.8889833832039103
+2019-10-31,Oct19,Number of indigenous clients,proportion of national compared to prop pop,1.188331511743797
+2019-10-31,Oct19,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.8919718895525812
+2020-10-31,Oct20,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.093117879696416
+2020-10-31,Oct20,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.18100412202123414
+2020-10-31,Oct20,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7935969063519479
+2020-10-31,Oct20,Number of clients who are homeless,proportion of national compared to prop pop,0.6209220555726638
+2020-10-31,Oct20,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.798033230948989
+2020-10-31,Oct20,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6416570613297211
+2020-10-31,Oct20,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.9357418121038599
+2020-10-31,Oct20,Number of indigenous clients,proportion of national compared to prop pop,1.1630784371797658
+2020-10-31,Oct20,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.6998249762494742
+2021-10-31,Oct21,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.221970616249988
+2021-10-31,Oct21,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.29045337961782525
+2021-10-31,Oct21,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.773754775232503
+2021-10-31,Oct21,Number of clients who are homeless,proportion of national compared to prop pop,0.6577316917084544
+2021-10-31,Oct21,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.8625879947896989
+2021-10-31,Oct21,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6137799014539672
+2021-10-31,Oct21,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.9763217688161959
+2021-10-31,Oct21,Number of indigenous clients,proportion of national compared to prop pop,1.1917265486982935
+2021-10-31,Oct21,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.7144230784653789
+2022-10-31,Oct22,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.1755953554598957
+2022-10-31,Oct22,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.25560643860160237
+2022-10-31,Oct22,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7341094287063749
+2022-10-31,Oct22,Number of clients who are homeless,proportion of national compared to prop pop,0.6837820197037259
+2022-10-31,Oct22,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.8836205889464189
+2022-10-31,Oct22,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6033965735140987
+2022-10-31,Oct22,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.9608280257651666
+2022-10-31,Oct22,Number of indigenous clients,proportion of national compared to prop pop,1.1933521848303394
+2022-10-31,Oct22,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.788568430203422
+2017-09-30,Sep17,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.048506377500675
+2017-09-30,Sep17,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.20520578561486227
+2017-09-30,Sep17,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7343812606222584
+2017-09-30,Sep17,Number of clients who are homeless,proportion of national compared to prop pop,0.5910187615320421
+2017-09-30,Sep17,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.7781291789636191
+2017-09-30,Sep17,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6012539330258493
+2017-09-30,Sep17,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.9378696124608357
+2017-09-30,Sep17,Number of indigenous clients,proportion of national compared to prop pop,1.0149376576333045
+2017-09-30,Sep17,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.7100916097090699
+2018-09-30,Sep18,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,0.9895546148500873
+2018-09-30,Sep18,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.22035318327536604
+2018-09-30,Sep18,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7126411284855365
+2018-09-30,Sep18,Number of clients who are homeless,proportion of national compared to prop pop,0.5757641636120385
+2018-09-30,Sep18,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.83523871412677
+2018-09-30,Sep18,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.627283405517094
+2018-09-30,Sep18,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.898430099462438
+2018-09-30,Sep18,Number of indigenous clients,proportion of national compared to prop pop,1.0229342095466558
+2018-09-30,Sep18,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.7389310040999117
+2019-09-30,Sep19,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.3322734859273453
+2019-09-30,Sep19,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.3350276662446843
+2019-09-30,Sep19,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7408589419750977
+2019-09-30,Sep19,Number of clients who are homeless,proportion of national compared to prop pop,0.6084413105321016
+2019-09-30,Sep19,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.8116195276423961
+2019-09-30,Sep19,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.5975331523829138
+2019-09-30,Sep19,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.8981673071035504
+2019-09-30,Sep19,Number of indigenous clients,proportion of national compared to prop pop,1.167449169004305
+2019-09-30,Sep19,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.875154165889987
+2020-09-30,Sep20,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.017658834458264
+2020-09-30,Sep20,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.1394841247206169
+2020-09-30,Sep20,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7481457342781218
+2020-09-30,Sep20,Number of clients who are homeless,proportion of national compared to prop pop,0.5817617608814817
+2020-09-30,Sep20,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.7657207816164037
+2020-09-30,Sep20,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6150455273971406
+2020-09-30,Sep20,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.9219029832311567
+2020-09-30,Sep20,Number of indigenous clients,proportion of national compared to prop pop,1.101540047636002
+2020-09-30,Sep20,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.6811145247596139
+2021-09-30,Sep21,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.1247829291233897
+2021-09-30,Sep21,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.22075485611449233
+2021-09-30,Sep21,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7521967485660781
+2021-09-30,Sep21,Number of clients who are homeless,proportion of national compared to prop pop,0.6545873430039847
+2021-09-30,Sep21,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.8514042238641127
+2021-09-30,Sep21,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.6096196760037552
+2021-09-30,Sep21,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.9562449682654752
+2021-09-30,Sep21,Number of indigenous clients,proportion of national compared to prop pop,1.176426681812332
+2021-09-30,Sep21,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.7275374785094043
+2022-09-30,Sep22,Number of clients accommodated in short-term/emergency accommodation,proportion of national compared to prop pop,1.2048116309116064
+2022-09-30,Sep22,Number of clients financially assisted with payments for short term/emergency accommodation,proportion of national compared to prop pop,0.23217856143400217
+2022-09-30,Sep22,Number of clients who are at risk of homelessness,proportion of national compared to prop pop,0.7244114403337292
+2022-09-30,Sep22,Number of clients who are homeless,proportion of national compared to prop pop,0.6722522519910903
+2022-09-30,Sep22,Number of clients who have experienced family and domestic violence,proportion of national compared to prop pop,0.8622021863402488
+2022-09-30,Sep22,Number of clients with a current mental health issue,proportion of national compared to prop pop,0.603000545857419
+2022-09-30,Sep22,Number of clients with problematic drug or alcohol issues,proportion of national compared to prop pop,0.9463046658266268
+2022-09-30,Sep22,Number of indigenous clients,proportion of national compared to prop pop,1.186422730620753
+2022-09-30,Sep22,Number of nights in short-term/emergency accommodation,proportion of national compared to prop pop,0.8096973818545985

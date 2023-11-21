@@ -1,11 +1,16 @@
 import pandas as pd
-import plotly.graph_objects as go   
-from Waitlist_datav2 import *
-from assets import *
+import plotly.graph_objects as go
+from Waitlistcalcs import *
 
-Waitlist_trend, Waitlist_trend_monthly_change, _, _ = Waitlist_datav2()  
-print(Waitlist_trend_monthly_change.columns)
+#but where do i tell it df_long is the output of my function/s in Waitlistcalcs.py?
 
+class Waitlist_data:
+    def __init__(self, df_long):
+        self.df_long = df_long
+
+
+
+    
 def gap_filler(data, series):
     missing_dates = []
     for i in range(len(data)-1):
@@ -79,7 +84,7 @@ def create_annotations(data, series):
         annotations['max_latest'] = dict(
             x=max_date,
             y=max_val,
-            text=f"Peak: {max_val:,.0f} <br> ({max_date.strftime('%b %y')})",
+            text=f"Latest value is peak: {max_val:,.0f} <br> ({max_date.strftime('%b %y')})",
             showarrow=True,
             arrowhead=1,
             arrowsize=1,
@@ -282,12 +287,12 @@ def charts(data):
     return charts, filtered_data
     
 def plot_line_12m(charts, filtered_data):  
-    charts, filtered_data = charts(Waitlist_trend)
+    charts, filtered_data = charts(df_long)
     filtered_data = filtered_data[filtered_data['Date'] > filtered_data['Date'].max() - pd.DateOffset(months=14)]
     figs = {}
 
     for chart in charts:
-        series_data = filtered_data[['Date', chart['series']]]
+        series_data = filtered_data[filtered_data['Metric'] == chart['series']]
         series_data = series_data.dropna()
         chart_data, missing_dates = gap_filler(series_data, chart['series'])
         chart_data['Date'] = pd.to_datetime(chart_data['Date'], format='%b %y')
@@ -295,7 +300,7 @@ def plot_line_12m(charts, filtered_data):
         fig = go.Figure()
 
         xtickvals, xticktext = get_xticks(chart_data['Date'])
-        ytickvals, yticktext, _, max_y = format_yticks(chart_data[chart['series']], 0)
+        ytickvals, yticktext, _, max_y = format_yticks(chart_data[chart['series']], chart_data[chart['series']].min())
         
         chart_data_markers = chart_data[1:]
         chart_data_markers = chart_data_markers[~chart_data_markers['Date'].isin(missing_dates)]
@@ -357,10 +362,8 @@ def plot_line_12m(charts, filtered_data):
     return figs['priority_applications_12mline'], figs['total_applications_12mline'], figs['priority_individuals_12mline'], figs['total_individuals_12mline']
 
 def plot_monthly_change(charts, monthly_change):
-    charts, monthly_change = charts(Waitlist_trend_monthly_change)
-    #filter data to only include data from last 12 months
+    charts, monthly_change = charts(df_long)
     monthly_change = monthly_change[monthly_change['Date'] > monthly_change['Date'].max() - pd.DateOffset(days=364)]
-    #create bar chart for chart in charts, showing monthly change (may be positive or negative), treat x axis as categorical
     figs = {}
 
     for chart in charts:
@@ -415,4 +418,4 @@ def plot_monthly_change(charts, monthly_change):
 
     return figs['priority_applications_mc'], figs['total_applications_mc'], figs['priority_individuals_mc'], figs['total_individuals_mc']
 
-priority_applications_mc, total_applications_mc, priority_individuals_mc, total_individuals_mc = plot_monthly_change(charts, Waitlist_trend_monthly_change)
+priority_applications_mc, total_applications_mc, priority_individuals_mc, total_individuals_mc = plot_monthly_change(charts, df_long)
