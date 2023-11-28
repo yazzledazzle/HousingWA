@@ -26,7 +26,7 @@ def gap_filler(df_long):
                     missing_date = Category_df['Date'].iloc[i] + pd.DateOffset(days=1) + pd.offsets.MonthEnd(0)
                     proxy_value = round(Category_df['Waitlist figure'].iloc[i] + (diff / (gap+1)))
                     missing_dates.append(missing_date)
-                    new_row = {'Date': missing_date, 'Category': Category, 'Waitlist figure': proxy_value, 'Estimate flag - Waitlist figure': '^'}
+                    new_row = {'Date': missing_date, 'Category': Category, 'Waitlist figure': proxy_value, 'Estimate flag - Waitlist figure': 'Y'}
                     Category_df = pd.concat([Category_df, pd.DataFrame(new_row, index=[0])], ignore_index=True)
         Category_dfs.append(Category_df)
     df_long = pd.concat(Category_dfs)
@@ -78,11 +78,11 @@ def month_diff(df_long):
         df_long_Category['helper2'] = df_long_Category['helper'].apply(lambda x: df_long_Category.loc[df_long_Category['Date']==x, 'Waitlist figure'].values[0] if x in df_long_Category['Date'].values else float('nan'))
         df_long_Category['Difference - Prior month'] = df_long_Category['Waitlist figure'] - df_long_Category['helper2']
         df_long_Category['Difference - Prior month (per cent)'] = df_long_Category['Difference - Prior month'] / df_long_Category['helper2'] * 100
-        df_long_Category['Estimate flag - prior month'] = df_long_Category['helper2'].apply(lambda x: '*' if pd.isnull(x) else '*')
+        df_long_Category['Estimate flag - prior month'] = df_long_Category['helper2'].apply(lambda x: 'Y' if pd.isnull(x) else '')
         for i, row in df_long_Category.iterrows():
             if i == 0:
                 continue
-            if row['Estimate flag - prior month'] == '*':
+            if row['Estimate flag - prior month'] == 'Y':
                 if i-1 in df_long_Category.index:
                     month_diff = row['Date'].month - df_long_Category.at[i-1, 'Date'].month
                     if month_diff != 0:
@@ -101,11 +101,11 @@ def year_diff(df_long):
         df_long_Category['helper2'] = df_long_Category['helper'].apply(lambda x: df_long_Category.loc[df_long_Category['Date']==x, 'Waitlist figure'].values[0] if x in df_long_Category['Date'].values else float('nan'))
         df_long_Category['Difference - 12 months prior'] = df_long_Category['Waitlist figure'] - df_long_Category['helper2']
         df_long_Category['Difference - 12 months prior (per cent)'] = df_long_Category['Difference - 12 months prior'] / df_long_Category['helper2'] * 100
-        df_long_Category['Estimate flag - prior year'] = df_long_Category['helper2'].apply(lambda x: '#' if pd.isnull(x) else '')
+        df_long_Category['Estimate flag - prior year'] = df_long_Category['helper2'].apply(lambda x: 'Y' if pd.isnull(x) else '')
         for i, row in df_long_Category.iterrows():
             if row['Date'] < df_long_Category['Date'].min() + pd.offsets.MonthEnd(12):
                 continue
-            if row['Estimate flag - prior year'] == '#':
+            if row['Estimate flag - prior year'] == 'Y':
                 year_prior_date = row['Date'] - pd.offsets.MonthEnd(12)
                 closest_date = min(df_long_Category['Date'], key=lambda x: abs(x - year_prior_date))
                 df_long_Category.loc[i, 'Difference - 12 months prior'] = (row['Waitlist figure'] - df_long_Category.loc[df_long_Category['Date']==closest_date, 'Waitlist figure'].values[0]/(row['Date'].month-closest_date.month/12))
@@ -202,31 +202,8 @@ def final_long(plot_df, save_to):
     plot_df = plot_df.melt(id_vars=ids, value_vars=values, var_name="Value type", value_name="#")
     plot_df = plot_df.dropna(subset=['#'])
     plot_df = plot_df.rename(columns={'#': 'Value'})
-    plot_df.to_csv(save_to[:-4] + '__plotting.csv', index=False)
+    plot_df.to_csv(save_to[:-4] + '_plotting.csv', index=False)
     return plot_df
-
-# Main execution
-file_path = '/Users/yhanalucas/Desktop/Dash/Data/Public_housing/Waitlist_trend.csv'
-population_file_path = '/Users/yhanalucas/Desktop/Dash/Data/Population/Population_all_agesNoSex.csv'
-save_to = '/Users/yhanalucas/Desktop/Dash/Data/Public_housing/Waitlist_trend_long.csv'
-save_latest_to = '/Users/yhanalucas/Desktop/Dash/Data/Public_housing/Waitlist_trend_long_latest.csv'
-
-if __name__ == "__main__":
-    df = load_data(file_path)
-    df_long = convert_to_long_form(df)
-    df_long = gap_filler(df_long)
-    df_long = calculate_12_month_average(df_long)
-    population = population_to_monthly(population_file_path, df_long)
-    df_long = add_population(df_long, population)
-    df_long = month_diff(df_long)
-    df_long = year_diff(df_long)
-    df_long = calculate_cydiff(df_long)
-    df_long = FYtdchange(df_long)
-    df_long, df_long_latest = save_and_pass(df_long, save_to, save_latest_to)
-    plot_df = final_long(df_long, save_to)
-    print(df_long_latest)
-    print(df_long)
-    print(plot_df)
 
 
 

@@ -1,31 +1,8 @@
 import pandas as pd
 import plotly.graph_objects as go
-from Waitlistcalcs import *
+import numpy as np
 
-#but where do i tell it df_long is the output of my function/s in Waitlistcalcs.py?
-
-class Waitlist_data:
-    def __init__(self, df_long):
-        self.df_long = df_long
-
-
-
-    
-def gap_filler(data, series):
-    missing_dates = []
-    for i in range(len(data)-1):
-            if data['Date'].iloc[i] + pd.DateOffset(days=1) + pd.offsets.MonthEnd(0) != data['Date'].iloc[i+1]:    
-                gap = round((data['Date'].iloc[i+1] - data['Date'].iloc[i]).days / 30) - 1
-                diff = data[series].iloc[i+1] - data[series].iloc[i]
-                for j in range(gap):
-                    missing_date = data['Date'].iloc[i] + pd.DateOffset(days=1) + pd.offsets.MonthEnd(0)
-                    proxy_value = round(data[series].iloc[i] + (diff / (gap+1)))
-                    missing_dates.append(missing_date)
-                    new_row = {'Date': missing_date, series: proxy_value}
-                    data = pd.concat([data, pd.DataFrame(new_row, index=[0])], ignore_index=True)
-    data = data.sort_values(by=['Date'])
-    data = data.reset_index(drop=True)
-    return data, missing_dates
+plot_df = pd.read_csv('/Users/yhanalucas/Desktop/Dash/Data/Public_housing/Waitlist_trend_long_plotting.csv')
 
 def format_yticks(data, y0):
     max = data.max()
@@ -70,18 +47,36 @@ def format_yticks(data, y0):
             yticktext.append('-')
     return ytickvals, yticktext, min_y, max_y
 
-def create_annotations(data, series):
-    max_val = data[series].max()
-    max_date = data[data[series] == max_val]['Date'].iloc[0]
-    min_val = data[series].min()
+def create_annotations(data):
+    max_val = data['Value'].max()
+    max_date = data[data['Value'] == max_val]['Date'].iloc[0]
+    min_val = data['Value'].min()
     earliest_date = data['Date'].iloc[0]
-    min_date = data[data[series] == min_val]['Date'].iloc[0]
-    latest_val = data[series].iloc[-1]
+    min_date = data[data['Value'] == min_val]['Date'].iloc[0]
+    latest_val = data['Value'].iloc[-1]
     latest_date = data['Date'].iloc[-1]
+    Annotations_count = 0
+    Annotations_dict = {}
     
-    annotations = {}
+    class Annotation:
+        def __init__(self, x, y, text, showarrow, arrowhead, arrowsize, ax, ay, font, bordercolor, borderwidth, borderpad, bgcolor):
+            self.x = x
+            self.y = y
+            self.text = text
+            self.showarrow = showarrow
+            self.arrowhead = arrowhead
+            self.arrowsize = arrowsize
+            self.ax = ax
+            self.ay = ay
+            self.font = font
+            self.bordercolor = bordercolor
+            self.borderwidth = borderwidth
+            self.borderpad = borderpad
+            self.bgcolor = bgcolor
+
     if max_date == latest_date:
-        annotations['max_latest'] = dict(
+        Annotations_count += 1
+        Annotations_dict[Annotations_count] = Annotation(
             x=max_date,
             y=max_val,
             text=f"Latest value is peak: {max_val:,.0f} <br> ({max_date.strftime('%b %y')})",
@@ -100,8 +95,10 @@ def create_annotations(data, series):
             borderpad=2,
             bgcolor='maroon'
         )
+
     elif max_date == earliest_date:
-        annotations['max_earliest'] = dict(
+        Annotations_count += 1
+        Annotations_dict[Annotations_count] = Annotation(
             x=max_date,
             y=max_val,
             text=f"Peak: {max_val:,.0f} <br> ({max_date.strftime('%b %y')})",
@@ -121,7 +118,8 @@ def create_annotations(data, series):
             bgcolor='maroon'
         )
     else:
-        annotations['max'] = dict(
+        Annotations_count += 1
+        Annotations_dict[Annotations_count] = Annotation(
             x=max_date,
             y=max_val,
             text=f"Peak: {max_val:,.0f} <br> ({max_date.strftime('%b %y')})",
@@ -141,7 +139,8 @@ def create_annotations(data, series):
             bgcolor='maroon'
         )
     if min_date == earliest_date:
-       annotations['min_earliest'] = dict(
+        Annotations_count += 1
+        Annotations_dict[Annotations_count] = Annotation(
             x=min_date,
             y=min_val,
             text=f"Low: {min_val:,.0f} <br> ({min_date.strftime('%b %y')})",
@@ -161,7 +160,8 @@ def create_annotations(data, series):
             bgcolor='lightgreen'
         )
     elif min_date == latest_date:
-        annotations['min_latest'] = dict(
+        Annotations_count += 1
+        Annotations_dict[Annotations_count] = Annotation(
             x=min_date,
             y=min_val,
             text=f"Low: {min_val:,.0f} <br> ({min_date.strftime('%b %y')})",
@@ -181,7 +181,8 @@ def create_annotations(data, series):
             bgcolor='lightgreen'
         )
     else:
-        annotations['min'] = dict(
+        Annotations_count += 1
+        Annotations_dict[Annotations_count] = Annotation(
             x=min_date,
             y=min_val,
             text=f"Low: {min_val:,.0f} <br> ({min_date.strftime('%b %y')})",
@@ -201,11 +202,12 @@ def create_annotations(data, series):
             bgcolor='lightgreen'
         )
     if latest_date == min_date:
-        return annotations
+        return Annotations_dict
     elif latest_date == max_date:
-        return annotations
+        return Annotations_dict
     else:
-        annotations['latest'] = dict(
+        Annotations_count += 1
+        Annotations_dict[Annotations_count] = Annotation(
             x=latest_date,
             y=latest_val,
             text=f"Latest: {latest_val:,.0f} <br> ({latest_date.strftime('%b %y')})",
@@ -225,7 +227,7 @@ def create_annotations(data, series):
             bgcolor='powderblue'
         )
     
-    return annotations
+    return Annotations_dict
 
 def get_xticks(data):
     dates = data.unique()
@@ -251,34 +253,30 @@ def get_xticks(data):
             xticktext.append('-')
     return xtickvals, xticktext
         
-def charts(data):
-    data['Date'] = pd.to_datetime(data['Date'], format='%b %y')
-    filtered_data = data[data['Date'] > '2021-08-01']
+def chartconfigs(plot_df):
+    plot_df['Date'] = pd.to_datetime(plot_df['Date'], format='%Y-%m-%d')
+    filtered_data = plot_df[plot_df['Date'] > '2021-08-01']
     charts = [
         {
-            'series': 'priority_applications',
-            'label': 'Priority Applications',
+            'Category': 'Priority Applications',
             'color': 'darkorange',
             'fillcolor': 'rgb(245, 66, 66)',
             'marker_color': 'maroon'
         },
         {
-            'series': 'total_applications',
-            'label': 'Total Applications',
+            'Category': 'Total Applications',
             'color': 'navy',
             'fillcolor': 'rgb(66, 194, 245)',
             'marker_color': 'royalblue'
         },
         {
-            'series': 'priority_individuals',
-            'label': 'Priority Individuals',
+            'Category': 'Priority Individuals',
             'color': 'violet',
             'fillcolor': 'rgb(245, 66, 245)',
             'marker_color': 'darkviolet'
         },
         {
-            'series': 'total_individuals',
-            'label': 'Total Individuals',
+            'Category': 'Total Individuals',
             'color': 'darkseagreen',
             'fillcolor': 'lightgreen',
             'marker_color': 'darkgreen'
@@ -286,42 +284,203 @@ def charts(data):
     ]
     return charts, filtered_data
     
-def plot_line_12m(charts, filtered_data):  
-    charts, filtered_data = charts(df_long)
-    filtered_data = filtered_data[filtered_data['Date'] > filtered_data['Date'].max() - pd.DateOffset(months=14)]
+def plot_line_12m(charts, filtered_data, save_name):
+    filtered_data = filtered_data.copy()  
+    if save_name != 'Log Line':
+        filtered_data = filtered_data[filtered_data['Date'] > filtered_data['Date'].max() - pd.offsets.MonthEnd(12)]
     figs = {}
 
     for chart in charts:
-        series_data = filtered_data[filtered_data['Metric'] == chart['series']]
-        series_data = series_data.dropna()
-        chart_data, missing_dates = gap_filler(series_data, chart['series'])
+        chart_data = filtered_data[filtered_data['Category'] == chart['Category']]
+        chart_data = chart_data[chart_data['Metric'] == 'Waitlist figure']
+        chart_data = chart_data[chart_data['Value type'] == 'Value']
+        chart_data = chart_data.drop(columns=['Metric', 'Value type', 'Category'])
         chart_data['Date'] = pd.to_datetime(chart_data['Date'], format='%b %y')
         
-        fig = go.Figure()
-
+        fig = go.Figure()            
         xtickvals, xticktext = get_xticks(chart_data['Date'])
-        ytickvals, yticktext, _, max_y = format_yticks(chart_data[chart['series']], chart_data[chart['series']].min())
+        if save_name != 'Log Line':
+
+            ytickvals, yticktext, _, max_y = format_yticks(chart_data['Value'], 0)
         
         chart_data_markers = chart_data[1:]
+        missing_dates = chart_data[chart_data['Estimate flag - Waitlist figure'] == 'Y']['Date'].tolist()
         chart_data_markers = chart_data_markers[~chart_data_markers['Date'].isin(missing_dates)]
         
         fig.add_trace(go.Scatter(
             x=chart_data['Date'],
-            y=chart_data[chart['series']],
-            name=chart['label'],
+            y=chart_data['Value'],
+            name=chart['Category'],
             mode='lines',
             line=dict(width=1, color=chart['color'])
         ))
 
         fig.add_trace(go.Scatter(
             x=chart_data_markers['Date'],
-            y=chart_data_markers[chart['series']],
-            name=chart['label'],
+            y=chart_data_markers['Value'],
+            name=chart['Category'],
             mode='markers',
             marker=dict(color=chart['marker_color'], size=3)
         ))
 
+        
+
         fig.update_layout(
+            
+            width=600,
+            height=500,
+            showlegend=False,
+            xaxis=dict(
+                tickmode='array',
+                tickvals=xtickvals,
+                ticktext=xticktext, 
+                tickangle=45,
+                tickfont=dict(
+                    family='Tahoma',
+                    size=12
+                ),
+                showline=True,
+                linewidth=2,
+                linecolor='grey',
+            ),
+            plot_bgcolor='white')
+
+        if save_name != 'Log Line':
+                fig.update_layout(
+                    title= str(chart['Category']) + ' - 12 Month Trend',
+                yaxis=dict(
+                range=[0, max_y],
+                tickvals=ytickvals,
+                ticktext=yticktext,
+                showline=True,
+                linewidth=2,
+                linecolor='grey',
+                tickfont=dict(
+                    family='Tahoma',
+                    size=12
+                )))
+        else:
+            fig.update_layout(
+                title = str(chart['Category']) + ' - log scale',
+                yaxis=dict(
+                showline=True,
+                linewidth=2,
+                linecolor='grey',
+                showticklabels=False))
+
+        name = save_name + ' - ' + str(chart['Category'])
+        figs[name] = fig
+        fig.write_image(f"assets/charts/{name}.png")
+
+    return
+
+def plot_monthly_change(charts, filtered_data, save_name):
+    
+    monthly_change_chart_data = filtered_data.copy()
+    monthly_change_chart_data = monthly_change_chart_data[monthly_change_chart_data['Date'] > monthly_change_chart_data['Date'].max() - pd.offsets.MonthEnd(12)]
+    monthly_change_chart_data = monthly_change_chart_data[monthly_change_chart_data['Metric'] == 'Difference - Prior month']
+    monthly_change_chart_data = monthly_change_chart_data[monthly_change_chart_data['Value type'] == 'Value']
+    monthly_change_chart_data = monthly_change_chart_data.drop(columns=['Metric', 'Value type'])
+    monthly_change_chart_data['Date'] = pd.to_datetime(monthly_change_chart_data['Date'], format='%Y-%m-%d')
+    figs = {}
+
+    for chart in charts:
+        mc_data = monthly_change_chart_data[monthly_change_chart_data['Category'] == chart['Category']]
+        mc_data = mc_data.drop(columns=['Category'])
+        mc_data = mc_data.sort_values(by=['Date'], ascending=True)
+        mc_data = mc_data.reset_index(drop=True)
+        mc_data['Date'] = mc_data['Date'].dt.strftime('%b %y')
+        mc_data['color'] = mc_data['Value'].apply(lambda x: 'green' if x < 0 else 'red')
+        mc_data['textcolor'] = mc_data['Value'].apply(lambda x: 'white' if x < 0 else 'black')
+
+        fig = go.Figure()
+        fig.add_trace(go.Bar(
+            y=mc_data['Value'],
+            name=chart['Category'],
+            marker_color=mc_data['color'],
+            text=mc_data['Date'],
+            textposition='outside',
+            textfont=dict(
+                family='Tahoma',
+                size=12
+            )
+        ))
+
+        fig.add_trace(go.Bar(
+            y=mc_data['Value'],
+            name=chart['Category'],
+            marker_color=mc_data['color'],
+            text=mc_data['Value'],
+            textposition='inside',
+            textfont=dict(
+                family='Tahoma',
+                size=12,
+                color=mc_data['textcolor']
+            )
+        ))
+        
+
+        fig.update_layout(
+            title= str(chart['Category']) + ' - Monthly Change',
+            width=600,
+            height=500, barmode = 'overlay',
+            showlegend=False,
+            xaxis=dict(showticklabels=False),
+            yaxis=dict(showticklabels=False),
+            plot_bgcolor='white')
+
+        name = save_name + ' - ' + str(chart['Category'])
+        figs[name] = fig
+        fig.write_image(f"assets/charts/{name}.png")
+
+    return
+
+def bar_all_time(charts, filtered_data, save_name):
+    figs = {}
+
+    for chart in charts:
+        chart_data = filtered_data[filtered_data['Category'] == chart['Category']]
+        chart_data = chart_data[chart_data['Metric'] == 'Waitlist figure']
+        chart_data = chart_data[chart_data['Value type'] == 'Value']
+        chart_data = chart_data.drop(columns=['Metric', 'Value type', 'Category'])
+        chart_data['Date'] = pd.to_datetime(chart_data['Date'], format='%b %y')
+
+        # Convert 'Value' column to numeric type
+        chart_data['Value'] = pd.to_numeric(chart_data['Value'], errors='coerce')
+        chart_data['BarColor'] = 'skyblue'
+ 
+        for row in chart_data.index:
+            if chart_data.at[row, 'Estimate flag - Waitlist figure'] == 'Y':
+                chart_data.at[row, 'BarColor'] = 'rgb(120, 122, 120)'
+            elif chart_data.at[row, 'Value'] == chart_data['Value'].max():
+                chart_data.at[row, 'BarColor'] = 'rgb(255, 18, 18)'
+            elif chart_data.at[row, 'Value'] == chart_data['Value'].min():
+                chart_data.at[row, 'BarColor'] = 'rgb(80, 255, 54)'
+            elif chart_data.at[row, 'Value'] > chart_data.at[row - 1, 'Value']:
+                chart_data.at[row, 'BarColor'] = 'rgb(181, 51, 51)'
+            elif chart_data.at[row, 'Value'] < chart_data.at[row - 1, 'Value']:
+                chart_data.at[row, 'BarColor'] = 'rgb(57, 120, 44)'
+            else:
+                chart_data.at[row, 'BarColor'] = 'rgb(41, 99, 138)'
+
+        fig = go.Figure()
+
+        xtickvals, xticktext = get_xticks(chart_data['Date'])
+        ytickvals, yticktext, min_y, max_y = format_yticks(chart_data['Value'], chart_data['Value'].min())
+
+        for group in chart_data['BarColor'].unique():
+             fig.add_trace(go.Bar(
+                x=chart_data[chart_data['BarColor'] == group]['Date'],
+                y=chart_data[chart_data['BarColor'] == group]['Value'],
+                name=chart['Category'],
+                marker_color=group))
+             
+
+
+
+        fig.update_layout(
+            barmode='stack',
+            title= str(chart['Category']) + ' - cheeky bar',
             width=600,
             height=500,
             showlegend=False,
@@ -339,7 +498,7 @@ def plot_line_12m(charts, filtered_data):
                 linecolor='grey',
             ),
             yaxis=dict(
-                range=[0, max_y],
+                range=[min_y, max_y],
                 tickvals=ytickvals,
                 ticktext=yticktext,
                 showline=True,
@@ -351,71 +510,27 @@ def plot_line_12m(charts, filtered_data):
                 )),
             plot_bgcolor='white')
         
-        annotations = create_annotations(chart_data, chart['series'])
-        for annotation in annotations.values():
-            fig.add_annotation(annotation)
-
-        figs[str(chart['series']) + '_12mline'] = fig
-
-        fig.write_image(f"assets/{chart['series']}.png")
-
-    return figs['priority_applications_12mline'], figs['total_applications_12mline'], figs['priority_individuals_12mline'], figs['total_individuals_12mline']
-
-def plot_monthly_change(charts, monthly_change):
-    charts, monthly_change = charts(df_long)
-    monthly_change = monthly_change[monthly_change['Date'] > monthly_change['Date'].max() - pd.DateOffset(days=364)]
-    figs = {}
-
-    for chart in charts:
-        mc_data = monthly_change[monthly_change['Category'] == chart['series']]
-        mc_data = mc_data.dropna(subset=['M Delta'])
-        #sort by date
-        mc_data = mc_data.sort_values(by=['Date'], ascending=True)
-        mc_data = mc_data.reset_index(drop=True)
-        #date to string 
-        mc_data['Date'] = mc_data['Date'].dt.strftime('%b %y')
-        mc_data['color'] = mc_data['M Delta'].apply(lambda x: 'green' if x < 0 else 'red')
-        mc_data['textcolor'] = mc_data['M Delta'].apply(lambda x: 'white' if x < 0 else 'black')
-
-        fig = go.Figure()
-        fig.add_trace(go.Bar(
-            y=mc_data['M Delta'],
-            name=chart['label'],
-            marker_color=mc_data['color'],
-            text=mc_data['Date'],
-            textposition='outside',
-            textfont=dict(
-                family='Tahoma',
-                size=12
-            )
-        ))
-
-        fig.add_trace(go.Bar(
-            y=mc_data['M Delta'],
-            name=chart['label'],
-            marker_color=mc_data['color'],
-            text=mc_data['M Delta'],
-            textposition='inside',
-            textfont=dict(
-                family='Tahoma',
-                size=12,
-                color=mc_data['textcolor']
-            )
-        ))
-        
-
-        fig.update_layout(
-            width=600,
-            height=500, barmode = 'overlay',
-            showlegend=False,
-            xaxis=dict(showticklabels=False),
-            yaxis=dict(showticklabels=False),
-            plot_bgcolor='white')
-
-        figs[str(chart['series']) + '_change'] = fig
-        fig.write_image(f"assets/{chart['series']}" + "_mc.png")
 
 
-    return figs['priority_applications_mc'], figs['total_applications_mc'], figs['priority_individuals_mc'], figs['total_individuals_mc']
+        annotations = create_annotations(chart_data)
+        for Annotation in annotations.values():
+            #add text to chart, underneath
+            print(Annotation.text)
+            
 
-priority_applications_mc, total_applications_mc, priority_individuals_mc, total_individuals_mc = plot_monthly_change(charts, df_long)
+        name = save_name + ' - ' + str(chart['Category'])
+        figs[name] = fig
+        fig.write_image(f"assets/charts/{name}.png")
+
+
+    return
+
+charts, filtered_data = chartconfigs(plot_df)
+plot_line_12m(charts, filtered_data, save_name='Line')
+plot_monthly_change(charts, filtered_data, save_name='Monthly Change')
+bar_all_time(charts, filtered_data, save_name='Cheeky')
+
+log = filtered_data.copy()
+log['Value'] = np.log(log['Value'])
+log['Value'] = log['Value'].replace([np.inf, -np.inf], np.nan)
+plot_line_12m(charts, log, save_name='Log Line')
