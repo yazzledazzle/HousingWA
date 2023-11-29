@@ -1,0 +1,81 @@
+theme = {
+   "accent":"#fdaa2a",
+   "accent_negative":"#C20000",
+   "accent_positive":"#017500",
+   "background_content":"rgb(255,255,255)",
+   "background_page":"#221161",
+   "border":"#e2e2e2",
+   "breakpoint_font":"1200px",
+   "breakpoint_stack_blocks":"700px",
+   "card_border":{
+       "width":"0px 0px 0px 0px",
+       "style":"solid",
+       "color":"rgb(226, 226, 226)",
+       "radius":"0px"
+   },
+   "card_background_color":"rgb(255,255,255)",
+   "card_box_shadow":"0px 1px 3px rgba(0,0,0,0.12), 0px 1px 2px rgba(0,0,0,0.24)",
+   "card_margin":"15px",
+   "card_padding":"5px",
+   "card_outline":{
+       "width":"0px",
+       "style":"solid",
+       "color":"#e2e2e2"
+   },
+   "card_header_border":{
+       "width":"0px 0px 1px 0px",
+       "style":"solid",
+       "color":"#e2e2e2",
+       "radius":"0px"
+   },
+   "card_header_background_color":"rgb(255,255,255)",
+   "card_header_box_shadow":"0px 0px 0px rgba(0,0,0,0)",
+   "card_header_margin":"0px",
+   "card_header_padding":"10px",
+   "colorway":[
+       "#3366cc",
+       "#dc3912",
+       "#ff9900",
+       "#109618",
+       "#990099",
+       "#0099c6",
+       "#dd4477",
+       "#66aa00",
+       "#b82e2e",
+       "#316395"
+   ],
+   "colorscale":[
+       "#ffffcc",
+       "#ffeda0",
+       "#fed976",
+       "#feb24c",
+       "#fd8d3c",
+       "#fc4e2a",
+       "#e31a1c",
+       "#bd0026",
+       "#800026"
+   ],
+   "font_family":"Open Sans",
+   "font_size":"17px",
+   "font_size_smaller_screen":"15px",
+   "font_family_header":"Open Sans",
+   "font_size_header":"24px",
+   "font_family_headings":"Open Sans",
+   "font_headings_size":None,
+   "header_border":{
+       "width":"0px 0px 0px 0px",
+       "style":"solid",
+       "color":"#e2e2e2",
+       "radius":"0px"
+   },
+   "header_background_color":"rgb(255,255,255)",
+   "header_box_shadow":"0px 1px 3px rgba(0,0,0,0.12), 0px 1px 2px rgba(0,0,0,0.24)",
+   "header_margin":"0px 0px 15px 0px",
+   "header_padding":"0px",
+   "text":"rgb(0,0,0)",
+   "report_font_family":"Open Sans",
+   "report_font_size":"12px",
+   "report_background_page":"#221161",
+   "report_background_content":"#FFFFFF",
+   "report_text":"black"
+}
