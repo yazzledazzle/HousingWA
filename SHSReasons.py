@@ -7,7 +7,7 @@ import pandas as pd
 from pandas.tseries.offsets import MonthEnd
 
 # Load your data
-df = pd.read_csv('/Users/yhanalucas/Desktop/Dash/Data/SHS/Long_Form/SHS_Reasons_Long_Form.csv')
+df = pd.read_csv('02-CODE\DATA\SHS\Long_Form\SHS_Reasons_Long_Form.csv')
 
 df['MEASURE'] = df['MEASURE'].fillna('Count')
 #VALUE DISPLAY AS ,.0F
