@@ -1,10 +1,10 @@
 from Waitlistcalcs import *
 
 # Main execution
-file_path = '/Users/yhanalucas/Desktop/Dash/Data/Public_housing/Waitlist_trend.csv'
-population_file_path = '/Users/yhanalucas/Desktop/Dash/Data/Population/Population_all_agesNoSex.csv'
-save_to = '/Users/yhanalucas/Desktop/Dash/Data/Public_housing/Waitlist_trend_long.csv'
-save_latest_to = '/Users/yhanalucas/Desktop/Dash/Data/Public_housing/Waitlist_trend_long_latest.csv'
+file_path = 'DATA\Public_housing\Waitlist_trend.csv'
+population_file_path = 'DATA\Population\Population_all_agesNoSex.csv'
+save_to = 'DATA\Public_housing\Waitlist_trend_long.csv'
+save_latest_to = 'DATA\Public_housing\Waitlist_trend_long_latest.csv'
 
 if __name__ == "__main__":
     df = load_data(file_path)

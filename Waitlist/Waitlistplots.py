@@ -2,7 +2,7 @@ import pandas as pd
 import plotly.graph_objects as go
 import numpy as np
 
-plot_df = pd.read_csv('/Users/yhanalucas/Desktop/Dash/Data/Public_housing/Waitlist_trend_long_plotting.csv')
+plot_df = pd.read_csv('DATA\Public_housing\Waitlist_trend_long_plotting.csv')
 
 def format_yticks(data, y0):
     max = data.max()
