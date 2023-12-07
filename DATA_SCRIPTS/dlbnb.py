@@ -2,7 +2,7 @@ import csv
 import os
 import requests
 
-def download_links_from_csv(csv_file_path, date_column, type_column, url_column):
+def download_links_from_csv(csv_file_path, date_column, type_column, url_column, save_directory):
     try:
         with open(csv_file_path, 'r') as csvfile:
             reader = csv.DictReader(csvfile)
@@ -12,8 +12,9 @@ def download_links_from_csv(csv_file_path, date_column, type_column, url_column)
                 url = row[url_column].strip()
 
                 if date_value and type_value and url:
-                    filename = f"{date_value}_{type_value}.csv"
-                    download_file(url, filename)
+                    filename = f"{date_value}_{type_value}"
+                    save_path = os.path.join(save_directory, filename)
+                    download_file(url, save_path)
                 else:
                     print(f"Missing data in row {reader.line_num}")
 
@@ -22,24 +23,25 @@ def download_links_from_csv(csv_file_path, date_column, type_column, url_column)
     except Exception as e:
         print(f"An error occurred: {e}")
 
-def download_file(url, filename):
+def download_file(url, save_path):
     try:
         response = requests.get(url)
         if response.status_code == 200:
-            with open(filename, 'wb') as file:
+            with open(save_path, 'wb') as file:
                 file.write(response.content)
-            print(f"Downloaded: {filename}")
+            print(f"Downloaded: {save_path}")
         else:
             print(f"Failed to download {url}. Status code: {response.status_code}")
 
     except Exception as e:
         print(f"An error occurred while downloading {url}: {e}")
 
-# Specify the path to your CSV file and the column names
-csv_file_path = 'wa_links.csv'
+# Specify the path to your CSV file, column names, and save directory
+csv_file_path = '04-DATA WIP (TO CLEAN)/Airbnb/Links/batch_links.csv'
 date_column = 'date'
 type_column = 'type'
 url_column = 'link'
+save_directory = '04-DATA WIP (TO CLEAN)/Airbnb/Tas summary files'
 
-# Call the function to download links and create filenames
-download_links_from_csv(csv_file_path, date_column, type_column, url_column)
+# Call the function to download links and save files to the specified directory
+download_links_from_csv(csv_file_path, date_column, type_column, url_column, save_directory)
