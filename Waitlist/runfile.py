@@ -3,8 +3,9 @@ from Waitlistcalcs import *
 # Main execution
 file_path = 'DATA\Public_housing\Waitlist_trend.csv'
 population_file_path = 'DATA\Population\Population_all_agesNoSex.csv'
-save_to = 'DATA\Public_housing\Waitlist_trend_long.csv'
-save_latest_to = 'DATA\Public_housing\Waitlist_trend_long_latest.csv'
+save_long = 'DATA\Public_housing\Waitlist_trend_long.csv'
+save_latest = 'DATA\Public_housing\Waitlist_trend_latest.csv'
+save_plotting = 'DATA\Public_housing\Waitlist_trend_plotting.csv'
 
 if __name__ == "__main__":
     df = load_data(file_path)
@@ -17,5 +18,4 @@ if __name__ == "__main__":
     df_long = year_diff(df_long)
     df_long = calculate_cydiff(df_long)
     df_long = FYtdchange(df_long)
-    df_long, df_long_latest = save_and_pass(df_long, save_to, save_latest_to)
-    plot_df = final_long(df_long, save_to)
+    final_long(df_long, save_latest, save_long, save_plotting)

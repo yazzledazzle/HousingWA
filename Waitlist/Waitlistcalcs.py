@@ -26,14 +26,14 @@ def gap_filler(df_long):
                     missing_date = Category_df['Date'].iloc[i] + pd.DateOffset(days=1) + pd.offsets.MonthEnd(0)
                     proxy_value = round(Category_df['Waitlist figure'].iloc[i] + (diff / (gap+1)))
                     missing_dates.append(missing_date)
-                    new_row = {'Date': missing_date, 'Category': Category, 'Waitlist figure': proxy_value, 'Estimate flag - Waitlist figure': 'Y'}
+                    new_row = {'Date': missing_date, 'Category': Category, 'Waitlist figure': proxy_value, 'Estimate flag - figure': 'Y'}
                     Category_df = pd.concat([Category_df, pd.DataFrame(new_row, index=[0])], ignore_index=True)
         Category_dfs.append(Category_df)
     df_long = pd.concat(Category_dfs)
     df_long = df_long.sort_values(by=['Date'])
     df_long = df_long.reset_index(drop=True)
-    df_long['Estimate flag - Waitlist figure'] = df_long['Estimate flag - Waitlist figure'].fillna('')
-    df_long['Estimate flag - Waitlist figure'] = df_long['Estimate flag - Waitlist figure'].astype(str)
+    df_long['Estimate flag - figure'] = df_long['Estimate flag - figure'].fillna('')
+    df_long['Estimate flag - figure'] = df_long['Estimate flag - figure'].astype(str)
     df_long['Date'] = pd.to_datetime(df_long['Date'])
     df_long['Category'] = df_long['Category'].astype(str)
     df_long['Waitlist figure'] = df_long['Waitlist figure'].astype(float)
@@ -166,44 +166,58 @@ def add_population(df_long, population):
     return df_long
 
 def save_and_pass(df_long, save_to, save_latest_to):
-    df_long['Category'] = df_long['Category'].str.replace('_', ' ')
-    df_long['Category'] = df_long['Category'].str.title()
-    df_long['Group'] = df_long['Category'].str.split(' ').str[0]
-    df_long['Count'] = df_long['Category'].str.split(' ').str[1]
 
-    df_long.to_csv(save_to, index=False)
     df_long_latest = df_long[df_long['Date'] == df_long['Date'].max()]
     df_long_latest.to_csv(save_latest_to, index=False)
     return df_long, df_long_latest
 
-def final_long(plot_df, save_to):
-    cols = plot_df.columns.tolist()
-    ids =["Date", "Category", "Group", "Count", "Estimate flag - Waitlist figure", "Estimate flag - prior month", "Estimate flag - prior year"]
+def final_long(df_long, save_latest, save_long, save_plotting):
+    df_long['Category'] = df_long['Category'].str.replace('_', ' ')
+    df_long['Category'] = df_long['Category'].str.title()
+    df_long['Group'] = df_long['Category'].str.split(' ').str[0]
+    df_long['Count'] = df_long['Category'].str.split(' ').str[1]
+    cols = df_long.columns.tolist()
+    ids =["Date", "Category", "Group", "Count", "Estimate flag - figure", "Estimate flag - prior month", "Estimate flag - prior year"]
     values = [col for col in cols if col not in ids]
-    plot_df = plot_df.melt(id_vars=ids, value_vars=values, var_name="Metric", value_name="Value")
-    plot_df = plot_df[plot_df['Metric'] != 'WA_POPULATION']
-    plot_df['Metric change - monthly'] = plot_df.groupby(['Category', 'Metric'])['Value'].diff()
+    df_long = df_long.melt(id_vars=ids, value_vars=values, var_name="Metric", value_name="Value")
+    df_long = df_long[df_long['Metric'] != 'WA_POPULATION']
+    df_long['Metric change - monthly'] = df_long.groupby(['Category', 'Metric'])['Value'].diff()
+    df_long['Metric change - monthly (per cent)'] = df_long['Metric change - monthly'] / df_long['Value'].shift(1) * 100
+    df_long['Metric change - prior year'] = df_long.groupby(['Category', 'Metric'])['Value'].diff(12)
+    df_long['Metric change - prior year (per cent)'] = df_long['Metric change - prior year'] / df_long['Value'].shift(12) * 100
+    cols = df_long.columns.tolist()
+    ids =["Date", "Category", "Group", "Count", "Estimate flag - figure", "Estimate flag - prior month", "Estimate flag - prior year", "Metric"]
+    values = [col for col in cols if col not in ids]
+    df_long = df_long.melt(id_vars=ids, value_vars=values, var_name="Value type", value_name="#")
+    df_long = df_long.dropna(subset=['#'])
+    df_long = df_long.rename(columns={'#': 'Value'})
+    df_long.to_csv(save_long, index=False)
+    
+    plot_df = df_long.copy()
     plot_df.loc[(plot_df['Metric'] == 'Difference - financial year to date') & (plot_df['Date'].dt.month == 7), 'Metric change - monthly'] = float('nan')
     plot_df.loc[(plot_df['Metric'] == 'Difference - financial year to date (per cent)') & (plot_df['Date'].dt.month == 7), 'Metric change - monthly'] = float('nan')
     plot_df.loc[(plot_df['Metric'] == 'Difference - calendar year to date') & (plot_df['Date'].dt.month == 1), 'Metric change - monthly'] = float('nan')
     plot_df.loc[(plot_df['Metric'] == 'Difference - calendar year to date (per cent)') & (plot_df['Date'].dt.month == 1), 'Metric change - monthly'] = float('nan')
     plot_df.loc[plot_df['Metric'] == 'Waitlist figure', 'Metric change - monthly'] = float('nan')
-    plot_df['Metric change - monthly (per cent)'] = plot_df['Metric change - monthly'] / plot_df['Value'].shift(1) * 100
-    plot_df['Metric change - prior year'] = plot_df.groupby(['Category', 'Metric'])['Value'].diff(12)
     plot_df.loc[(plot_df['Metric'] == 'Difference - financial year to date') & (plot_df['Date'].dt.month == 7), 'Metric change - prior year'] = float('nan')
     plot_df.loc[(plot_df['Metric'] == 'Difference - financial year to date (per cent)') & (plot_df['Date'].dt.month == 7), 'Metric change - prior year'] = float('nan')
     plot_df.loc[(plot_df['Metric'] == 'Difference - calendar year to date') & (plot_df['Date'].dt.month == 1), 'Metric change - prior year'] = float('nan')
     plot_df.loc[(plot_df['Metric'] == 'Difference - calendar year to date (per cent)') & (plot_df['Date'].dt.month == 1), 'Metric change - prior year'] = float('nan')
     plot_df.loc[plot_df['Metric'] == 'Waitlist figure', 'Metric change - prior year'] = float('nan')
-    plot_df['Metric change - prior year (per cent)'] = plot_df['Metric change - prior year'] / plot_df['Value'].shift(12) * 100
-    cols = plot_df.columns.tolist()
-    ids =["Date", "Category", "Group", "Count", "Estimate flag - Waitlist figure", "Estimate flag - prior month", "Estimate flag - prior year", "Metric"]
-    values = [col for col in cols if col not in ids]
-    plot_df = plot_df.melt(id_vars=ids, value_vars=values, var_name="Value type", value_name="#")
-    plot_df = plot_df.dropna(subset=['#'])
-    plot_df = plot_df.rename(columns={'#': 'Value'})
-    plot_df.to_csv(save_to[:-4] + '_plotting.csv', index=False)
-    return plot_df
+    plot_df.to_csv(save_plotting, index=False)
+
+    df_latest = pd.DataFrame()
+    for Category in df_long['Category'].unique():
+        max_date = df_long[df_long['Category'] == Category]['Date'].max()
+        df_cat_latest = df_long[(df_long['Category'] == Category) & (df_long['Date'] == max_date)]
+        df_latest = pd.concat([df_latest, df_cat_latest])
+    df_latest = df_latest.reset_index(drop=True)
+    df_latest.to_csv(save_latest, index=False)
+
+        
+
+
+    return
 
 
 
