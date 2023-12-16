@@ -3,14 +3,16 @@ from Waitlistcalcs import *
 # Main execution
 file_path = 'DATA\Public_housing\Waitlist_trend.csv'
 population_file_path = 'DATA\Population\Population_all_agesNoSex.csv'
-save_long = 'DATA\Public_housing\Waitlist_trend_long.csv'
+save = 'DATA\Public_housing\Waitlist_trend_long.csv'
 save_latest = 'DATA\Public_housing\Waitlist_trend_latest.csv'
-save_plotting = 'DATA\Public_housing\Waitlist_trend_plotting.csv'
+
 
 if __name__ == "__main__":
     df = load_data(file_path)
     df_long = convert_to_long_form(df)
+    df_long = nonpriority(df_long)
     df_long = gap_filler(df_long)
+    df_long = calculate_priority_proportion(df_long)
     df_long = calculate_12_month_average(df_long)
     population = population_to_monthly(population_file_path, df_long)
     df_long = add_population(df_long, population)
@@ -18,4 +20,4 @@ if __name__ == "__main__":
     df_long = year_diff(df_long)
     df_long = calculate_cydiff(df_long)
     df_long = FYtdchange(df_long)
-    final_long(df_long, save_latest, save_long, save_plotting)
+    final_long(df_long, save_latest, save)

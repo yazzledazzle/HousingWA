@@ -1,271 +1,684 @@
-Date,Category,Group,Count,Estimate flag - figure,Estimate flag - prior month,Estimate flag - prior year,Metric,Value type,Value
-2023-09-30,Priority Applications,Priority,Applications,,,,Waitlist figure,Value,4875.0
-2023-09-30,Priority Applications,Priority,Applications,,,,12 month rolling average,Value,4602.153846153846
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - 12 month rolling average,Value,272.84615384615427
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - 12 month rolling average (per cent),Value,5.9286621648726445
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - Prior month,Value,53.0
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - Prior month (per cent),Value,1.0991289921194525
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - 12 months prior,Value,618.0
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - 12 months prior (per cent),Value,14.517265680056376
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - calendar year to date,Value,424.0
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - calendar year to date (per cent),Value,9.525949224893282
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - financial year to date,Value,105.0
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - financial year to date (per cent),Value,2.20125786163522
-2023-09-30,Priority Applications,Priority,Applications,,,,Waitlist figure,Metric change - monthly,53.0
-2023-09-30,Priority Applications,Priority,Applications,,,,12 month rolling average,Metric change - monthly,49.2307692307686
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - 12 month rolling average,Metric change - monthly,3.769230769231399
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - 12 month rolling average (per cent),Metric change - monthly,0.018680411814597342
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - Prior month,Metric change - monthly,-1.0
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - Prior month (per cent),Metric change - monthly,-0.03342134345101733
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - 12 months prior,Metric change - monthly,31.0
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - 12 months prior (per cent),Metric change - monthly,0.6565809102806952
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - calendar year to date,Metric change - monthly,53.0
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - calendar year to date (per cent),Metric change - monthly,1.1907436531116602
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - financial year to date,Metric change - monthly,53.0
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - financial year to date (per cent),Metric change - monthly,1.1111111111111112
-2023-09-30,Priority Applications,Priority,Applications,,,,Waitlist figure,Metric change - monthly (per cent),1.0991289921194525
-2023-09-30,Priority Applications,Priority,Applications,,,,12 month rolling average,Metric change - monthly (per cent),1.0813002635669253
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - 12 month rolling average,Metric change - monthly (per cent),1.400800457404466
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - 12 month rolling average (per cent),Metric change - monthly (per cent),0.316082394077298
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - Prior month,Metric change - monthly (per cent),-1.8518518518518516
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - Prior month (per cent),Metric change - monthly (per cent),-2.950980843971308
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - 12 months prior,Metric change - monthly (per cent),5.281090289608177
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - 12 months prior (per cent),Metric change - monthly (per cent),4.73700196769803
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - calendar year to date,Metric change - monthly (per cent),14.285714285714285
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - calendar year to date (per cent),Metric change - monthly (per cent),14.285714285714285
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - financial year to date,Metric change - monthly (per cent),101.92307692307692
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - financial year to date (per cent),Metric change - monthly (per cent),101.92307692307693
-2023-09-30,Priority Applications,Priority,Applications,,,,Waitlist figure,Metric change - prior year,618.0
-2023-09-30,Priority Applications,Priority,Applications,,,,12 month rolling average,Metric change - prior year,657.3076923076919
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - 12 month rolling average,Metric change - prior year,-39.30769230769192
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - 12 month rolling average (per cent),Metric change - prior year,-1.9842914454855638
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - Prior month,Metric change - prior year,31.0
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - Prior month (per cent),Metric change - prior year,0.579648472638933
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - 12 months prior,Metric change - prior year,7.0
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - 12 months prior (per cent),Metric change - prior year,-2.2408253786380854
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - calendar year to date,Metric change - prior year,-74.0
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - calendar year to date (per cent),Metric change - prior year,-3.7222550847635425
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - financial year to date,Metric change - prior year,-11.0
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - financial year to date (per cent),Metric change - prior year,-0.5999978736944107
-2023-09-30,Priority Applications,Priority,Applications,,,,Waitlist figure,Metric change - prior year (per cent),14.517265680056376
-2023-09-30,Priority Applications,Priority,Applications,,,,12 month rolling average,Metric change - prior year (per cent),16.66244174482771
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - 12 month rolling average,Metric change - prior year (per cent),-12.592410054213774
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - 12 month rolling average (per cent),Metric change - prior year (per cent),-25.07649536688915
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - Prior month,Metric change - prior year (per cent),140.9090909090909
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - Prior month (per cent),Metric change - prior year (per cent),111.58233098299462
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - 12 months prior,Metric change - prior year (per cent),1.1456628477905073
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - 12 months prior (per cent),Metric change - prior year (per cent),-13.37160283226589
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - calendar year to date,Metric change - prior year (per cent),-14.859437751004014
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - calendar year to date (per cent),Metric change - prior year (per cent),-28.09629892294409
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - financial year to date,Metric change - prior year (per cent),-9.482758620689655
-2023-09-30,Priority Applications,Priority,Applications,,,,Difference - financial year to date (per cent),Metric change - prior year (per cent),-21.418889611797884
-2023-09-30,Total Applications,Total,Applications,,,,Waitlist figure,Value,19114.0
-2023-09-30,Total Applications,Total,Applications,,,,12 month rolling average,Value,19044.384615384617
-2023-09-30,Total Applications,Total,Applications,,,,Difference - 12 month rolling average,Value,69.61538461538294
-2023-09-30,Total Applications,Total,Applications,,,,Difference - 12 month rolling average (per cent),Value,0.36554284121706704
-2023-09-30,Total Applications,Total,Applications,,,,Difference - Prior month,Value,65.0
-2023-09-30,Total Applications,Total,Applications,,,,Difference - Prior month (per cent),Value,0.3412252611685653
-2023-09-30,Total Applications,Total,Applications,,,,Difference - 12 months prior,Value,139.0
-2023-09-30,Total Applications,Total,Applications,,,,Difference - 12 months prior (per cent),Value,0.7325428194993412
-2023-09-30,Total Applications,Total,Applications,,,,Difference - calendar year to date,Value,14663.0
-2023-09-30,Total Applications,Total,Applications,,,,Difference - calendar year to date (per cent),Value,329.4315884070995
-2023-09-30,Total Applications,Total,Applications,,,,Difference - financial year to date,Value,52.0
-2023-09-30,Total Applications,Total,Applications,,,,Difference - financial year to date (per cent),Value,0.27279404049942296
-2023-09-30,Total Applications,Total,Applications,,,,Waitlist figure,Metric change - monthly,65.0
-2023-09-30,Total Applications,Total,Applications,,,,12 month rolling average,Metric change - monthly,9.307692307695106
-2023-09-30,Total Applications,Total,Applications,,,,Difference - 12 month rolling average,Metric change - monthly,55.692307692304894
-2023-09-30,Total Applications,Total,Applications,,,,Difference - 12 month rolling average (per cent),Metric change - monthly,0.29239852465169197
-2023-09-30,Total Applications,Total,Applications,,,,Difference - Prior month,Metric change - monthly,0.0
-2023-09-30,Total Applications,Total,Applications,,,,Difference - Prior month (per cent),Metric change - monthly,-0.0011683334374186782
-2023-09-30,Total Applications,Total,Applications,,,,Difference - 12 months prior,Metric change - monthly,83.0
-2023-09-30,Total Applications,Total,Applications,,,,Difference - 12 months prior (per cent),Metric change - monthly,0.4376973501158841
-2023-09-30,Total Applications,Total,Applications,,,,Difference - calendar year to date,Metric change - monthly,65.0
-2023-09-30,Total Applications,Total,Applications,,,,Difference - calendar year to date (per cent),Metric change - monthly,1.4603459896652566
-2023-09-30,Total Applications,Total,Applications,,,,Difference - financial year to date,Metric change - monthly,65.0
-2023-09-30,Total Applications,Total,Applications,,,,Difference - financial year to date (per cent),Metric change - monthly,0.3409925506242787
-2023-09-30,Total Applications,Total,Applications,,,,Waitlist figure,Metric change - monthly (per cent),0.3412252611685653
-2023-09-30,Total Applications,Total,Applications,,,,12 month rolling average,Metric change - monthly (per cent),0.04889758179233333
-2023-09-30,Total Applications,Total,Applications,,,,Difference - 12 month rolling average,Metric change - monthly (per cent),399.9999999999477
-2023-09-30,Total Applications,Total,Applications,,,,Difference - 12 month rolling average (per cent),Metric change - monthly (per cent),399.7556315812335
-2023-09-30,Total Applications,Total,Applications,,,,Difference - Prior month,Metric change - monthly (per cent),0.0
-2023-09-30,Total Applications,Total,Applications,,,,Difference - Prior month (per cent),Metric change - monthly (per cent),-0.3412252611685568
-2023-09-30,Total Applications,Total,Applications,,,,Difference - 12 months prior,Metric change - monthly (per cent),148.21428571428572
-2023-09-30,Total Applications,Total,Applications,,,,Difference - 12 months prior (per cent),Metric change - monthly (per cent),148.44974590626762
-2023-09-30,Total Applications,Total,Applications,,,,Difference - calendar year to date,Metric change - monthly (per cent),0.44526647485956977
-2023-09-30,Total Applications,Total,Applications,,,,Difference - calendar year to date (per cent),Metric change - monthly (per cent),0.44526647485957377
-2023-09-30,Total Applications,Total,Applications,,,,Difference - financial year to date,Metric change - monthly (per cent),-500.0
-2023-09-30,Total Applications,Total,Applications,,,,Difference - financial year to date (per cent),Metric change - monthly (per cent),-500.0
-2023-09-30,Total Applications,Total,Applications,,,,Waitlist figure,Metric change - prior year,139.0
-2023-09-30,Total Applications,Total,Applications,,,,12 month rolling average,Metric change - prior year,467.2307692307695
-2023-09-30,Total Applications,Total,Applications,,,,Difference - 12 month rolling average,Metric change - prior year,-328.2307692307695
-2023-09-30,Total Applications,Total,Applications,,,,Difference - 12 month rolling average (per cent),Metric change - prior year,-1.7760454620338164
-2023-09-30,Total Applications,Total,Applications,,,,Difference - Prior month,Metric change - prior year,83.0
-2023-09-30,Total Applications,Total,Applications,,,,Difference - Prior month (per cent),Metric change - prior year,0.4359970191846765
-2023-09-30,Total Applications,Total,Applications,,,,Difference - 12 months prior,Metric change - prior year,-1147.0
-2023-09-30,Total Applications,Total,Applications,,,,Difference - 12 months prior (per cent),Metric change - prior year,-6.537512016839627
-2023-09-30,Total Applications,Total,Applications,,,,Difference - calendar year to date,Metric change - prior year,-553.0
-2023-09-30,Total Applications,Total,Applications,,,,Difference - calendar year to date (per cent),Metric change - prior year,-75.35691917470422
-2023-09-30,Total Applications,Total,Applications,,,,Difference - financial year to date,Metric change - prior year,147.0
-2023-09-30,Total Applications,Total,Applications,,,,Difference - financial year to date (per cent),Metric change - prior year,0.7709586970280018
-2023-09-30,Total Applications,Total,Applications,,,,Waitlist figure,Metric change - prior year (per cent),0.7325428194993412
-2023-09-30,Total Applications,Total,Applications,,,,12 month rolling average,Metric change - prior year (per cent),2.5150826283731478
-2023-09-30,Total Applications,Total,Applications,,,,Difference - 12 month rolling average,Metric change - prior year (per cent),-82.50193348801274
-2023-09-30,Total Applications,Total,Applications,,,,Difference - 12 month rolling average (per cent),Metric change - prior year (per cent),-82.93122722690532
-2023-09-30,Total Applications,Total,Applications,,,,Difference - Prior month,Metric change - prior year (per cent),-461.1111111111111
-2023-09-30,Total Applications,Total,Applications,,,,Difference - Prior month (per cent),Metric change - prior year (per cent),-460.0495214096978
-2023-09-30,Total Applications,Total,Applications,,,,Difference - 12 months prior,Metric change - prior year (per cent),-89.19129082426127
-2023-09-30,Total Applications,Total,Applications,,,,Difference - 12 months prior (per cent),Metric change - prior year (per cent),-89.92383364376062
-2023-09-30,Total Applications,Total,Applications,,,,Difference - calendar year to date,Metric change - prior year (per cent),-3.6343322818086228
-2023-09-30,Total Applications,Total,Applications,,,,Difference - calendar year to date (per cent),Metric change - prior year (per cent),-18.61636824248903
-2023-09-30,Total Applications,Total,Applications,,,,Difference - financial year to date,Metric change - prior year (per cent),-154.73684210526315
-2023-09-30,Total Applications,Total,Applications,,,,Difference - financial year to date (per cent),Metric change - prior year (per cent),-154.75981423498942
-2023-09-30,Total Individuals,Total,Individuals,,,,Waitlist figure,Value,34117.0
-2023-09-30,Total Individuals,Total,Individuals,,,,12 month rolling average,Value,33928.07692307692
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - 12 month rolling average,Value,188.92307692307804
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - 12 month rolling average (per cent),Value,0.5568340267307572
-2023-09-30,Total Individuals,Total,Individuals,,,,percent_of_population,Value,1.1947426700014077
-2023-09-30,Total Individuals,Total,Individuals,,,,Value_per10k,Value,119.47426700014077
-2023-09-30,Total Individuals,Total,Individuals,,,,12 month rolling average_per10k,Value,118.81267758328713
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - Prior month,Value,87.0
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - Prior month (per cent),Value,0.2556567734352042
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - 12 months prior,Value,582.0
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - 12 months prior (per cent),Value,1.735500223646936
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - calendar year to date,Value,29666.0
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - calendar year to date (per cent),Value,666.5019096832173
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - financial year to date,Value,131.0
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - financial year to date (per cent),Value,0.38545283351968457
-2023-09-30,Total Individuals,Total,Individuals,,,,Waitlist figure,Metric change - monthly,87.0
-2023-09-30,Total Individuals,Total,Individuals,,,,12 month rolling average,Metric change - monthly,47.846153846156085
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - 12 month rolling average,Metric change - monthly,39.153846153843915
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - 12 month rolling average (per cent),Metric change - monthly,0.1147790956726989
-2023-09-30,Total Individuals,Total,Individuals,,,,percent_of_population,Metric change - monthly,0.0030466515898268653
-2023-09-30,Total Individuals,Total,Individuals,,,,Value_per10k,Metric change - monthly,0.30466515898268653
-2023-09-30,Total Individuals,Total,Individuals,,,,12 month rolling average_per10k,Metric change - monthly,0.16755236860056755
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - Prior month,Metric change - monthly,0.0
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - Prior month (per cent),Metric change - monthly,-0.0006552791234971655
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - 12 months prior,Metric change - monthly,47.0
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - 12 months prior (per cent),Metric change - monthly,0.1382469022556836
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - calendar year to date,Metric change - monthly,87.0
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - calendar year to date (per cent),Metric change - monthly,1.9546169400134659
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - financial year to date,Metric change - monthly,87.0
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - financial year to date (per cent),Metric change - monthly,0.2559877596657447
-2023-09-30,Total Individuals,Total,Individuals,,,,Waitlist figure,Metric change - monthly (per cent),0.2556567734352042
-2023-09-30,Total Individuals,Total,Individuals,,,,12 month rolling average,Metric change - monthly (per cent),0.1412214520380683
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - 12 month rolling average,Metric change - monthly (per cent),26.142783769900333
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - 12 month rolling average (per cent),Metric change - monthly (per cent),25.964894317087513
-2023-09-30,Total Individuals,Total,Individuals,,,,percent_of_population,Metric change - monthly (per cent),0.255656773435206
-2023-09-30,Total Individuals,Total,Individuals,,,,Value_per10k,Metric change - monthly (per cent),0.25565677343520593
-2023-09-30,Total Individuals,Total,Individuals,,,,12 month rolling average_per10k,Metric change - monthly (per cent),0.14122145203807074
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - Prior month,Metric change - monthly (per cent),0.0
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - Prior month (per cent),Metric change - monthly (per cent),-0.2556567734352217
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - 12 months prior,Metric change - monthly (per cent),8.785046728971963
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - 12 months prior (per cent),Metric change - monthly (per cent),8.655289702904902
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - calendar year to date,Metric change - monthly (per cent),0.2941275905203016
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - calendar year to date (per cent),Metric change - monthly (per cent),0.2941275905202994
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - financial year to date,Metric change - monthly (per cent),197.72727272727272
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - financial year to date (per cent),Metric change - monthly (per cent),197.72727272727272
-2023-09-30,Total Individuals,Total,Individuals,,,,Waitlist figure,Metric change - prior year,582.0
-2023-09-30,Total Individuals,Total,Individuals,,,,12 month rolling average,Metric change - prior year,1356.7692307692305
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - 12 month rolling average,Metric change - prior year,-774.7692307692305
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - 12 month rolling average (per cent),Metric change - prior year,-2.401881407098453
-2023-09-30,Total Individuals,Total,Individuals,,,,percent_of_population,Metric change - prior year,0.0014923357952421057
-2023-09-30,Total Individuals,Total,Individuals,,,,Value_per10k,Metric change - prior year,0.14923357952422123
-2023-09-30,Total Individuals,Total,Individuals,,,,12 month rolling average_per10k,Metric change - prior year,2.9166770185696436
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - Prior month,Metric change - prior year,47.0
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - Prior month (per cent),Metric change - prior year,0.13623596435922275
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - 12 months prior,Metric change - prior year,-2179.0
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - 12 months prior (per cent),Metric change - prior year,-7.236359138151986
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - calendar year to date,Metric change - prior year,-110.0
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - calendar year to date (per cent),Metric change - prior year,-125.62365562670561
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - financial year to date,Metric change - prior year,159.0
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - financial year to date (per cent),Metric change - prior year,0.468878033889139
-2023-09-30,Total Individuals,Total,Individuals,,,,Waitlist figure,Metric change - prior year (per cent),1.735500223646936
-2023-09-30,Total Individuals,Total,Individuals,,,,12 month rolling average,Metric change - prior year (per cent),4.165535027289237
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - 12 month rolling average,Metric change - prior year (per cent),-80.39591315453374
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - 12 month rolling average (per cent),Metric change - prior year (per cent),-81.17987217141409
-2023-09-30,Total Individuals,Total,Individuals,,,,percent_of_population,Metric change - prior year (per cent),0.12506477077460137
-2023-09-30,Total Individuals,Total,Individuals,,,,Value_per10k,Metric change - prior year (per cent),0.1250647707746103
-2023-09-30,Total Individuals,Total,Individuals,,,,12 month rolling average_per10k,Metric change - prior year (per cent),2.516633019567351
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - Prior month,Metric change - prior year (per cent),117.5
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - Prior month (per cent),Metric change - prior year (per cent),114.08059065530416
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - 12 months prior,Metric change - prior year (per cent),-78.92068091271278
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - 12 months prior (per cent),Metric change - prior year (per cent),-80.65618113635973
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - calendar year to date,Metric change - prior year (per cent),-0.3694250403009135
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - calendar year to date (per cent),Metric change - prior year (per cent),-15.859058352390731
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - financial year to date,Metric change - prior year (per cent),-567.8571428571429
-2023-09-30,Total Individuals,Total,Individuals,,,,Difference - financial year to date (per cent),Metric change - prior year (per cent),-562.0340518364704
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Waitlist figure,Value,9568.0
-2023-09-30,Priority Individuals,Priority,Individuals,,,,12 month rolling average,Value,9190.307692307691
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - 12 month rolling average,Value,377.69230769230853
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - 12 month rolling average (per cent),Value,4.10968076736362
-2023-09-30,Priority Individuals,Priority,Individuals,,,,percent_of_population,Value,0.33506163691337076
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Value_per10k,Value,33.50616369133707
-2023-09-30,Priority Individuals,Priority,Individuals,,,,12 month rolling average_per10k,Value,32.18352361122657
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - Prior month,Value,60.0
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - Prior month (per cent),Value,0.6310475389145982
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - 12 months prior,Value,883.0
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - 12 months prior (per cent),Value,10.166954519286126
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - calendar year to date,Value,5117.0
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - calendar year to date (per cent),Value,114.96292967872388
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - financial year to date,Value,145.0
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - financial year to date (per cent),Value,1.5387880717393612
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Waitlist figure,Metric change - monthly,60.0
-2023-09-30,Priority Individuals,Priority,Individuals,,,,12 month rolling average,Metric change - monthly,74.69230769230671
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - 12 month rolling average,Metric change - monthly,-14.692307692306713
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - 12 month rolling average (per cent),Metric change - monthly,-0.1948516073441917
-2023-09-30,Priority Individuals,Priority,Individuals,,,,percent_of_population,Metric change - monthly,0.0021011390274668362
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Value_per10k,Metric change - monthly,0.21011390274667718
-2023-09-30,Priority Individuals,Priority,Individuals,,,,12 month rolling average_per10k,Metric change - monthly,0.26156487123977357
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - Prior month,Metric change - monthly,-1.0
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - Prior month (per cent),Metric change - monthly,-0.014660093137905283
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - 12 months prior,Metric change - monthly,-28.0
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - 12 months prior (per cent),Metric change - monthly,-0.4297652666857239
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - calendar year to date,Metric change - monthly,60.0
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - calendar year to date (per cent),Metric change - monthly,1.3480116827679325
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - financial year to date,Metric change - monthly,60.0
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - financial year to date (per cent),Metric change - monthly,0.6367398917542185
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Waitlist figure,Metric change - monthly (per cent),0.6310475389145982
-2023-09-30,Priority Individuals,Priority,Individuals,,,,12 month rolling average,Metric change - monthly (per cent),0.8193885386867735
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - 12 month rolling average,Metric change - monthly (per cent),-3.7443638502251977
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - 12 month rolling average (per cent),Metric change - monthly (per cent),-4.526661443855864
-2023-09-30,Priority Individuals,Priority,Individuals,,,,percent_of_population,Metric change - monthly (per cent),0.6310475389146123
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Value_per10k,Metric change - monthly (per cent),0.6310475389145929
-2023-09-30,Priority Individuals,Priority,Individuals,,,,12 month rolling average_per10k,Metric change - monthly (per cent),0.8193885386867766
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - Prior month,Metric change - monthly (per cent),-1.639344262295082
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - Prior month (per cent),Metric change - monthly (per cent),-2.2703918012096915
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - 12 months prior,Metric change - monthly (per cent),-3.0735455543358947
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - 12 months prior (per cent),Metric change - monthly (per cent),-4.055644344343764
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - calendar year to date,Metric change - monthly (per cent),1.1864741941862764
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - calendar year to date (per cent),Metric change - monthly (per cent),1.18647419418629
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - financial year to date,Metric change - monthly (per cent),70.58823529411765
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - financial year to date (per cent),Metric change - monthly (per cent),70.58823529411767
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Waitlist figure,Metric change - prior year,883.0
-2023-09-30,Priority Individuals,Priority,Individuals,,,,12 month rolling average,Metric change - prior year,1197.6923076923067
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - 12 month rolling average,Metric change - prior year,-314.6923076923067
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - 12 month rolling average (per cent),Metric change - prior year,-4.553123359522735
-2023-09-30,Priority Individuals,Priority,Individuals,,,,percent_of_population,Metric change - prior year,0.026029904318155328
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Value_per10k,Metric change - prior year,2.602990431815531
-2023-09-30,Priority Individuals,Priority,Individuals,,,,12 month rolling average_per10k,Metric change - prior year,3.7440097335654734
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - Prior month,Metric change - prior year,-28.0
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - Prior month (per cent),Metric change - prior year,-0.39256534930222164
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - 12 months prior,Metric change - prior year,-364.0
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - 12 months prior (per cent),Metric change - prior year,-6.5983049590682725
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - calendar year to date,Metric change - prior year,191.0
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - calendar year to date (per cent),Metric change - prior year,-16.082561143303266
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - financial year to date,Metric change - prior year,-166.0
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - financial year to date (per cent),Metric change - prior year,-2.1750882119960098
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Waitlist figure,Metric change - prior year (per cent),10.166954519286126
-2023-09-30,Priority Individuals,Priority,Individuals,,,,12 month rolling average,Metric change - prior year (per cent),14.984986141053266
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - 12 month rolling average,Metric change - prior year (per cent),-45.450505499388825
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - 12 month rolling average (per cent),Metric change - prior year (per cent),-52.55946334272308
-2023-09-30,Priority Individuals,Priority,Individuals,,,,percent_of_population,Metric change - prior year (per cent),8.423052254070795
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Value_per10k,Metric change - prior year (per cent),8.423052254070791
-2023-09-30,Priority Individuals,Priority,Individuals,,,,12 month rolling average_per10k,Metric change - prior year (per cent),13.164816211947802
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - Prior month,Metric change - prior year (per cent),-31.818181818181817
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - Prior month (per cent),Metric change - prior year (per cent),-38.35095804489999
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - 12 months prior,Metric change - prior year (per cent),-29.190056134723335
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - 12 months prior (per cent),Metric change - prior year (per cent),-39.357010654009464
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - calendar year to date,Metric change - prior year (per cent),3.8773853024766547
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - calendar year to date (per cent),Metric change - prior year (per cent),-12.272502504603526
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - financial year to date,Metric change - prior year (per cent),-53.37620578778135
-2023-09-30,Priority Individuals,Priority,Individuals,,,,Difference - financial year to date (per cent),Metric change - prior year (per cent),-58.566523110143365
+Date,Category,Description1,Description2,Description3,Description4,Description5,Description6,Description7,Estimate,Value
+2023-09-30,Priority Applications,Priority,Applications,Number,,Actual,-,-,N,4875.0
+2023-09-30,Priority Applications,Priority,Applications,12 month rolling average,,Actual,-,-,N,4602.153846153846
+2023-09-30,Priority Applications,Priority,Applications,Difference,12 month rolling average,Actual,-,-,N,272.84615384615427
+2023-09-30,Priority Applications,Priority,Applications,Difference,12 month rolling average,Percentage,-,-,N,5.9286621648726445
+2023-09-30,Priority Applications,Priority,Applications,Difference,prior month,Actual,-,-,N,53.0
+2023-09-30,Priority Applications,Priority,Applications,Difference,prior month,Percentage,-,-,N,1.0991289921194525
+2023-09-30,Priority Applications,Priority,Applications,Difference,prior year,Actual,-,-,N,618.0
+2023-09-30,Priority Applications,Priority,Applications,Difference,prior year,Percentage,-,-,N,14.517265680056376
+2023-09-30,Priority Applications,Priority,Applications,Difference,calendar year to date,Actual,-,-,N,424.0
+2023-09-30,Priority Applications,Priority,Applications,Difference,calendar year to date,Percentage,-,-,N,9.525949224893282
+2023-09-30,Priority Applications,Priority,Applications,Difference,financial year to date,Actual,-,-,N,105.0
+2023-09-30,Priority Applications,Priority,Applications,Difference,financial year to date,Percentage,-,-,N,2.20125786163522
+2023-09-30,Priority Applications,Priority,Applications,12 month rolling average,,Actual,change from prior month,Actual,N,49.2307692307686
+2023-09-30,Priority Applications,Priority,Applications,Difference,12 month rolling average,Actual,change from prior month,Actual,N,3.769230769231399
+2023-09-30,Priority Applications,Priority,Applications,Difference,12 month rolling average,Percentage,change from prior month,Actual,N,0.018680411814597342
+2023-09-30,Priority Applications,Priority,Applications,Difference,prior month,Actual,change from prior month,Actual,N,-1.0
+2023-09-30,Priority Applications,Priority,Applications,Difference,prior month,Percentage,change from prior month,Actual,N,-0.03342134345101733
+2023-09-30,Priority Applications,Priority,Applications,Difference,prior year,Actual,change from prior month,Actual,N,31.0
+2023-09-30,Priority Applications,Priority,Applications,Difference,prior year,Percentage,change from prior month,Actual,N,0.6565809102806952
+2023-09-30,Priority Applications,Priority,Applications,Difference,calendar year to date,Actual,change from prior month,Actual,N,53.0
+2023-09-30,Priority Applications,Priority,Applications,Difference,calendar year to date,Percentage,change from prior month,Actual,N,1.1907436531116602
+2023-09-30,Priority Applications,Priority,Applications,Difference,financial year to date,Actual,change from prior month,Actual,N,53.0
+2023-09-30,Priority Applications,Priority,Applications,Difference,financial year to date,Percentage,change from prior month,Actual,N,1.1111111111111112
+2023-09-30,Priority Applications,Priority,Applications,Number,,Actual,change from prior month,Percentage,N,1.0991289921194525
+2023-09-30,Priority Applications,Priority,Applications,12 month rolling average,,Actual,change from prior month,Percentage,N,1.0813002635669253
+2023-09-30,Priority Applications,Priority,Applications,Difference,12 month rolling average,Actual,change from prior month,Percentage,N,1.400800457404466
+2023-09-30,Priority Applications,Priority,Applications,Difference,12 month rolling average,Percentage,change from prior month,Percentage,N,0.316082394077298
+2023-09-30,Priority Applications,Priority,Applications,Difference,prior month,Actual,change from prior month,Percentage,N,-1.8518518518518516
+2023-09-30,Priority Applications,Priority,Applications,Difference,prior month,Percentage,change from prior month,Percentage,N,-2.950980843971308
+2023-09-30,Priority Applications,Priority,Applications,Difference,prior year,Actual,change from prior month,Percentage,N,5.281090289608177
+2023-09-30,Priority Applications,Priority,Applications,Difference,prior year,Percentage,change from prior month,Percentage,N,4.73700196769803
+2023-09-30,Priority Applications,Priority,Applications,Difference,calendar year to date,Actual,change from prior month,Percentage,N,14.285714285714285
+2023-09-30,Priority Applications,Priority,Applications,Difference,calendar year to date,Percentage,change from prior month,Percentage,N,14.285714285714285
+2023-09-30,Priority Applications,Priority,Applications,Difference,financial year to date,Actual,change from prior month,Percentage,N,101.92307692307692
+2023-09-30,Priority Applications,Priority,Applications,Difference,financial year to date,Percentage,change from prior month,Percentage,N,101.92307692307693
+2023-09-30,Priority Applications,Priority,Applications,12 month rolling average,,Actual,change from prior year,Actual,N,657.3076923076919
+2023-09-30,Priority Applications,Priority,Applications,Difference,12 month rolling average,Actual,change from prior year,Actual,N,-39.30769230769192
+2023-09-30,Priority Applications,Priority,Applications,Difference,12 month rolling average,Percentage,change from prior year,Actual,N,-1.9842914454855638
+2023-09-30,Priority Applications,Priority,Applications,Difference,prior month,Actual,change from prior year,Actual,N,31.0
+2023-09-30,Priority Applications,Priority,Applications,Difference,prior month,Percentage,change from prior year,Actual,N,0.579648472638933
+2023-09-30,Priority Applications,Priority,Applications,Difference,prior year,Actual,change from prior year,Actual,N,7.0
+2023-09-30,Priority Applications,Priority,Applications,Difference,prior year,Percentage,change from prior year,Actual,N,-2.2408253786380854
+2023-09-30,Priority Applications,Priority,Applications,Difference,calendar year to date,Actual,change from prior year,Actual,N,-74.0
+2023-09-30,Priority Applications,Priority,Applications,Difference,calendar year to date,Percentage,change from prior year,Actual,N,-3.7222550847635425
+2023-09-30,Priority Applications,Priority,Applications,Difference,financial year to date,Actual,change from prior year,Actual,N,-11.0
+2023-09-30,Priority Applications,Priority,Applications,Difference,financial year to date,Percentage,change from prior year,Actual,N,-0.5999978736944107
+2023-09-30,Priority Applications,Priority,Applications,Number,,Actual,change from prior year,Percentage,N,14.517265680056376
+2023-09-30,Priority Applications,Priority,Applications,12 month rolling average,,Actual,change from prior year,Percentage,N,16.66244174482771
+2023-09-30,Priority Applications,Priority,Applications,Difference,12 month rolling average,Actual,change from prior year,Percentage,N,-12.592410054213774
+2023-09-30,Priority Applications,Priority,Applications,Difference,12 month rolling average,Percentage,change from prior year,Percentage,N,-25.07649536688915
+2023-09-30,Priority Applications,Priority,Applications,Difference,prior month,Actual,change from prior year,Percentage,N,140.9090909090909
+2023-09-30,Priority Applications,Priority,Applications,Difference,prior month,Percentage,change from prior year,Percentage,N,111.58233098299462
+2023-09-30,Priority Applications,Priority,Applications,Difference,prior year,Actual,change from prior year,Percentage,N,1.1456628477905073
+2023-09-30,Priority Applications,Priority,Applications,Difference,prior year,Percentage,change from prior year,Percentage,N,-13.37160283226589
+2023-09-30,Priority Applications,Priority,Applications,Difference,calendar year to date,Actual,change from prior year,Percentage,N,-14.859437751004014
+2023-09-30,Priority Applications,Priority,Applications,Difference,calendar year to date,Percentage,change from prior year,Percentage,N,-28.09629892294409
+2023-09-30,Priority Applications,Priority,Applications,Difference,financial year to date,Actual,change from prior year,Percentage,N,-9.482758620689655
+2023-09-30,Priority Applications,Priority,Applications,Difference,financial year to date,Percentage,change from prior year,Percentage,N,-21.418889611797884
+2023-09-30,Total Applications,Total,Applications,Number,,Actual,-,-,N,19114.0
+2023-09-30,Total Applications,Total,Applications,12 month rolling average,,Actual,-,-,N,19044.384615384617
+2023-09-30,Total Applications,Total,Applications,Difference,12 month rolling average,Actual,-,-,N,69.61538461538294
+2023-09-30,Total Applications,Total,Applications,Difference,12 month rolling average,Percentage,-,-,N,0.36554284121706704
+2023-09-30,Total Applications,Total,Applications,Difference,prior month,Actual,-,-,N,65.0
+2023-09-30,Total Applications,Total,Applications,Difference,prior month,Percentage,-,-,N,0.3412252611685653
+2023-09-30,Total Applications,Total,Applications,Difference,prior year,Actual,-,-,N,139.0
+2023-09-30,Total Applications,Total,Applications,Difference,prior year,Percentage,-,-,N,0.7325428194993412
+2023-09-30,Total Applications,Total,Applications,Difference,calendar year to date,Actual,-,-,N,14663.0
+2023-09-30,Total Applications,Total,Applications,Difference,calendar year to date,Percentage,-,-,N,329.4315884070995
+2023-09-30,Total Applications,Total,Applications,Difference,financial year to date,Actual,-,-,N,52.0
+2023-09-30,Total Applications,Total,Applications,Difference,financial year to date,Percentage,-,-,N,0.27279404049942296
+2023-09-30,Total Applications,Total,Applications,12 month rolling average,,Actual,change from prior month,Actual,N,9.307692307695106
+2023-09-30,Total Applications,Total,Applications,Difference,12 month rolling average,Actual,change from prior month,Actual,N,55.692307692304894
+2023-09-30,Total Applications,Total,Applications,Difference,12 month rolling average,Percentage,change from prior month,Actual,N,0.29239852465169197
+2023-09-30,Total Applications,Total,Applications,Difference,prior month,Actual,change from prior month,Actual,N,0.0
+2023-09-30,Total Applications,Total,Applications,Difference,prior month,Percentage,change from prior month,Actual,N,-0.0011683334374186782
+2023-09-30,Total Applications,Total,Applications,Difference,prior year,Actual,change from prior month,Actual,N,83.0
+2023-09-30,Total Applications,Total,Applications,Difference,prior year,Percentage,change from prior month,Actual,N,0.4376973501158841
+2023-09-30,Total Applications,Total,Applications,Difference,calendar year to date,Actual,change from prior month,Actual,N,65.0
+2023-09-30,Total Applications,Total,Applications,Difference,calendar year to date,Percentage,change from prior month,Actual,N,1.4603459896652566
+2023-09-30,Total Applications,Total,Applications,Difference,financial year to date,Actual,change from prior month,Actual,N,65.0
+2023-09-30,Total Applications,Total,Applications,Difference,financial year to date,Percentage,change from prior month,Actual,N,0.3409925506242787
+2023-09-30,Total Applications,Total,Applications,Number,,Actual,change from prior month,Percentage,N,0.3412252611685653
+2023-09-30,Total Applications,Total,Applications,12 month rolling average,,Actual,change from prior month,Percentage,N,0.04889758179233333
+2023-09-30,Total Applications,Total,Applications,Difference,12 month rolling average,Actual,change from prior month,Percentage,N,399.9999999999477
+2023-09-30,Total Applications,Total,Applications,Difference,12 month rolling average,Percentage,change from prior month,Percentage,N,399.7556315812335
+2023-09-30,Total Applications,Total,Applications,Difference,prior month,Actual,change from prior month,Percentage,N,0.0
+2023-09-30,Total Applications,Total,Applications,Difference,prior month,Percentage,change from prior month,Percentage,N,-0.3412252611685568
+2023-09-30,Total Applications,Total,Applications,Difference,prior year,Actual,change from prior month,Percentage,N,148.21428571428572
+2023-09-30,Total Applications,Total,Applications,Difference,prior year,Percentage,change from prior month,Percentage,N,148.44974590626762
+2023-09-30,Total Applications,Total,Applications,Difference,calendar year to date,Actual,change from prior month,Percentage,N,0.44526647485956977
+2023-09-30,Total Applications,Total,Applications,Difference,calendar year to date,Percentage,change from prior month,Percentage,N,0.44526647485957377
+2023-09-30,Total Applications,Total,Applications,Difference,financial year to date,Actual,change from prior month,Percentage,N,-500.0
+2023-09-30,Total Applications,Total,Applications,Difference,financial year to date,Percentage,change from prior month,Percentage,N,-500.0
+2023-09-30,Total Applications,Total,Applications,12 month rolling average,,Actual,change from prior year,Actual,N,467.2307692307695
+2023-09-30,Total Applications,Total,Applications,Difference,12 month rolling average,Actual,change from prior year,Actual,N,-328.2307692307695
+2023-09-30,Total Applications,Total,Applications,Difference,12 month rolling average,Percentage,change from prior year,Actual,N,-1.7760454620338164
+2023-09-30,Total Applications,Total,Applications,Difference,prior month,Actual,change from prior year,Actual,N,83.0
+2023-09-30,Total Applications,Total,Applications,Difference,prior month,Percentage,change from prior year,Actual,N,0.4359970191846765
+2023-09-30,Total Applications,Total,Applications,Difference,prior year,Actual,change from prior year,Actual,N,-1147.0
+2023-09-30,Total Applications,Total,Applications,Difference,prior year,Percentage,change from prior year,Actual,N,-6.537512016839627
+2023-09-30,Total Applications,Total,Applications,Difference,calendar year to date,Actual,change from prior year,Actual,N,-553.0
+2023-09-30,Total Applications,Total,Applications,Difference,calendar year to date,Percentage,change from prior year,Actual,N,-75.35691917470422
+2023-09-30,Total Applications,Total,Applications,Difference,financial year to date,Actual,change from prior year,Actual,N,147.0
+2023-09-30,Total Applications,Total,Applications,Difference,financial year to date,Percentage,change from prior year,Actual,N,0.7709586970280018
+2023-09-30,Total Applications,Total,Applications,Number,,Actual,change from prior year,Percentage,N,0.7325428194993412
+2023-09-30,Total Applications,Total,Applications,12 month rolling average,,Actual,change from prior year,Percentage,N,2.5150826283731478
+2023-09-30,Total Applications,Total,Applications,Difference,12 month rolling average,Actual,change from prior year,Percentage,N,-82.50193348801274
+2023-09-30,Total Applications,Total,Applications,Difference,12 month rolling average,Percentage,change from prior year,Percentage,N,-82.93122722690532
+2023-09-30,Total Applications,Total,Applications,Difference,prior month,Actual,change from prior year,Percentage,N,-461.1111111111111
+2023-09-30,Total Applications,Total,Applications,Difference,prior month,Percentage,change from prior year,Percentage,N,-460.0495214096978
+2023-09-30,Total Applications,Total,Applications,Difference,prior year,Actual,change from prior year,Percentage,N,-89.19129082426127
+2023-09-30,Total Applications,Total,Applications,Difference,prior year,Percentage,change from prior year,Percentage,N,-89.92383364376062
+2023-09-30,Total Applications,Total,Applications,Difference,calendar year to date,Actual,change from prior year,Percentage,N,-3.6343322818086228
+2023-09-30,Total Applications,Total,Applications,Difference,calendar year to date,Percentage,change from prior year,Percentage,N,-18.61636824248903
+2023-09-30,Total Applications,Total,Applications,Difference,financial year to date,Actual,change from prior year,Percentage,N,-154.73684210526315
+2023-09-30,Total Applications,Total,Applications,Difference,financial year to date,Percentage,change from prior year,Percentage,N,-154.75981423498942
+2023-09-30,Priority Individuals,Priority,Individuals,Number,,Actual,-,-,N,9568.0
+2023-09-30,Priority Individuals,Priority,Individuals,12 month rolling average,,Actual,-,-,N,9190.307692307691
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,12 month rolling average,Actual,-,-,N,377.69230769230853
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,12 month rolling average,Percentage,-,-,N,4.10968076736362
+2023-09-30,Priority Individuals,Priority,Individuals,Percentage of population,,Percentage,-,-,N,0.33506163691337076
+2023-09-30,Priority Individuals,Priority,Individuals,Number,,per 10 000,-,-,N,33.50616369133707
+2023-09-30,Priority Individuals,Priority,Individuals,12 month rolling average,,per 10 000,-,-,N,32.18352361122657
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,prior month,Actual,-,-,N,60.0
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,prior month,Percentage,-,-,N,0.6310475389145982
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,prior year,Actual,-,-,N,883.0
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,prior year,Percentage,-,-,N,10.166954519286126
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,calendar year to date,Actual,-,-,N,5117.0
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,calendar year to date,Percentage,-,-,N,114.96292967872388
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,financial year to date,Actual,-,-,N,145.0
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,financial year to date,Percentage,-,-,N,1.5387880717393612
+2023-09-30,Priority Individuals,Priority,Individuals,12 month rolling average,,Actual,change from prior month,Actual,N,74.69230769230671
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,12 month rolling average,Actual,change from prior month,Actual,N,-14.692307692306713
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,12 month rolling average,Percentage,change from prior month,Actual,N,-0.1948516073441917
+2023-09-30,Priority Individuals,Priority,Individuals,Percentage of population,,Percentage,change from prior month,Actual,N,0.0021011390274668362
+2023-09-30,Priority Individuals,Priority,Individuals,Number,,per 10 000,change from prior month,Actual,N,0.21011390274667718
+2023-09-30,Priority Individuals,Priority,Individuals,12 month rolling average,,per 10 000,change from prior month,Actual,N,0.26156487123977357
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,prior month,Actual,change from prior month,Actual,N,-1.0
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,prior month,Percentage,change from prior month,Actual,N,-0.014660093137905283
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,prior year,Actual,change from prior month,Actual,N,-28.0
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,prior year,Percentage,change from prior month,Actual,N,-0.4297652666857239
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,calendar year to date,Actual,change from prior month,Actual,N,60.0
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,calendar year to date,Percentage,change from prior month,Actual,N,1.3480116827679325
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,financial year to date,Actual,change from prior month,Actual,N,60.0
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,financial year to date,Percentage,change from prior month,Actual,N,0.6367398917542185
+2023-09-30,Priority Individuals,Priority,Individuals,Number,,Actual,change from prior month,Percentage,N,0.6310475389145982
+2023-09-30,Priority Individuals,Priority,Individuals,12 month rolling average,,Actual,change from prior month,Percentage,N,0.8193885386867735
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,12 month rolling average,Actual,change from prior month,Percentage,N,-3.7443638502251977
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,12 month rolling average,Percentage,change from prior month,Percentage,N,-4.526661443855864
+2023-09-30,Priority Individuals,Priority,Individuals,Percentage of population,,Percentage,change from prior month,Percentage,N,0.6310475389146123
+2023-09-30,Priority Individuals,Priority,Individuals,Number,,per 10 000,change from prior month,Percentage,N,0.6310475389145929
+2023-09-30,Priority Individuals,Priority,Individuals,12 month rolling average,,per 10 000,change from prior month,Percentage,N,0.8193885386867766
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,prior month,Actual,change from prior month,Percentage,N,-1.639344262295082
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,prior month,Percentage,change from prior month,Percentage,N,-2.2703918012096915
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,prior year,Actual,change from prior month,Percentage,N,-3.0735455543358947
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,prior year,Percentage,change from prior month,Percentage,N,-4.055644344343764
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,calendar year to date,Actual,change from prior month,Percentage,N,1.1864741941862764
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,calendar year to date,Percentage,change from prior month,Percentage,N,1.18647419418629
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,financial year to date,Actual,change from prior month,Percentage,N,70.58823529411765
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,financial year to date,Percentage,change from prior month,Percentage,N,70.58823529411767
+2023-09-30,Priority Individuals,Priority,Individuals,12 month rolling average,,Actual,change from prior year,Actual,N,1197.6923076923067
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,12 month rolling average,Actual,change from prior year,Actual,N,-314.6923076923067
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,12 month rolling average,Percentage,change from prior year,Actual,N,-4.553123359522735
+2023-09-30,Priority Individuals,Priority,Individuals,Percentage of population,,Percentage,change from prior year,Actual,N,0.026029904318155328
+2023-09-30,Priority Individuals,Priority,Individuals,Number,,per 10 000,change from prior year,Actual,N,2.602990431815531
+2023-09-30,Priority Individuals,Priority,Individuals,12 month rolling average,,per 10 000,change from prior year,Actual,N,3.7440097335654734
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,prior month,Actual,change from prior year,Actual,N,-28.0
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,prior month,Percentage,change from prior year,Actual,N,-0.39256534930222164
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,prior year,Actual,change from prior year,Actual,N,-364.0
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,prior year,Percentage,change from prior year,Actual,N,-6.5983049590682725
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,calendar year to date,Actual,change from prior year,Actual,N,191.0
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,calendar year to date,Percentage,change from prior year,Actual,N,-16.082561143303266
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,financial year to date,Actual,change from prior year,Actual,N,-166.0
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,financial year to date,Percentage,change from prior year,Actual,N,-2.1750882119960098
+2023-09-30,Priority Individuals,Priority,Individuals,Number,,Actual,change from prior year,Percentage,N,10.166954519286126
+2023-09-30,Priority Individuals,Priority,Individuals,12 month rolling average,,Actual,change from prior year,Percentage,N,14.984986141053266
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,12 month rolling average,Actual,change from prior year,Percentage,N,-45.450505499388825
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,12 month rolling average,Percentage,change from prior year,Percentage,N,-52.55946334272308
+2023-09-30,Priority Individuals,Priority,Individuals,Percentage of population,,Percentage,change from prior year,Percentage,N,8.423052254070795
+2023-09-30,Priority Individuals,Priority,Individuals,Number,,per 10 000,change from prior year,Percentage,N,8.423052254070791
+2023-09-30,Priority Individuals,Priority,Individuals,12 month rolling average,,per 10 000,change from prior year,Percentage,N,13.164816211947802
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,prior month,Actual,change from prior year,Percentage,N,-31.818181818181817
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,prior month,Percentage,change from prior year,Percentage,N,-38.35095804489999
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,prior year,Actual,change from prior year,Percentage,N,-29.190056134723335
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,prior year,Percentage,change from prior year,Percentage,N,-39.357010654009464
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,calendar year to date,Actual,change from prior year,Percentage,N,3.8773853024766547
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,calendar year to date,Percentage,change from prior year,Percentage,N,-12.272502504603526
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,financial year to date,Actual,change from prior year,Percentage,N,-53.37620578778135
+2023-09-30,Priority Individuals,Priority,Individuals,Difference,financial year to date,Percentage,change from prior year,Percentage,N,-58.566523110143365
+2023-09-30,Total Individuals,Total,Individuals,Number,,Actual,-,-,N,34117.0
+2023-09-30,Total Individuals,Total,Individuals,12 month rolling average,,Actual,-,-,N,33928.07692307692
+2023-09-30,Total Individuals,Total,Individuals,Difference,12 month rolling average,Actual,-,-,N,188.92307692307804
+2023-09-30,Total Individuals,Total,Individuals,Difference,12 month rolling average,Percentage,-,-,N,0.5568340267307572
+2023-09-30,Total Individuals,Total,Individuals,Percentage of population,,Percentage,-,-,N,1.1947426700014077
+2023-09-30,Total Individuals,Total,Individuals,Number,,per 10 000,-,-,N,119.47426700014077
+2023-09-30,Total Individuals,Total,Individuals,12 month rolling average,,per 10 000,-,-,N,118.81267758328713
+2023-09-30,Total Individuals,Total,Individuals,Difference,prior month,Actual,-,-,N,87.0
+2023-09-30,Total Individuals,Total,Individuals,Difference,prior month,Percentage,-,-,N,0.2556567734352042
+2023-09-30,Total Individuals,Total,Individuals,Difference,prior year,Actual,-,-,N,582.0
+2023-09-30,Total Individuals,Total,Individuals,Difference,prior year,Percentage,-,-,N,1.735500223646936
+2023-09-30,Total Individuals,Total,Individuals,Difference,calendar year to date,Actual,-,-,N,29666.0
+2023-09-30,Total Individuals,Total,Individuals,Difference,calendar year to date,Percentage,-,-,N,666.5019096832173
+2023-09-30,Total Individuals,Total,Individuals,Difference,financial year to date,Actual,-,-,N,131.0
+2023-09-30,Total Individuals,Total,Individuals,Difference,financial year to date,Percentage,-,-,N,0.38545283351968457
+2023-09-30,Total Individuals,Total,Individuals,12 month rolling average,,Actual,change from prior month,Actual,N,47.846153846156085
+2023-09-30,Total Individuals,Total,Individuals,Difference,12 month rolling average,Actual,change from prior month,Actual,N,39.153846153843915
+2023-09-30,Total Individuals,Total,Individuals,Difference,12 month rolling average,Percentage,change from prior month,Actual,N,0.1147790956726989
+2023-09-30,Total Individuals,Total,Individuals,Percentage of population,,Percentage,change from prior month,Actual,N,0.0030466515898268653
+2023-09-30,Total Individuals,Total,Individuals,Number,,per 10 000,change from prior month,Actual,N,0.30466515898268653
+2023-09-30,Total Individuals,Total,Individuals,12 month rolling average,,per 10 000,change from prior month,Actual,N,0.16755236860056755
+2023-09-30,Total Individuals,Total,Individuals,Difference,prior month,Actual,change from prior month,Actual,N,0.0
+2023-09-30,Total Individuals,Total,Individuals,Difference,prior month,Percentage,change from prior month,Actual,N,-0.0006552791234971655
+2023-09-30,Total Individuals,Total,Individuals,Difference,prior year,Actual,change from prior month,Actual,N,47.0
+2023-09-30,Total Individuals,Total,Individuals,Difference,prior year,Percentage,change from prior month,Actual,N,0.1382469022556836
+2023-09-30,Total Individuals,Total,Individuals,Difference,calendar year to date,Actual,change from prior month,Actual,N,87.0
+2023-09-30,Total Individuals,Total,Individuals,Difference,calendar year to date,Percentage,change from prior month,Actual,N,1.9546169400134659
+2023-09-30,Total Individuals,Total,Individuals,Difference,financial year to date,Actual,change from prior month,Actual,N,87.0
+2023-09-30,Total Individuals,Total,Individuals,Difference,financial year to date,Percentage,change from prior month,Actual,N,0.2559877596657447
+2023-09-30,Total Individuals,Total,Individuals,Number,,Actual,change from prior month,Percentage,N,0.2556567734352042
+2023-09-30,Total Individuals,Total,Individuals,12 month rolling average,,Actual,change from prior month,Percentage,N,0.1412214520380683
+2023-09-30,Total Individuals,Total,Individuals,Difference,12 month rolling average,Actual,change from prior month,Percentage,N,26.142783769900333
+2023-09-30,Total Individuals,Total,Individuals,Difference,12 month rolling average,Percentage,change from prior month,Percentage,N,25.964894317087513
+2023-09-30,Total Individuals,Total,Individuals,Percentage of population,,Percentage,change from prior month,Percentage,N,0.255656773435206
+2023-09-30,Total Individuals,Total,Individuals,Number,,per 10 000,change from prior month,Percentage,N,0.25565677343520593
+2023-09-30,Total Individuals,Total,Individuals,12 month rolling average,,per 10 000,change from prior month,Percentage,N,0.14122145203807074
+2023-09-30,Total Individuals,Total,Individuals,Difference,prior month,Actual,change from prior month,Percentage,N,0.0
+2023-09-30,Total Individuals,Total,Individuals,Difference,prior month,Percentage,change from prior month,Percentage,N,-0.2556567734352217
+2023-09-30,Total Individuals,Total,Individuals,Difference,prior year,Actual,change from prior month,Percentage,N,8.785046728971963
+2023-09-30,Total Individuals,Total,Individuals,Difference,prior year,Percentage,change from prior month,Percentage,N,8.655289702904902
+2023-09-30,Total Individuals,Total,Individuals,Difference,calendar year to date,Actual,change from prior month,Percentage,N,0.2941275905203016
+2023-09-30,Total Individuals,Total,Individuals,Difference,calendar year to date,Percentage,change from prior month,Percentage,N,0.2941275905202994
+2023-09-30,Total Individuals,Total,Individuals,Difference,financial year to date,Actual,change from prior month,Percentage,N,197.72727272727272
+2023-09-30,Total Individuals,Total,Individuals,Difference,financial year to date,Percentage,change from prior month,Percentage,N,197.72727272727272
+2023-09-30,Total Individuals,Total,Individuals,12 month rolling average,,Actual,change from prior year,Actual,N,1356.7692307692305
+2023-09-30,Total Individuals,Total,Individuals,Difference,12 month rolling average,Actual,change from prior year,Actual,N,-774.7692307692305
+2023-09-30,Total Individuals,Total,Individuals,Difference,12 month rolling average,Percentage,change from prior year,Actual,N,-2.401881407098453
+2023-09-30,Total Individuals,Total,Individuals,Percentage of population,,Percentage,change from prior year,Actual,N,0.0014923357952421057
+2023-09-30,Total Individuals,Total,Individuals,Number,,per 10 000,change from prior year,Actual,N,0.14923357952422123
+2023-09-30,Total Individuals,Total,Individuals,12 month rolling average,,per 10 000,change from prior year,Actual,N,2.9166770185696436
+2023-09-30,Total Individuals,Total,Individuals,Difference,prior month,Actual,change from prior year,Actual,N,47.0
+2023-09-30,Total Individuals,Total,Individuals,Difference,prior month,Percentage,change from prior year,Actual,N,0.13623596435922275
+2023-09-30,Total Individuals,Total,Individuals,Difference,prior year,Actual,change from prior year,Actual,N,-2179.0
+2023-09-30,Total Individuals,Total,Individuals,Difference,prior year,Percentage,change from prior year,Actual,N,-7.236359138151986
+2023-09-30,Total Individuals,Total,Individuals,Difference,calendar year to date,Actual,change from prior year,Actual,N,-110.0
+2023-09-30,Total Individuals,Total,Individuals,Difference,calendar year to date,Percentage,change from prior year,Actual,N,-125.62365562670561
+2023-09-30,Total Individuals,Total,Individuals,Difference,financial year to date,Actual,change from prior year,Actual,N,159.0
+2023-09-30,Total Individuals,Total,Individuals,Difference,financial year to date,Percentage,change from prior year,Actual,N,0.468878033889139
+2023-09-30,Total Individuals,Total,Individuals,Number,,Actual,change from prior year,Percentage,N,1.735500223646936
+2023-09-30,Total Individuals,Total,Individuals,12 month rolling average,,Actual,change from prior year,Percentage,N,4.165535027289237
+2023-09-30,Total Individuals,Total,Individuals,Difference,12 month rolling average,Actual,change from prior year,Percentage,N,-80.39591315453374
+2023-09-30,Total Individuals,Total,Individuals,Difference,12 month rolling average,Percentage,change from prior year,Percentage,N,-81.17987217141409
+2023-09-30,Total Individuals,Total,Individuals,Percentage of population,,Percentage,change from prior year,Percentage,N,0.12506477077460137
+2023-09-30,Total Individuals,Total,Individuals,Number,,per 10 000,change from prior year,Percentage,N,0.1250647707746103
+2023-09-30,Total Individuals,Total,Individuals,12 month rolling average,,per 10 000,change from prior year,Percentage,N,2.516633019567351
+2023-09-30,Total Individuals,Total,Individuals,Difference,prior month,Actual,change from prior year,Percentage,N,117.5
+2023-09-30,Total Individuals,Total,Individuals,Difference,prior month,Percentage,change from prior year,Percentage,N,114.08059065530416
+2023-09-30,Total Individuals,Total,Individuals,Difference,prior year,Actual,change from prior year,Percentage,N,-78.92068091271278
+2023-09-30,Total Individuals,Total,Individuals,Difference,prior year,Percentage,change from prior year,Percentage,N,-80.65618113635973
+2023-09-30,Total Individuals,Total,Individuals,Difference,calendar year to date,Actual,change from prior year,Percentage,N,-0.3694250403009135
+2023-09-30,Total Individuals,Total,Individuals,Difference,calendar year to date,Percentage,change from prior year,Percentage,N,-15.859058352390731
+2023-09-30,Total Individuals,Total,Individuals,Difference,financial year to date,Actual,change from prior year,Percentage,N,-567.8571428571429
+2023-09-30,Total Individuals,Total,Individuals,Difference,financial year to date,Percentage,change from prior year,Percentage,N,-562.0340518364704
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Number,,Actual,-,-,N,14239.0
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,12 month rolling average,,Actual,-,-,N,14442.307692307691
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,12 month rolling average,Actual,-,-,N,-203.30769230769147
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,12 month rolling average,Percentage,-,-,N,-1.407723035952058
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,prior month,Actual,-,-,N,11.0
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,prior month,Percentage,-,-,N,0.07731234186111892
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,prior year,Actual,-,-,N,-479.0
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,prior year,Percentage,-,-,N,-3.254518276939802
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,calendar year to date,Actual,-,-,N,9788.0
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,calendar year to date,Percentage,-,-,N,219.90563918220624
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,financial year to date,Actual,-,-,N,-53.0
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,financial year to date,Percentage,-,-,N,-0.3708368317940106
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,12 month rolling average,,Actual,change from prior month,Actual,N,-39.92307692307804
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,12 month rolling average,Actual,change from prior month,Actual,N,50.92307692307804
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,12 month rolling average,Percentage,change from prior month,Actual,N,0.3477438757540665
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,prior month,Actual,change from prior month,Actual,N,-1.0
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,prior month,Percentage,change from prior month,Actual,N,-0.007099588358352102
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,prior year,Actual,change from prior month,Actual,N,51.0
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,prior year,Percentage,change from prior month,Actual,N,0.33675425321333563
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,calendar year to date,Actual,change from prior month,Actual,N,11.0
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,calendar year to date,Percentage,change from prior month,Actual,N,0.2471354751741046
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,financial year to date,Actual,change from prior month,Actual,N,11.0
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,financial year to date,Percentage,change from prior month,Actual,N,0.07696613490064375
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Number,,Actual,change from prior month,Percentage,N,0.07731234186111892
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,12 month rolling average,,Actual,change from prior month,Percentage,N,-0.2756693879502279
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,12 month rolling average,Actual,change from prior month,Percentage,N,-20.03025718608211
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,12 month rolling average,Percentage,change from prior month,Percentage,N,-19.809195686639114
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,prior month,Actual,change from prior month,Percentage,N,-8.333333333333332
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,prior month,Percentage,change from prior month,Percentage,N,-8.410645675194456
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,prior year,Actual,change from prior month,Percentage,N,-9.622641509433963
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,prior year,Percentage,change from prior month,Percentage,N,-9.377017488532843
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,calendar year to date,Actual,change from prior month,Percentage,N,0.11250894957553442
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,calendar year to date,Percentage,change from prior month,Percentage,N,0.11250894957552825
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,financial year to date,Actual,change from prior month,Percentage,N,-17.1875
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,financial year to date,Percentage,change from prior month,Percentage,N,-17.187500000000007
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,12 month rolling average,,Actual,change from prior year,Actual,N,-190.0
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,12 month rolling average,Actual,change from prior year,Actual,N,-289.0
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,12 month rolling average,Percentage,change from prior year,Actual,N,-1.9933607186352726
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,prior month,Actual,change from prior year,Actual,N,51.0
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,prior month,Percentage,change from prior year,Actual,N,0.3483517780990915
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,prior year,Actual,change from prior year,Actual,N,-1154.0
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,prior year,Percentage,change from prior year,Actual,N,-8.06118351940936
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,calendar year to date,Actual,change from prior year,Actual,N,-1171.0
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,calendar year to date,Percentage,change from prior year,Actual,N,-71.6346640899406
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,financial year to date,Actual,change from prior year,Actual,N,158.0
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,financial year to date,Percentage,change from prior year,Actual,N,1.0425197225632807
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Number,,Actual,change from prior year,Percentage,N,-3.254518276939802
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,12 month rolling average,,Actual,change from prior year,Percentage,N,-1.2984964777625907
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,12 month rolling average,Actual,change from prior year,Percentage,N,-337.2531418312355
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,12 month rolling average,Percentage,change from prior year,Percentage,N,-340.37439488222424
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,prior month,Actual,change from prior year,Percentage,N,-127.49999999999999
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,prior month,Percentage,change from prior year,Percentage,N,-128.5243885296598
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,prior year,Actual,change from prior year,Percentage,N,-170.96296296296296
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,prior year,Percentage,change from prior year,Percentage,N,-167.70844468602317
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,calendar year to date,Actual,change from prior year,Percentage,N,-10.685281503786841
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,calendar year to date,Percentage,change from prior year,Percentage,N,-24.57110158902151
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,financial year to date,Actual,change from prior year,Percentage,N,-74.88151658767772
+2023-09-30,Nonpriority Applications,Nonpriority,Applications,Difference,financial year to date,Percentage,change from prior year,Percentage,N,-73.76197601017638
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Number,,Actual,-,-,N,24549.0
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,12 month rolling average,,Actual,-,-,N,24737.76923076923
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,12 month rolling average,Actual,-,-,N,-188.7692307692305
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,12 month rolling average,Percentage,-,-,N,-0.7630810563728451
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Percentage of population,,Percentage,-,-,N,0.859681033088037
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Number,,per 10 000,-,-,N,85.9681033088037
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,12 month rolling average,,per 10 000,-,-,N,86.62915397206056
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,prior month,Actual,-,-,N,27.0
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,prior month,Percentage,-,-,N,0.1101052116466846
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,prior year,Actual,-,-,N,-301.0
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,prior year,Percentage,-,-,N,-1.211267605633803
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,calendar year to date,Actual,-,-,N,20098.0
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,calendar year to date,Percentage,-,-,N,451.53898000449334
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,financial year to date,Actual,-,-,N,-14.0
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,financial year to date,Percentage,-,-,N,-0.05699629524080935
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,12 month rolling average,,Actual,change from prior month,Actual,N,-26.846153846152447
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,12 month rolling average,Actual,change from prior month,Actual,N,53.84615384615245
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,12 month rolling average,Percentage,change from prior month,Actual,N,0.2166045993393927
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Percentage of population,,Percentage,change from prior month,Actual,N,0.0009455125623600846
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Number,,per 10 000,change from prior month,Actual,N,0.09455125623601646
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,12 month rolling average,,per 10 000,change from prior month,Actual,N,-0.09401250263921668
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,prior month,Actual,change from prior month,Actual,N,1.0
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,prior month,Percentage,change from prior month,Actual,N,0.003965433723758405
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,prior year,Actual,change from prior month,Actual,N,75.0
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,prior year,Percentage,change from prior month,Actual,N,0.29889385311790395
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,calendar year to date,Actual,change from prior month,Actual,N,27.0
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,calendar year to date,Percentage,change from prior month,Actual,N,0.606605257245576
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,financial year to date,Actual,change from prior month,Actual,N,27.0
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,financial year to date,Percentage,change from prior month,Actual,N,0.1099214265358466
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Number,,Actual,change from prior month,Percentage,N,0.1101052116466846
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,12 month rolling average,,Actual,change from prior month,Percentage,N,-0.10840529291171704
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,12 month rolling average,Actual,change from prior month,Percentage,N,-22.194039315154935
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,12 month rolling average,Percentage,change from prior month,Percentage,N,-22.10960200105408
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Percentage of population,,Percentage,change from prior month,Percentage,N,0.11010521164668802
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Number,,per 10 000,change from prior month,Percentage,N,0.11010521164669734
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,12 month rolling average,,per 10 000,change from prior month,Percentage,N,-0.1084052929117198
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,prior month,Actual,change from prior month,Percentage,N,3.8461538461538463
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,prior month,Percentage,change from prior month,Percentage,N,3.736048634507149
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,prior year,Actual,change from prior month,Percentage,N,-19.9468085106383
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,prior year,Percentage,change from prior month,Percentage,N,-19.792178603536097
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,calendar year to date,Actual,change from prior month,Percentage,N,0.13452244531911714
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,calendar year to date,Percentage,change from prior month,Percentage,N,0.13452244531912008
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,financial year to date,Actual,change from prior month,Percentage,N,-65.85365853658537
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,financial year to date,Percentage,change from prior month,Percentage,N,-65.85365853658537
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,12 month rolling average,,Actual,change from prior year,Actual,N,159.07692307692196
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,12 month rolling average,Actual,change from prior year,Actual,N,-460.07692307692196
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,12 month rolling average,Percentage,change from prior year,Actual,N,-1.8669139572907723
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Percentage of population,,Percentage,change from prior year,Actual,N,-0.024537568522913222
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Number,,per 10 000,change from prior year,Actual,N,-2.4537568522913205
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,12 month rolling average,,per 10 000,change from prior year,Actual,N,-0.8273327149958334
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,prior month,Actual,change from prior year,Actual,N,75.0
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,prior month,Percentage,change from prior year,Actual,N,0.3028917808490302
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,prior year,Actual,change from prior year,Actual,N,-1815.0
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,prior year,Percentage,change from prior year,Actual,N,-7.699097567923827
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,calendar year to date,Actual,change from prior year,Actual,N,-993.0
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,calendar year to date,Percentage,change from prior year,Actual,N,-109.54109448340233
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,financial year to date,Actual,change from prior year,Actual,N,325.0
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,financial year to date,Percentage,change from prior year,Actual,N,1.2888292635348466
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Number,,Actual,change from prior year,Percentage,N,-1.211267605633803
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,12 month rolling average,,Actual,change from prior year,Percentage,N,0.6472147544934121
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,12 month rolling average,Actual,change from prior year,Percentage,N,-169.5775446555147
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,12 month rolling average,Percentage,change from prior year,Percentage,N,-169.13012429130177
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Percentage of population,,Percentage,change from prior year,Percentage,N,-2.775056810409602
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Number,,per 10 000,change from prior year,Percentage,N,-2.7750568104096
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,12 month rolling average,,per 10 000,change from prior year,Percentage,N,-0.9459935407150069
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,prior month,Actual,change from prior year,Percentage,N,-156.25
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,prior month,Percentage,change from prior year,Percentage,N,-157.1124908245657
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,prior year,Actual,change from prior year,Percentage,N,-119.88110964332893
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,prior year,Percentage,change from prior year,Percentage,N,-118.66984203769513
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,calendar year to date,Actual,change from prior year,Percentage,N,-4.7081693613389595
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,calendar year to date,Percentage,change from prior year,Percentage,N,-19.523255140254584
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,financial year to date,Actual,change from prior year,Percentage,N,-95.87020648967551
+2023-09-30,Nonpriority Individuals,Nonpriority,Individuals,Difference,financial year to date,Percentage,change from prior year,Percentage,N,-95.76495669374411
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Number,,Actual,-,-,N,28.044669812703344
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,12 month rolling average,,Actual,-,-,N,27.085112370606346
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,12 month rolling average,Actual,-,-,N,0.9595574420969974
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,12 month rolling average,Percentage,-,-,N,3.542748610259933
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,prior month,Actual,-,-,N,0.10461691819849861
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,prior month,Percentage,-,-,N,0.37443350087241356
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,prior year,Actual,-,-,N,2.146354619621487
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,prior year,Percentage,-,-,N,8.28762258710496
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,calendar year to date,Actual,-,-,N,-4422.955330187297
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,calendar year to date,Percentage,-,-,N,-99.36992429088511
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,financial year to date,Actual,-,-,N,0.31854729166526496
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,financial year to date,Percentage,-,-,N,1.1489067446180297
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,12 month rolling average,,Actual,change from prior month,Actual,N,0.18293480169599974
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,12 month rolling average,Actual,change from prior month,Actual,N,-0.07831788349750113
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,12 month rolling average,Percentage,change from prior month,Actual,N,-0.3152116717133935
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,prior month,Actual,change from prior month,Actual,N,-0.003482407087361139
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,prior month,Percentage,change from prior month,Actual,N,-0.013966562446940445
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,prior year,Actual,change from prior month,Actual,N,-0.1271808842280393
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,prior year,Percentage,change from prior month,Actual,N,-0.5703594649410917
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,calendar year to date,Actual,change from prior month,Actual,N,0.10461691819818952
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,calendar year to date,Percentage,change from prior month,Actual,N,0.0023504137991210428
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,financial year to date,Actual,change from prior month,Actual,N,0.10461691819849861
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,financial year to date,Percentage,change from prior month,Actual,N,0.37732257050771234
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Number,,Actual,change from prior month,Percentage,N,0.37443350087241356
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,12 month rolling average,,Actual,change from prior month,Percentage,N,0.6799999785422923
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,12 month rolling average,Actual,change from prior month,Percentage,N,-7.545981830971882
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,12 month rolling average,Percentage,change from prior month,Percentage,N,-8.170422935307265
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,prior month,Actual,change from prior month,Percentage,N,-3.2214882730786716
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,prior month,Percentage,change from prior month,Percentage,N,-3.595921773951083
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,prior year,Actual,change from prior month,Percentage,N,-5.5939695691005475
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,prior year,Percentage,change from prior month,Percentage,N,-6.438932271367019
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,calendar year to date,Actual,change from prior month,Percentage,N,-0.002365261141591629
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,calendar year to date,Percentage,change from prior month,Percentage,N,-0.0023652611416071856
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,financial year to date,Actual,change from prior month,Percentage,N,48.90232111652469
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,financial year to date,Percentage,change from prior month,Percentage,N,48.90232111652469
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,12 month rolling average,,Actual,change from prior year,Actual,N,2.562256689816028
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,12 month rolling average,Actual,change from prior year,Actual,N,-0.41590207019454084
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,12 month rolling average,Percentage,change from prior year,Actual,N,-2.066139400971923
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,prior month,Actual,change from prior year,Actual,N,-0.1271808842280393
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,prior month,Percentage,change from prior year,Actual,N,-0.5286800727319704
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,prior year,Actual,change from prior year,Actual,N,0.41779311471796277
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,prior year,Percentage,change from prior year,Actual,N,1.1358678476721744
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,calendar year to date,Actual,change from prior year,Actual,N,-689.8536453803786
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,calendar year to date,Percentage,change from prior year,Actual,N,-0.058892505651854776
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,financial year to date,Actual,change from prior year,Actual,N,-0.6296740480661747
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,financial year to date,Percentage,change from prior year,Actual,N,-2.6515652908974117
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Number,,Actual,change from prior year,Percentage,N,8.28762258710496
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,12 month rolling average,,Actual,change from prior year,Percentage,N,10.448443375308614
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,12 month rolling average,Actual,change from prior year,Percentage,N,-30.23731825458396
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,12 month rolling average,Percentage,change from prior year,Percentage,N,-36.83688097951782
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,prior month,Actual,change from prior year,Percentage,N,-54.867165648969376
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,prior month,Percentage,change from prior year,Percentage,N,-58.53971063926926
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,prior year,Actual,change from prior year,Percentage,N,24.16998837083792
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,prior year,Percentage,change from prior year,Percentage,N,15.882365783732983
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,calendar year to date,Actual,change from prior year,Percentage,N,18.479369265186758
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,calendar year to date,Percentage,change from prior year,Percentage,N,0.05930107118332408
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,financial year to date,Actual,change from prior year,Percentage,N,-66.40580861052065
+2023-09-30,Proportion Priority - Individuals,Proportion Priority,Individuals,Difference,financial year to date,Percentage,change from prior year,Percentage,N,-69.76936722908398
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Number,,Actual,-,-,N,25.504865543580625
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,12 month rolling average,,Actual,-,-,N,24.1639238438342
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,12 month rolling average,Actual,-,-,N,1.3409416997464234
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,12 month rolling average,Percentage,-,-,N,5.549354104956698
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,prior month,Actual,-,-,N,0.19120078427567577
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,prior month,Percentage,-,-,N,0.7553263665838549
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,prior year,Actual,-,-,N,3.0700829348849723
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,prior year,Percentage,-,-,N,13.684478198130689
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,calendar year to date,Actual,-,-,N,-4425.49513445642
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,calendar year to date,Percentage,-,-,N,-99.42698572133048
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,financial year to date,Actual,-,-,N,0.48125836699894364
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,financial year to date,Percentage,-,-,N,1.9232173986863448
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,12 month rolling average,,Actual,change from prior month,Actual,N,0.24670591703512557
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,12 month rolling average,Actual,change from prior month,Actual,N,-0.05550513275944979
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,12 month rolling average,Percentage,change from prior month,Actual,N,-0.28931340553650386
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,prior month,Actual,change from prior month,Actual,N,-0.00657691223955581
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,prior month,Percentage,change from prior month,Actual,N,-0.03213415997762914
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,prior year,Actual,change from prior month,Actual,N,0.05410679770396243
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,prior year,Percentage,change from prior month,Actual,N,0.15851957393259752
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,calendar year to date,Actual,change from prior month,Actual,N,0.19120078427567933
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,calendar year to date,Percentage,change from prior month,Actual,N,0.004295681515969818
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,financial year to date,Actual,change from prior month,Actual,N,0.19120078427567577
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,financial year to date,Percentage,change from prior month,Actual,N,0.7640816247092101
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Number,,Actual,change from prior month,Percentage,N,0.7553263665838549
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,12 month rolling average,,Actual,change from prior month,Percentage,N,1.0314992228201145
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,12 month rolling average,Actual,change from prior month,Percentage,N,-3.9747401381438805
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,12 month rolling average,Percentage,change from prior month,Percentage,N,-4.955127261769101
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,prior month,Actual,change from prior month,Percentage,N,-3.3254064312804337
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,prior month,Percentage,change from prior month,Percentage,N,-4.080732797864267
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,prior year,Actual,change from prior month,Percentage,N,1.794006160623515
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,prior year,Percentage,change from prior month,Percentage,N,1.1719655392779647
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,calendar year to date,Actual,change from prior month,Percentage,N,-0.004320251590204047
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,calendar year to date,Percentage,change from prior month,Percentage,N,-0.004320251590207148
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,financial year to date,Actual,change from prior month,Percentage,N,65.91821612817228
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,financial year to date,Percentage,change from prior month,Percentage,N,65.91821612817228
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,12 month rolling average,,Actual,change from prior year,Actual,N,2.942660839841132
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,12 month rolling average,Actual,change from prior year,Actual,N,0.1274220950438405
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,12 month rolling average,Percentage,change from prior year,Actual,N,-0.16905956568223957
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,prior month,Actual,change from prior year,Actual,N,0.05410679770396243
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,prior month,Percentage,change from prior year,Actual,N,0.14049139917971043
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,prior year,Actual,change from prior year,Actual,N,1.2469799010663642
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,prior year,Percentage,change from prior year,Actual,N,4.839478317379907
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,calendar year to date,Actual,change from prior year,Actual,N,-688.9299170651152
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,calendar year to date,Percentage,change from prior year,Actual,N,-0.02381420254079103
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,financial year to date,Actual,change from prior year,Actual,N,-0.2387890555404404
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,financial year to date,Percentage,change from prior year,Actual,N,-1.3927218304433466
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Number,,Actual,change from prior year,Percentage,N,13.684478198130689
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,12 month rolling average,,Actual,change from prior year,Percentage,N,13.866567881880687
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,12 month rolling average,Actual,change from prior year,Percentage,N,10.500209024234916
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,12 month rolling average,Percentage,change from prior year,Percentage,N,-2.9564067138107197
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,prior month,Actual,change from prior year,Percentage,N,39.46693728660328
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,prior month,Percentage,change from prior year,Percentage,N,22.850261717037696
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,prior year,Actual,change from prior year,Percentage,N,68.398761777851
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,prior year,Percentage,change from prior year,Percentage,N,54.71428357972032
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,calendar year to date,Actual,change from prior year,Percentage,N,18.43751887050145
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,calendar year to date,Percentage,change from prior year,Percentage,N,0.023957185849235757
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,financial year to date,Actual,change from prior year,Percentage,N,-33.16296233632855
+2023-09-30,Proportion Priority - Applications,Proportion Priority,Applications,Difference,financial year to date,Percentage,change from prior year,Percentage,N,-42.00082493094674
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Number,,Actual,-,-,N,1.7849220466673643
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,12 month rolling average,,Actual,-,-,N,1.7815224366931173
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,12 month rolling average,Actual,-,-,N,0.003399609974247042
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,12 month rolling average,Percentage,-,-,N,0.19082611053484333
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,prior month,Actual,-,-,N,-0.0015234360351397136
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,prior month,Percentage,-,-,N,-0.08527749936343346
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,prior year,Actual,-,-,N,0.017596618472370817
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,prior year,Percentage,-,-,N,0.9956637409072201
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,calendar year to date,Actual,-,-,N,-4449.215077953332
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,calendar year to date,Percentage,-,-,N,-99.95989840380436
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,financial year to date,Actual,-,-,N,0.002003150434020551
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,financial year to date,Percentage,-,-,N,0.11235230263431925
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,12 month rolling average,,Actual,change from prior month,Actual,N,0.0016444294551971606
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,12 month rolling average,Actual,change from prior month,Actual,N,-0.003167865490336874
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,12 month rolling average,Percentage,change from prior month,Actual,N,-0.1781584736825641
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,prior month,Actual,change from prior month,Actual,N,1.0432294804685327e-05
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,prior month,Percentage,change from prior month,Actual,N,0.000510310717185436
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,prior year,Actual,change from prior month,Actual,N,-0.005304400480330651
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,prior year,Percentage,change from prior month,Actual,N,-0.30291530960377855
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,calendar year to date,Actual,change from prior month,Actual,N,-0.0015234360344038578
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,calendar year to date,Percentage,change from prior month,Actual,N,-3.422682620168871e-05
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,financial year to date,Actual,change from prior month,Actual,N,-0.0015234360351397136
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,financial year to date,Percentage,change from prior month,Actual,N,-0.08544617696061091
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Number,,Actual,change from prior month,Percentage,N,-0.08527749936343346
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,12 month rolling average,,Actual,change from prior month,Percentage,N,0.09239000923153415
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,12 month rolling average,Actual,change from prior month,Percentage,N,-48.235665400199174
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,12 month rolling average,Percentage,change from prior month,Percentage,N,-48.283446328910124
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,prior month,Actual,change from prior month,Percentage,N,-0.6801297478424035
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,prior month,Percentage,change from prior month,Percentage,N,-0.594852248478977
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,prior year,Actual,change from prior month,Percentage,N,-23.162290251303116
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,prior year,Percentage,change from prior month,Percentage,N,-23.32667460518322
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,calendar year to date,Actual,change from prior month,Percentage,N,3.424056893958505e-05
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,calendar year to date,Percentage,change from prior month,Percentage,N,3.424056893583847e-05
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,financial year to date,Actual,change from prior month,Percentage,N,-43.198601493598645
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,financial year to date,Percentage,change from prior month,Percentage,N,-43.198601493598645
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,12 month rolling average,,Actual,change from prior year,Actual,N,0.028425846443521863
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,12 month rolling average,Actual,change from prior year,Actual,N,-0.010829227971151045
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,12 month rolling average,Percentage,change from prior year,Actual,N,-0.6208141621424466
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,prior month,Actual,change from prior year,Actual,N,-0.005304400480330651
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,prior month,Percentage,change from prior year,Actual,N,-0.2996732530804404
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,prior year,Actual,change from prior year,Actual,N,-0.010003556740543429
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,prior year,Percentage,change from prior year,Actual,N,-0.590803729493898
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,calendar year to date,Actual,change from prior year,Actual,N,-691.9824033815271
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,calendar year to date,Percentage,change from prior year,Actual,N,-0.006914243873396231
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,financial year to date,Actual,change from prior year,Actual,N,-0.005332765437952469
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,financial year to date,Percentage,change from prior year,Actual,N,-0.3044635829495842
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Number,,Actual,change from prior year,Percentage,N,0.9956637409072201
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,12 month rolling average,,Actual,change from prior year,Percentage,N,1.6214649324869637
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,12 month rolling average,Actual,change from prior year,Percentage,N,-76.10760634640195
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,12 month rolling average,Percentage,change from prior year,Percentage,N,-76.48883169567459
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,prior month,Actual,change from prior year,Percentage,N,-140.2922602744227
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,prior month,Percentage,change from prior year,Percentage,N,-139.77574083673133
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,prior year,Actual,change from prior year,Percentage,N,-36.24454070807029
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,prior year,Percentage,change from prior year,Percentage,N,-37.2402044489775
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,calendar year to date,Actual,change from prior year,Percentage,N,18.41734231858263
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,calendar year to date,Percentage,change from prior year,Percentage,N,0.006917496192342805
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,financial year to date,Actual,change from prior year,Percentage,N,-72.6939284885529
+2023-09-30,Average Number Of Individuals Per Application - Total,Average Number Of Individuals Per Application,Total,Difference,financial year to date,Percentage,change from prior year,Percentage,N,-73.04510060192916
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Number,,Actual,-,-,N,1.9626666666666666
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,12 month rolling average,,Actual,-,-,N,1.997863661841919
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,12 month rolling average,Actual,-,-,N,-0.03519699517525243
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,12 month rolling average,Percentage,-,-,N,-1.7617315859683218
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,prior month,Actual,-,-,N,-0.009129268629890941
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,prior month,Percentage,-,-,N,-0.46299256766232766
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,prior year,Actual,-,-,N,-0.07750246652572224
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,prior year,Percentage,-,-,N,-3.7988255613126034
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,calendar year to date,Actual,-,-,N,-4449.037333333334
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,calendar year to date,Percentage,-,-,N,-99.9559050400659
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,financial year to date,Actual,-,-,N,-0.012805031446540882
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,financial year to date,Percentage,-,-,N,-0.6482012098057944
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,12 month rolling average,,Actual,change from prior month,Actual,N,-0.005178578996760885
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,12 month rolling average,Actual,change from prior month,Actual,N,-0.003950689633130056
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,12 month rolling average,Percentage,change from prior month,Actual,N,-0.2017891691254572
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,prior month,Actual,change from prior month,Actual,N,0.0004086886910013021
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,prior month,Percentage,change from prior month,Actual,N,0.018398143738267425
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,prior year,Actual,change from prior month,Actual,N,-0.019310208197722556
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,prior year,Percentage,change from prior month,Actual,N,-0.9321951783990445
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,calendar year to date,Actual,change from prior month,Actual,N,-0.009129268630204024
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,calendar year to date,Percentage,change from prior month,Actual,N,-0.00020510601279966068
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,financial year to date,Actual,change from prior month,Actual,N,-0.009129268629890941
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,financial year to date,Percentage,change from prior month,Actual,N,-0.4621310767757592
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Number,,Actual,change from prior month,Percentage,N,-0.46299256766232766
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,12 month rolling average,,Actual,change from prior month,Percentage,N,-0.25853568592705256
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,12 month rolling average,Actual,change from prior month,Percentage,N,12.643701597951246
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,12 month rolling average,Percentage,change from prior month,Percentage,N,12.935680634536123
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,prior month,Actual,change from prior month,Percentage,N,-4.284866006960395
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,prior month,Percentage,change from prior month,Percentage,N,-3.821873439298081
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,prior year,Actual,change from prior month,Percentage,N,33.18346589830024
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,prior year,Percentage,change from prior month,Percentage,N,32.51884805084598
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,calendar year to date,Actual,change from prior month,Percentage,N,0.00020519691517944025
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,calendar year to date,Percentage,change from prior month,Percentage,N,0.0002051969151684013
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,financial year to date,Actual,change from prior month,Percentage,N,248.363920232788
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,financial year to date,Percentage,change from prior month,Percentage,N,248.363920232788
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,12 month rolling average,,Actual,change from prior year,Actual,N,-0.02817246615501534
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,12 month rolling average,Actual,change from prior year,Actual,N,-0.049330000370706895
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,12 month rolling average,Percentage,change from prior year,Actual,N,-2.4593008444902433
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,prior month,Actual,change from prior year,Actual,N,-0.019310208197722556
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,prior month,Percentage,change from prior year,Actual,N,-0.9645196011596743
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,prior year,Actual,change from prior year,Actual,N,-0.0776277160099379
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,prior year,Percentage,change from prior year,Actual,N,-3.8049651098397654
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,calendar year to date,Actual,change from prior year,Actual,N,-692.0775024665259
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,calendar year to date,Percentage,change from prior year,Actual,N,-0.010179292079527613
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,financial year to date,Actual,change from prior year,Actual,N,-0.030757308807005
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,financial year to date,Percentage,change from prior year,Actual,N,-1.5359535450061994
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Number,,Actual,change from prior year,Percentage,N,-3.7988255613126034
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,12 month rolling average,,Actual,change from prior year,Percentage,N,-1.39052141103073
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,12 month rolling average,Actual,change from prior year,Percentage,N,-349.0411252843287
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,12 month rolling average,Percentage,change from prior year,Percentage,N,-352.5529278198487
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,prior month,Actual,change from prior year,Percentage,N,-189.67019761846336
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,prior month,Percentage,change from prior year,Percentage,N,-192.3165725352225
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,prior year,Actual,change from prior year,Percentage,N,-61978.47160494025
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,prior year,Percentage,change from prior year,Percentage,N,-61974.672779378954
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,calendar year to date,Actual,change from prior year,Percentage,N,18.421211128755914
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,calendar year to date,Percentage,change from prior year,Percentage,N,0.01018481981430076
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,financial year to date,Actual,change from prior year,Percentage,N,-171.32817296339852
+2023-09-30,Average Number Of Individuals Per Application - Priority,Average Number Of Individuals Per Application,Priority,Difference,financial year to date,Percentage,change from prior year,Percentage,N,-173.0159960277059
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Number,,Actual,-,-,N,1.7240677013835242
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,12 month rolling average,,Actual,-,-,N,1.7129764154372513
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,12 month rolling average,Actual,-,-,N,0.011091285946272844
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,12 month rolling average,Percentage,-,-,N,0.6474862027473801
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,prior month,Actual,-,-,N,0.00044360635294848905
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,prior month,Percentage,-,-,N,0.02573683868933266
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,prior year,Actual,-,-,N,0.035658950194503936
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,prior year,Percentage,-,-,N,2.1119856296286077
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,calendar year to date,Actual,-,-,N,-4449.275932298617
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,calendar year to date,Percentage,-,-,N,-99.9612656099442
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,financial year to date,Actual,-,-,N,0.00541390905214989
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,financial year to date,Percentage,-,-,N,0.31500870485415555
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,12 month rolling average,,Actual,change from prior month,Actual,N,0.0028448254246358218
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,12 month rolling average,Actual,change from prior month,Actual,N,-0.0024012190716873327
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,12 month rolling average,Percentage,change from prior month,Actual,N,-0.14148846427579576
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,prior month,Actual,change from prior month,Actual,N,-5.1619797492019615e-05
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,prior month,Percentage,change from prior month,Actual,N,-0.003003098258178242
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,prior year,Actual,change from prior month,Actual,N,-0.000880173972811038
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,prior year,Percentage,change from prior month,Actual,N,-0.05382846974176081
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,calendar year to date,Actual,change from prior month,Actual,N,0.00044360635274642846
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,calendar year to date,Percentage,change from prior month,Actual,N,9.96644243400624e-06
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,financial year to date,Actual,change from prior month,Actual,N,0.00044360635294848905
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,financial year to date,Percentage,change from prior month,Actual,N,0.025811268966900613
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Number,,Actual,change from prior month,Percentage,N,0.02573683868933266
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,12 month rolling average,,Actual,change from prior month,Percentage,N,0.16635125865459485
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,12 month rolling average,Actual,change from prior month,Percentage,N,-17.796688372478023
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,12 month rolling average,Percentage,change from prior month,Percentage,N,-17.933207514714738
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,prior month,Actual,change from prior month,Percentage,N,-10.42347974679917
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,prior month,Percentage,change from prior month,Percentage,N,-10.449216585488484
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,prior year,Actual,change from prior month,Percentage,N,-2.4088535039336616
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,prior year,Percentage,change from prior month,Percentage,N,-2.485368885418627
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,calendar year to date,Actual,change from prior month,Percentage,N,-9.970303376719326e-06
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,calendar year to date,Percentage,change from prior month,Percentage,N,-9.9703033765213e-06
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,financial year to date,Actual,change from prior month,Percentage,N,8.925137557915036
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,financial year to date,Percentage,change from prior month,Percentage,N,8.925137557915026
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,12 month rolling average,,Actual,change from prior year,Actual,N,0.03336147490266783
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,12 month rolling average,Actual,change from prior year,Actual,N,0.002297475291836104
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,12 month rolling average,Percentage,change from prior year,Actual,N,0.12392509107747152
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,prior month,Actual,change from prior year,Actual,N,-0.000880173972811038
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,prior month,Percentage,change from prior year,Actual,N,-0.05272870090243817
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,prior year,Actual,change from prior year,Actual,N,0.009003385646514817
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,prior year,Percentage,change from prior year,Actual,N,0.5079228384586936
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,calendar year to date,Actual,change from prior year,Actual,N,-691.9643410498056
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,calendar year to date,Percentage,change from prior year,Actual,N,-0.006182043867838161
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,financial year to date,Actual,change from prior year,Actual,N,0.004258155384731843
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,financial year to date,Percentage,change from prior year,Actual,N,0.24650957229278345
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Number,,Actual,change from prior year,Percentage,N,2.1119856296286077
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,12 month rolling average,,Actual,change from prior year,Percentage,N,1.9862573318173526
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,12 month rolling average,Actual,change from prior year,Percentage,N,26.126049128394175
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,12 month rolling average,Percentage,change from prior year,Percentage,N,23.669651606134376
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,prior month,Actual,change from prior year,Percentage,N,-66.48942847115006
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,prior month,Percentage,change from prior year,Percentage,N,-67.19981940705108
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,prior year,Actual,change from prior year,Percentage,N,33.77675843370584
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,prior year,Percentage,change from prior year,Percentage,N,31.664772804077256
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,calendar year to date,Actual,change from prior year,Percentage,N,18.41647476513436
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,calendar year to date,Percentage,change from prior year,Percentage,N,0.006184821869266364
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,financial year to date,Actual,change from prior year,Percentage,N,368.43105107722135
+2023-09-30,Average Number Of Individuals Per Application - Nonpriority,Average Number Of Individuals Per Application,Nonpriority,Difference,financial year to date,Percentage,change from prior year,Percentage,N,359.8725459361432

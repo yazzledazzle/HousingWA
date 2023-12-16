@@ -1,0 +1,74 @@
+Description3,Description4,Description5,Description6,Description7
+Number,,Actual,Value,
+12 month rolling average,,Actual,Value,
+Difference,12 month rolling average,Actual,Value,
+Difference,12 month rolling average,Percentage,Value,
+Percentage of population,,Percentage,Value,
+Number,,per 10 000,Value,
+12 month rolling average,,per 10 000,Value,
+Difference,prior month,Actual,Value,
+Difference,prior month,Percentage,Value,
+Difference,12 months prior,Actual,Value,
+Difference,12 months prior,Percentage,Value,
+Difference,calendar year to date,Actual,Value,
+Difference,calendar year to date,Percentage,Value,
+Difference,financial year to date,Actual,Value,
+Difference,financial year to date,Percentage,Value,
+12 month rolling average,,Actual,change from prior month,Actual
+Difference,12 month rolling average,Actual,change from prior month,Actual
+Difference,12 month rolling average,Percentage,change from prior month,Actual
+Percentage of population,,Percentage,change from prior month,Actual
+Number,,per 10 000,change from prior month,Actual
+12 month rolling average,,per 10 000,change from prior month,Actual
+Difference,prior month,Actual,change from prior month,Actual
+Difference,prior month,Percentage,change from prior month,Actual
+Difference,12 months prior,Actual,change from prior month,Actual
+Difference,12 months prior,Percentage,change from prior month,Actual
+Difference,calendar year to date,Actual,change from prior month,Actual
+Difference,calendar year to date,Percentage,change from prior month,Actual
+Difference,financial year to date,Actual,change from prior month,Actual
+Difference,financial year to date,Percentage,change from prior month,Actual
+Number,,Actual,change from prior month,Percentage
+12 month rolling average,,Actual,change from prior month,Percentage
+Difference,12 month rolling average,Actual,change from prior month,Percentage
+Difference,12 month rolling average,Percentage,change from prior month,Percentage
+Percentage of population,,Percentage,change from prior month,Percentage
+Number,,per 10 000,change from prior month,Percentage
+12 month rolling average,,per 10 000,change from prior month,Percentage
+Difference,prior month,Actual,change from prior month,Percentage
+Difference,prior month,Percentage,change from prior month,Percentage
+Difference,12 months prior,Actual,change from prior month,Percentage
+Difference,12 months prior,Percentage,change from prior month,Percentage
+Difference,calendar year to date,Actual,change from prior month,Percentage
+Difference,calendar year to date,Percentage,change from prior month,Percentage
+Difference,financial year to date,Actual,change from prior month,Percentage
+Difference,financial year to date,Percentage,change from prior month,Percentage
+12 month rolling average,,Actual,change from prior year,Actual
+Difference,12 month rolling average,Actual,change from prior year,Actual
+Difference,12 month rolling average,Percentage,change from prior year,Actual
+Percentage of population,,Percentage,change from prior year,Actual
+Number,,per 10 000,change from prior year,Actual
+12 month rolling average,,per 10 000,change from prior year,Actual
+Difference,prior month,Actual,change from prior year,Actual
+Difference,prior month,Percentage,change from prior year,Actual
+Difference,12 months prior,Actual,change from prior year,Actual
+Difference,12 months prior,Percentage,change from prior year,Actual
+Difference,calendar year to date,Actual,change from prior year,Actual
+Difference,calendar year to date,Percentage,change from prior year,Actual
+Difference,financial year to date,Actual,change from prior year,Actual
+Difference,financial year to date,Percentage,change from prior year,Actual
+Number,,Actual,change from prior year,Percentage
+12 month rolling average,,Actual,change from prior year,Percentage
+Difference,12 month rolling average,Actual,change from prior year,Percentage
+Difference,12 month rolling average,Percentage,change from prior year,Percentage
+Percentage of population,,Percentage,change from prior year,Percentage
+Number,,per 10 000,change from prior year,Percentage
+12 month rolling average,,per 10 000,change from prior year,Percentage
+Difference,prior month,Actual,change from prior year,Percentage
+Difference,prior month,Percentage,change from prior year,Percentage
+Difference,12 months prior,Actual,change from prior year,Percentage
+Difference,12 months prior,Percentage,change from prior year,Percentage
+Difference,calendar year to date,Actual,change from prior year,Percentage
+Difference,calendar year to date,Percentage,change from prior year,Percentage
+Difference,financial year to date,Actual,change from prior year,Percentage
+Difference,financial year to date,Percentage,change from prior year,Percentage
