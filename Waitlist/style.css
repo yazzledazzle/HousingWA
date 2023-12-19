@@ -1,0 +1,116 @@
+.custom-table {{
+        width: 80%;
+        border-collapse: separate;
+    }}
+    .custom-table th, .custom-table td {{
+        font-family: Tahoma;
+        text-align: center;
+        border: none;
+    }}
+    .custom-table th {{
+        background-color: transparent;
+        border-bottom: none;
+    }}
+    .header-row {{
+        font-weight: bold;
+        background-color: transparent;
+        border-bottom: 1px solid #d3d3d3;
+    }}
+    .data-row {{
+        height: 1.2cm;
+    }}
+    .data-cell-total-count {{
+        border-right: 3px dotted #d3d3d3;
+        background-color: #ffff75;
+        font-weight: bold;
+        font-size: 18px;
+    }}
+            
+    .data-cell-total {{
+        border-right: 3px dotted #d3d3d3;
+        background-color: transparent;
+    }}
+            
+    .data-cell-nonpriority {{
+        background-color: #f0f0f0;
+    }}
+    
+    .data-cell-priority {{
+        background-color: #f7e7e6;
+    }}
+            
+    .data-cell-proportion {{
+        background-color: #f7f5e6;
+        font-style: italic;
+    }}
+
+    .data-cell-total-count, .data-cell-priority, data-cell-nonpriority, .data-cell-total {{
+        height: 0.8cm;
+        width: 0.8cm;
+    }}
+
+    .header-cell-total-count {{
+        border-right: 3px dotted #d3d3d3;
+        background-color: #ffff75;
+        font-weight: bold;
+        font-size: 18px;
+    }}
+            
+    .header-cell-total {{
+        border-right: 3px dotted #d3d3d3;
+        background-color: transparent;
+    }}
+    
+    .header-cell-priority {{
+        background-color: #f7e7e6;
+    }}
+    
+    .header-cell-proportion {{
+        background-color: #f7f5e6;
+            font-style: italic;
+    }}
+            
+    .header-cell-nonpriority {{
+        background-color: #f0f0f0;
+    }}
+            
+    .header-cell-total, .header-cell-priority, .header-cell-nonpriority, .header-cell-proportion {{
+        height: 1cm;
+        width: 0.8cm;
+        font-weight: bold;
+        font-size: 14px;
+    }}
+    
+    .header-applications {{
+        background-color: #add8e6;
+        font-weight: bold;
+        font-size: 18px;
+    }}
+            
+    .header-persons-per-application {{
+        background-color: #cafaf8;
+        font-style: italic;
+        font-size: 14px;
+    }}
+            
+    .header-individuals {{
+        background-color: #90ee90;
+        font-weight: bold;
+        font-size: 18px;
+    }}
+            
+    .header-individuals-per-10k {{
+        background-color: #f0e68c;
+        font-style: italic;
+        font-size: 14px;
+    }}
+    
+    .header-individuals-percentage {{
+        background-color: #ffd4b3;
+        font-style: italic;
+        font-size: 14px;
+    }}
+    
+    .spacer-column {{
+        width: 0.1cm; 
+    }}

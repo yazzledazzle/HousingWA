@@ -4,7 +4,7 @@ import datetime
 
 # Set page configuration
 st.set_page_config(page_title='Add data', page_icon=':plus-sign:')
-Waitlist_trend = pd.read_csv('Data/CSV/Public_housing/Waitlist_trend.csv')
+Waitlist_trend = pd.read_csv('DATA/Public_housing/Waitlist_trend.csv')
 if 'data' not in st.session_state:
     data = pd.DataFrame({'Date':[],'total_applications':[],'total_individuals':[],'priority_applications':[],'priority_individuals':[]})
     st.session_state.data = data
@@ -98,3 +98,6 @@ with dfForm:
     with dfColumns[3]:
         st.number_input('Priority individuals', step=100, min_value=0, key='priority_individuals')
     save = st.form_submit_button(on_click=update_fields)
+
+    st.markdown(f'### NOTE:')
+    st.markdown(f'**This does not currently sync with charts - will do once deployed, if this form is helpful (I had already created prior to meeting this month) - please let me know**')

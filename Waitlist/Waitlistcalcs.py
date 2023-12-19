@@ -59,17 +59,6 @@ def FYtdchange(df_long):
         df_long = pd.concat([df_long, df_long_Category])
     return df_long
 
-def calculate_12_month_average(df_long):
-    def average_last_12_months(row):
-        start_date = row['Date'] - pd.offsets.MonthEnd(12)
-        end_date = row['Date']
-        filtered_df = df_long[(df_long['Date'] >= start_date) & (df_long['Date'] <= end_date) & (df_long['Category'] == row['Category'])]
-        return filtered_df['Number'].sum() / len(filtered_df)
-    df_long['12 month rolling average'] = df_long.apply(average_last_12_months, axis=1)
-    df_long['Difference - 12 month rolling average'] = df_long['Number'] - df_long['12 month rolling average']
-    df_long['Difference - 12 month rolling average (per cent)'] = df_long['Difference - 12 month rolling average'] / df_long['12 month rolling average'] * 100
-    return df_long
-
 def month_diff(df_long):
     df_long['Estimate flag - prior month'] = ''
     for Category in df_long['Category'].unique():
@@ -93,6 +82,7 @@ def month_diff(df_long):
         df_long = pd.concat([df_long, df_long_Category])
     return df_long
 
+
 def year_diff(df_long):
     df_long['Estimate flag - prior year'] = ''
     for Category in df_long['Category'].unique():
@@ -113,6 +103,31 @@ def year_diff(df_long):
         df_long_Category = df_long_Category.drop(['helper', 'helper2'], axis=1)
         df_long = df_long.drop(df_long[df_long['Category'] == Category].index)
         df_long = pd.concat([df_long, df_long_Category])
+    return df_long
+
+def calculate_12_month_average(df_long):
+    def average_last_12_months(row):
+        start_date = row['Date'] - pd.offsets.MonthEnd(11)
+        end_date = row['Date']
+        filtered_df = df_long[(df_long['Date'] >= start_date) & (df_long['Date'] <= end_date) & (df_long['Category'] == row['Category'])]
+        return filtered_df['Number'].sum() / len(filtered_df)
+    def average_prior_month_difference_last_12_months(row):
+        start_date = row['Date'] - pd.offsets.MonthEnd(11)
+        end_date = row['Date']
+        filtered_df = df_long[(df_long['Date'] >= start_date) & (df_long['Date'] <= end_date) & (df_long['Category'] == row['Category'])]
+        return filtered_df['Difference - prior month'].sum() / len(filtered_df)
+    def average_prior_year_difference_last_12_months(row):
+        start_date = row['Date'] - pd.offsets.MonthEnd(11)
+        end_date = row['Date']
+        filtered_df = df_long[(df_long['Date'] >= start_date) & (df_long['Date'] <= end_date) & (df_long['Category'] == row['Category'])]
+        return filtered_df['Difference - prior year'].sum() / len(filtered_df)
+    df_long['12 month rolling average'] = df_long.apply(average_last_12_months, axis=1)
+    df_long['Difference - 12 month rolling average'] = df_long['Number'] - df_long['12 month rolling average']
+    df_long['Difference - 12 month rolling average (per cent)'] = df_long['Difference - 12 month rolling average'] / df_long['12 month rolling average'] * 100
+    df_long['12 month rolling average - prior month change'] = df_long.apply(average_prior_month_difference_last_12_months, axis=1)
+    df_long['12 month rolling average - prior month change (per cent)'] = df_long['12 month rolling average - prior month change'] / df_long['12 month rolling average'] * 100
+    df_long['12 month rolling average - prior year change'] = df_long.apply(average_prior_year_difference_last_12_months, axis=1)
+    df_long['12 month rolling average - prior year change (per cent)'] = df_long['12 month rolling average - prior year change'] / df_long['12 month rolling average'] * 100
     return df_long
 
 def calculate_cydiff(df_long):
@@ -223,7 +238,12 @@ def add_population(df_long, population):
     df_long = df_long.merge(population, how='left', left_on='Date', right_on='DATE')
     df_long['Percentage of population'] = df_long.apply(lambda row: row['Number'] / row['WA_POPULATION'] * 100 if row['Category'] in ['total_individuals', 'priority_individuals', 'nonpriority_individuals'] else float('nan'), axis=1)
     df_long['Value per 10 000'] = df_long.apply(lambda row: row['Number'] / row['WA_POPULATION'] * 10000 if row['Category'] in ['total_individuals', 'priority_individuals', 'nonpriority_individuals'] else float('nan'), axis=1)
-    df_long['12 month rolling average per 10 000'] = df_long.apply(lambda row: row['12 month rolling average'] / row['WA_POPULATION'] * 10000 if row['Category'] in ['total_individuals', 'priority_individuals', 'nonpriority_individuals'] else float('nan'), axis=1)
+    if 'Difference - prior month' in df_long.columns:
+        df_long['Difference - prior month per 10 000'] = df_long.apply(lambda row: row['Difference - prior month'] / row['WA_POPULATION'] * 10000 if row['Category'] in ['total_individuals', 'priority_individuals', 'nonpriority_individuals'] else float('nan'), axis=1)
+    if 'Difference - prior year' in df_long.columns:
+        df_long['Difference - prior year per 10 000'] = df_long.apply(lambda row: row['Difference - prior year'] / row['WA_POPULATION'] * 10000 if row['Category'] in ['total_individuals', 'priority_individuals', 'nonpriority_individuals'] else float('nan'), axis=1)
+    if '12 month rolling average' in df_long.columns:
+        df_long['12 month rolling average per 10 000'] = df_long.apply(lambda row: row['12 month rolling average'] / row['WA_POPULATION'] * 10000 if row['Category'] in ['total_individuals', 'priority_individuals', 'nonpriority_individuals'] else float('nan'), axis=1)
     df_long = df_long.drop(['DATE'], axis=1)
     return df_long
 
@@ -294,6 +314,7 @@ def final_long(df_long, save_latest, save):
     df_long = df_long.rename(columns={'Group': 'Description1', 'Count': 'Description2', 'Metric 1': 'Description3', 'Metric 2': 'Description4', 'Number type 1': 'Description5', 'Value type': 'Description6', 'Number type 2': 'Description7'})
     df_long = df_long[['Date', 'Category', 'Description1', 'Description2', 'Description3', 'Description4', 'Description5', 'Description6', 'Description7', 'Estimate', 'Value']]
     df_long.loc[df_long['Description3'] == 'Value', 'Description3'] = 'Number'
+    df_long.loc[df_long['Description4'] == '', 'Description4'] = '-'
     df_long.loc[df_long['Description6'] == 'Value', 'Description7'] = '-'
     df_long.loc[df_long['Description6'] == 'Value', 'Description6'] = '-'
     df_long.to_csv(save, index=False)
