@@ -4,7 +4,7 @@ import datetime
 
 # Set page configuration
 st.set_page_config(page_title='Add data', page_icon=':plus-sign:')
-Waitlist_trend = pd.read_csv('DATA/Public_housing/Waitlist_trend.csv')
+Waitlist_trend = pd.read_csv('https://github.com/yazzledazzle/HousingWA/blob/b34d682e5176ff5299efddb46fc3545891c54707/Data/Public_housing/Waitlist_trend.csv')
 if 'data' not in st.session_state:
     data = pd.DataFrame({'Date':[],'total_applications':[],'total_individuals':[],'priority_applications':[],'priority_individuals':[]})
     st.session_state.data = data
@@ -82,7 +82,8 @@ def append_new_data(Waitlist_trend, row):
     new_row['Date'] = pd.to_datetime(new_row['Date']).dt.strftime('%Y-%m-%d')
     #concatenate new row to Waitlist_trend
     Waitlist_trend = pd.concat([Waitlist_trend, new_row])
-    Waitlist_trend.to_csv('Data/CSV/Public_housing/Waitlist_trend_update.csv', index=False)
+    savenew = 'Data/Public_housing/Waitlist_trend_update.csv'
+    Waitlist_trend.to_csv(savenew, index=False)
     st.write('Data saved')
 
 dfForm = st.form(key='dfForm')
