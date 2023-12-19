@@ -426,5 +426,59 @@ st.markdown(f'''
         <td class="pm-pi">{PriorityIndividuals["Prior month"][0]:,.0f}</td>
         <td class="pm-npi">{NonpriorityIndividuals["Prior month"][0]:,.0f}</td>
 ''', unsafe_allow_html=True)
+#add title and table for prior year
+st.markdown('</br>', unsafe_allow_html=True)
+st.markdown(f'### Changes - prior year')
+st.markdown(f'''
+    <table class="custom-table">
+        <tr class="header-row">
+            <tr>
+        <td colspan="7" class="header-percent">%</td>
+        <td class="spacer-column"></td>
+        <td colspan="7" class="header-count">NUMBER</td>
+    </tr>
+    <tr class="header-row">
+            <tr>
+            <td colspan="3", class="header-applications">APPLICATIONS</td>
+            <td class="spacer-column"></td>
+            <td colspan="3", class="header-individuals">INDIVIDUALS</td>
+            <td class="spacer-column"></td>
+ <td colspan="3", class="header-applications">APPLICATIONS</td>
+            <td class="spacer-column"></td>
+            <td colspan="3", class="header-individuals">INDIVIDUALS</td>
+            </tr>
+            <tr>
+            <td class="header-cell-total-count">Total</td>
+            <td class="header-cell-priority">Priority</td>
+            <td class="header-cell-nonpriority">Non-priority</td>
+            <td class="spacer-column"></td>
+            <td class="header-cell-total-count">Total</td>
+            <td class="header-cell-priority">Priority</td>
+            <td class="header-cell-nonpriority">Non-priority</td>
+            <td class="spacer-column"></td>
+            <td class="header-cell-total-count">Total</td>
+            <td class="header-cell-priority">Priority</td>
+            <td class="header-cell-nonpriority">Non-priority</td>
+            <td class="spacer-column"></td>
+            <td class="header-cell-total-count">Total</td>
+            <td class="header-cell-priority">Priority</td>
+            <td class="header-cell-nonpriority">Non-priority</td>
+    <tr class="data-row">
+                <td class= "py-ta">{TotalApplications["Prior year %"][0]:,.2f}%</td>
+        <td class="py-pa">{PriorityApplications["Prior year %"][0]:,.2f}%</td>
+        <td class="py-npa">{NonpriorityApplications["Prior year %"][0]:,.2f}%</td>
+        <td class="spacer-column"></td>
+         <td class="py-ti">{TotalIndividuals["Prior year %"][0]:,.2f}%</td>
+        <td class="py-pi">{PriorityIndividuals["Prior year %"][0]:,.2f}%</td>
+        <td class="py-npi">{NonpriorityIndividuals["Prior year %"][0]:,.2f}%</td>
+        <td class="spacer-column"></td>
+            <td class= "py-ta">{TotalApplications["Prior year"][0]:,.0f}</td>
+        <td class="py-pa">{PriorityApplications["Prior year"][0]:,.0f}</td>
+        <td class="py-npa">{NonpriorityApplications["Prior year"][0]:,.0f}</td>
+        <td class="spacer-column"></td>
+        <td class="py-ti">{TotalIndividuals["Prior year"][0]:,.0f}</td>
+        <td class="py-pi">{PriorityIndividuals["Prior year"][0]:,.0f}</td>
+        <td class="py-npi">{NonpriorityIndividuals["Prior year"][0]:,.0f}</td>
+''', unsafe_allow_html=True)
 
 
