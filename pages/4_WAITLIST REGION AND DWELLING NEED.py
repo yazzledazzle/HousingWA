@@ -138,7 +138,7 @@ elif view == 'New tenancies by region':
         region_need['Category'] = region_need['Category'].str.contains('Priority')
         region_need['Category'] = region_need['Category'].replace(True, 'Priority')
         region_need['Category'] = region_need['Category'].replace(False, 'Total')
-        latest_date = latest_date.strftime('%d %B %Y')
+        
         #filter for Subcategory = Applications
         region_need = region_need[region_need['Subcategory'] == 'Applications']
         #drop Subcategory, Detail, Item, Newtenanciestime, Date
