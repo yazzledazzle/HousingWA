@@ -3,11 +3,11 @@ import streamlit as st
 import plotly.express as px
 import plotly.graph_objects as go
 
-data = pd.read_csv('Data/Public_housing/Waitlist_breakdowns.csv')
+source = pd.read_csv('Data/Public_housing/Waitlist_breakdowns.csv')
 
 #initialize streamlit page
 st.title('Waitlist breakdown')
-
+data = source.copy()
 #filter data for Item = Dwelling need | New tenancies by region
 data = data[(data['Item'] == 'Dwelling need') | (data['Item'] == 'New tenancies by region') | (data['Item'] == 'Waiting time by region') | (data['Item'] == 'Waiting time by dwelling need')]
 
@@ -123,18 +123,22 @@ elif view == 'New tenancies by region':
         clean['Category'] = clean['Category'].str.contains('Priority')
         clean['Category'] = clean['Category'].replace(True, 'Priority')
         clean['Category'] = clean['Category'].replace(False, 'Total')
-        #pivot table
+        #print clean
+        #create Priority and Total columns for each Region
         clean = clean.pivot_table(index='Region', columns='Category', values='Value', aggfunc='sum')
         clean['Priority %'] = clean['Priority'] / clean['Total'] * 100
         #proportion priority to .1f
         clean['Priority %'] = clean['Priority %'].round(1)
         #get data for item = Region need
-        region_need = data[data['Item'] == 'Region need']
+        region_need = source[source['Item'] == 'Region need']
+
         region_dates = region_need['Date'].unique()
+
         #pick latest date
         latest_date = region_dates.max()
         #filter data to only include latest date
         region_need = region_need[region_need['Date'] == latest_date]
+
         #if category string contains Priority, change to Priority, else Total
         region_need['Category'] = region_need['Category'].str.contains('Priority')
         region_need['Category'] = region_need['Category'].replace(True, 'Priority')
