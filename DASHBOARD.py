@@ -374,7 +374,7 @@ st.markdown(f'''
 ''', unsafe_allow_html=True)
 
 st.markdown('</br>', unsafe_allow_html=True)
-st.markdown(f'### Changes - prior month')
+st.markdown(f'***Changes from prior month***')
 st.markdown(f'''
 <table class="custom-table">
         <tr class="header-row">
@@ -428,7 +428,7 @@ st.markdown(f'''
 ''', unsafe_allow_html=True)
 #add title and table for prior year
 st.markdown('</br>', unsafe_allow_html=True)
-st.markdown(f'### Changes - prior year')
+st.markdown(f'***Changes from prior year***')
 st.markdown(f'''
     <table class="custom-table">
         <tr class="header-row">
