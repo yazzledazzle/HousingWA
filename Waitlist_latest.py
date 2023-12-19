@@ -1,6 +1,6 @@
 import pandas as pd
 
-Waitlist_trend_latest = pd.read_csv('https://github.com/yazzledazzle/HousingWA/blob/b34d682e5176ff5299efddb46fc3545891c54707/Data/Public_housing/Waitlist_trend_latest.csv')
+Waitlist_trend_latest = pd.read_csv('Data/Public_housing/Waitlist_trend_latest.csv')
 
 class WaitlistUpdate:
     def __init__(self, Date, Category, Subcategory, Metric, MetricDetail, MetricAs, MetricCalc, MetricCalcAs, Estimate, Value, FontColor):
