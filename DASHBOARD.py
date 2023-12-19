@@ -311,7 +311,7 @@ st.markdown(f'''
     <tr>
         <td colspan="8" class="header-applications">APPLICATIONS</td>
         <td class="spacer-column"></td>
-        <td colspan="12" class="header-individuals">PERSONS</td>
+        <td colspan="12" class="header-individuals">INDIVIDUALS</td>
     </tr>
     <tr>
         <td colspan="4" class="header-cell-total"></td>
@@ -374,7 +374,7 @@ st.markdown(f'''
 ''', unsafe_allow_html=True)
 
 st.markdown('</br>', unsafe_allow_html=True)
-st.markdown(f'***Changes from prior month***')
+st.markdown(f'**Changes from prior month**')
 st.markdown(f'''
 <table class="custom-table">
         <tr class="header-row">
@@ -428,7 +428,7 @@ st.markdown(f'''
 ''', unsafe_allow_html=True)
 #add title and table for prior year
 st.markdown('</br>', unsafe_allow_html=True)
-st.markdown(f'***Changes from prior year***')
+st.markdown(f'**Changes from prior year**')
 st.markdown(f'''
     <table class="custom-table">
         <tr class="header-row">
