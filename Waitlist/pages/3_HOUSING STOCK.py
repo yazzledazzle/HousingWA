@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 import plotly.graph_objects as go
 
-localdata = pd.read_csv('DATA\Public_housing\Stock.csv')
+OWNdata = pd.read_csv('DATA\Public_housing\Stock.csv')
 rogshousing = pd.read_csv("DATA/ROGS/rogs-202306-partg-section18-housing-dataset.csv", encoding='latin-1')
 
 st.markdown('## NOTE: Some measures work, others still in progress')
