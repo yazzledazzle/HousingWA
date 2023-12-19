@@ -4,7 +4,7 @@ import datetime
 
 # Set page configuration
 st.set_page_config(page_title='Add data', page_icon=':plus-sign:')
-Waitlist_trend = pd.read_csv('https://github.com/yazzledazzle/HousingWA/blob/b34d682e5176ff5299efddb46fc3545891c54707/Data/Public_housing/Waitlist_trend.csv')
+Waitlist_trend = pd.read_csv('Data/Public_housing/Waitlist_trend.csv')
 if 'data' not in st.session_state:
     data = pd.DataFrame({'Date':[],'total_applications':[],'total_individuals':[],'priority_applications':[],'priority_individuals':[]})
     st.session_state.data = data
