@@ -4,6 +4,10 @@ from Waitlist_latest import *
 #initialize streamlit
 st.set_page_config(layout="wide")
 #title = Waitlist - Public housing waitlist data
+#sidebar success 'For optimal viewing, enable wide mode under Settings - click the 3 dots icon in the top right corner'
+st.sidebar.success('Navigate to other pages using the menu above')
+st.sidebar.markdown(f'*For optimal viewing, enable wide mode under Settings - click the 3 dots icon in the top right corner*')
+      
 st.title('Public housing waitlist data')
 st.markdown(f'### As at ' + latest_date)
 #two columns, heading2 on left  = Applications, heading2 on right = Individuals
