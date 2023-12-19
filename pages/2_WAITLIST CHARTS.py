@@ -3,7 +3,7 @@ import plotly.graph_objects as go
 import pandas as pd
 import streamlit as st
 
-data = pd.read_csv('https://github.com/yazzledazzle/HousingWA/blob/b34d682e5176ff5299efddb46fc3545891c54707/Data/Public_housing/Waitlist_trend_long.csv')
+data = pd.read_csv('Data/Public_housing/Waitlist_trend_long.csv')
 #make Date column datetime
 data['Date'] = pd.to_datetime(data['Date'])
 
