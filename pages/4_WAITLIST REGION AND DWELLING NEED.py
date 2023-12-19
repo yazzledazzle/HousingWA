@@ -115,7 +115,8 @@ elif view == 'New tenancies by region':
         st.markdown('Single data point only')
         #clean = data but drop Subcategory, Detail, Item, Newtenanciestime
         date = filtered_data['Date'].unique()[0]
-        clean = filtered_data.drop(columns=['Subcategory', 'Detail', 'Item', 'Newtenanciestime', 'Date'], axis=1)
+        clean =data[data['Item'] == view]
+        clean = clean.drop(columns=['Subcategory', 'Detail', 'Item', 'Newtenanciestime', 'Date'], axis=1)
         #Date to string
         date = date.strftime('%d %B %Y')
         #if string in Category contains Priority, change to Priority, else Total
