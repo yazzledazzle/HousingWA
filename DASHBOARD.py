@@ -394,19 +394,19 @@ st.markdown(f'''
             <td colspan="3", class="header-individuals">INDIVIDUALS</td>
             </tr>
             <tr>
-            <td class="header-cell-total-count">Total</td>
+            <td class="header-cell-total-count">TOTAL</td>
             <td class="header-cell-priority">Priority</td>
             <td class="header-cell-nonpriority">Non-priority</td>
             <td class="spacer-column"></td>
-            <td class="header-cell-total-count">Total</td>
+            <td class="header-cell-total-count">TOTAL</td>
             <td class="header-cell-priority">Priority</td>
             <td class="header-cell-nonpriority">Non-priority</td>
             <td class="spacer-column"></td>
-            <td class="header-cell-total-count">Total</td>
+            <td class="header-cell-total-count">TOTAL</td>
             <td class="header-cell-priority">Priority</td>
             <td class="header-cell-nonpriority">Non-priority</td>
             <td class="spacer-column"></td>
-            <td class="header-cell-total-count">Total</td>
+            <td class="header-cell-total-count">TOTAL</td>
             <td class="header-cell-priority">Priority</td>
             <td class="header-cell-nonpriority">Non-priority</td>
     <tr class="data-row">
@@ -448,19 +448,19 @@ st.markdown(f'''
             <td colspan="3", class="header-individuals">INDIVIDUALS</td>
             </tr>
             <tr>
-            <td class="header-cell-total-count">Total</td>
+            <td class="header-cell-total-count">TOTAL</td>
             <td class="header-cell-priority">Priority</td>
             <td class="header-cell-nonpriority">Non-priority</td>
             <td class="spacer-column"></td>
-            <td class="header-cell-total-count">Total</td>
+            <td class="header-cell-total-count">TOTAL</td>
             <td class="header-cell-priority">Priority</td>
             <td class="header-cell-nonpriority">Non-priority</td>
             <td class="spacer-column"></td>
-            <td class="header-cell-total-count">Total</td>
+            <td class="header-cell-total-count">TOTAL</td>
             <td class="header-cell-priority">Priority</td>
             <td class="header-cell-nonpriority">Non-priority</td>
             <td class="spacer-column"></td>
-            <td class="header-cell-total-count">Total</td>
+            <td class="header-cell-total-count">TOTAL</td>
             <td class="header-cell-priority">Priority</td>
             <td class="header-cell-nonpriority">Non-priority</td>
     <tr class="data-row">
