@@ -17,6 +17,27 @@ df['VALUE'] = df['VALUE'].astype(float)
 #if MEASURE is per 10k, .2f, else, ,.0f
 df['VALUE'] = df.apply(lambda x: "{:.2f}".format(x['VALUE']) if x['MEASURE'] == 'Per 10,000 population' else "{:.0f}".format(x['VALUE']), axis=1)
 
+df_latest_date = df[df['DATE'] == df['DATE'].max()]
+#filter for MEASURE == 'Persons'
+df_latest_date = df_latest_date[df_latest_date['MEASURE'] == 'Persons']
+df_reason_check = df_latest_date.groupby('REASON').sum().reset_index().sort_values(by='VALUE', ascending=False)
+top_reasons = df_reason_check['REASON'].head(3).tolist()
+other_reasons = df_reason_check['REASON'].tolist()[3:]
+#get sum of other reasons
+df_other_reasons = df_latest_date[df_latest_date['REASON'].isin(other_reasons)]
+#sum value, group by state, group, reason
+df_other_reasons = df_other_reasons.groupby(['STATE', 'GROUP']).sum().reset_index()
+df_other_reasons['REASON'] = 'Other'
+#df for top reasons - sum value, group by state, group, reason
+df_top_reasons = df_latest_date[df_latest_date['REASON'].isin(top_reasons)]
+df_top_reasons = df_top_reasons.groupby(['STATE', 'GROUP', 'REASON']).sum().reset_index()
+#concat df_top_reasons and df_other_reasons
+df_latest_date = pd.concat([df_top_reasons, df_other_reasons])
+#pie chart
+pie_chart = go.Figure(data=[go.Pie(labels=df_latest_date['REASON'], values=df_latest_date['VALUE'], hole=.3)])
+
+
+
 
 #MAKE STATE COLUMN STRINGS ALL CAPS
 df['STATE'] = df['STATE'].str.upper()
@@ -43,9 +64,6 @@ with col1:
         
     reasonfilter = st.radio('Reason Filtering:', ['Top 3', 'Selection'], index=0, horizontal=True)
     if reasonfilter == 'Top 3':
-        df_latest_date = df_filtered[df_filtered['DATE'] == df_filtered['DATE'].max()]
-        df_reason_check = df_latest_date.groupby('REASON').sum().reset_index().sort_values(by='VALUE', ascending=False)
-        top_reasons = df_reason_check['REASON'].head(3).tolist()
         df_filtered = df_filtered[df_filtered['REASON'].isin(top_reasons)]
     else:
         selected_reasons = st.multiselect('Select Reasons', options=df['REASON'].unique().tolist(), default='Accommodation')
@@ -104,3 +122,5 @@ chart.update_layout(legend=dict(
 ))
 
 st.plotly_chart(chart)
+
+st.plotly_chart(pie_chart)
