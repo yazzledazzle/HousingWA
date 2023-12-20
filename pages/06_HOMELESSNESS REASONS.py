@@ -79,7 +79,7 @@ for region in regions:
     df_measure2 = df_measure2.groupby(['DATE']).sum().reset_index()
     #DATE TO DATETIME
     df_measure2['DATE'] = pd.to_datetime(df_measure2['DATE'])
-    chart.add_trace(go.Scatter(x=df_measure2['DATE'], y=df_measure2['VALUE'], name=name2, yaxis='y2'))
+    chart.add_trace(go.Scatter(x=df_measure2['DATE'], y=df_measure2['VALUE'], name=name2, yaxis='y2', line=dict(dash='dash')))
 # Add title and axis labels
 y1title = str(measure)
 y2title = str(second_measure)
