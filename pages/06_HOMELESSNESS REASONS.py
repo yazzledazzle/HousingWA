@@ -4,7 +4,7 @@ import pandas as pd
 import plotly.graph_objects as go
 
 # Read the data
-df = pd.read_csv('DATA\SHS\Long_Form\SHS_Reasons_Long_Form.csv') 
+df = pd.read_csv('Data/SHS/Long_Form/SHS_Reasons_Long_Form.csv') 
 
 # Data preprocessing
 df['MEASURE'] = df['MEASURE'].fillna('Persons')  # Replace NaN in MEASURE with 'Persons'
