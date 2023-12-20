@@ -12,6 +12,12 @@ df = df.rename(columns={'REASON FOR SEEKING ASSISTANCE': 'REASON'})  # Rename co
 df = df[df['GROUP'] != 'Total']  # Drop rows where Group is 'Total'
 df = df.drop_duplicates()  # Drop duplicate rows
 
+#value is float
+df['VALUE'] = df['VALUE'].astype(float)
+#if MEASURE is per 10k, .2f, else, ,.0f
+df['VALUE'] = df.apply(lambda x: "{:.2f}".format(x['VALUE']) if x['MEASURE'] == 'Per 10,000 population' else "{:.0f}".format(x['VALUE']), axis=1)
+
+
 #MAKE STATE COLUMN STRINGS ALL CAPS
 df['STATE'] = df['STATE'].str.upper()
 
