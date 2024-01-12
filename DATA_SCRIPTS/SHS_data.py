@@ -1,7 +1,7 @@
 import pandas as pd
 from os import listdir
 
-path_to_dir = "02-CODE/DATA/SHS"
+path_to_dir = "DATA\PROCESSED DATA\SHS"
 prefix = 'SHS_'
 suffix = '.csv'
 

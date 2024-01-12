@@ -328,9 +328,6 @@ def final_long(df_long, save_latest, save):
     df_latest = df_latest.reset_index(drop=True)
     df_latest.to_csv(save_latest, index=False)
 
-        
-
-
     return
 
 
