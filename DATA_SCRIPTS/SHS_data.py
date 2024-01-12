@@ -1,7 +1,7 @@
 import pandas as pd
 from os import listdir
 
-path_to_dir = '/Users/yhanalucas/Desktop/Dash/Data/SHS/'
+path_to_dir = "02-CODE/DATA/SHS"
 prefix = 'SHS_'
 suffix = '.csv'
 
@@ -10,13 +10,13 @@ def find_csv_filenames(prefix, path_to_dir, suffix):
     return [ filename for filename in filenames if filename.endswith( suffix ) and filename.startswith(prefix) ]
 
 def date_to_quarter(date):
-    if date.month in [1, 2]:
+    if date.month in [1, 2, 3]:
         return pd.Timestamp(f'31-12-{(date.year)-1}')
-    elif date.month in [4, 5]:
+    elif date.month in [4, 5, 6]:
         return pd.Timestamp(f'31-03-{date.year}')
-    elif date.month in [7, 8]:
+    elif date.month in [7, 8, 9]:
         return pd.Timestamp(f'30-06-{date.year}')
-    elif date.month in [10, 11]:
+    elif date.month in [10, 11, 12]:
         return pd.Timestamp(f'30-09-{date.year}')
     else:
         return date
@@ -46,7 +46,7 @@ def identify_ignore_columns(dataframes_dict):
 
 def load_and_preprocess_data():
     # Import Population.csv
-    Population = pd.read_csv('/Users/yhanalucas/Desktop/Dash/Data/Population/Population_State_Sex_Age_to_65+.csv')
+    Population = pd.read_csv('02-CODE/DATA/Population/Population_State_Sex_Age_to_65+.csv')
     Population = convert_case(Population)
     # date is dd-mm-yyyy
     Population['DATE'] = pd.to_datetime(Population['DATE'], format='%Y-%m-%d')
@@ -68,7 +68,7 @@ def load_and_preprocess_data():
     # First, iterate over filenames to load the dataframes and store them in processed_dataframes
     for filename in filenames:
         df_name = filename.replace('.csv', '')
-        df = pd.read_csv(path_to_dir + filename)
+        df = pd.read_csv(path_to_dir + '/'+ filename)
         df = convert_case(df)
 
         # Drop any rows where specified columns are null / NaN
@@ -143,7 +143,7 @@ def load_and_preprocess_data():
             datetime_cols = [col for col in total_df.columns if 'datetime64' in str(total_df[col].dtype)]
             numeric_cols = [col for col in total_df.columns if total_df[col].dtype in ['int64', 'float64']]
             total_df = total_df.groupby(object_cols + datetime_cols)[numeric_cols].sum().reset_index()
-            total_df.to_csv(f'/Users/yhanalucas/Desktop/Dash/Data/SHS/DropSex/{total_df_name}.csv', index=False)
+            total_df.to_csv(f'02-CODE/DATA/SHS/DropSex/{total_df_name}.csv', index=False)
             processed_dataframes[total_df_name] = total_df
 
         processed_dataframes[df_name] = df
@@ -190,12 +190,12 @@ def merge_and_calculate(processed_dataframes, Population, Population_all_ages):
             PopulationNoSex = PopulationNoSex.drop(['SEX'], axis=1)
             PopulationNoSex = PopulationNoSex.groupby(['DATE', 'AGE GROUP']).sum().reset_index()
             #to csv in Population folder
-            PopulationNoSex.to_csv(f'/Users/yhanalucas/Desktop/Dash/Data/Population/PopulationNoSex.csv', index=False)
+            PopulationNoSex.to_csv(f'02-CODE/DATA/Population/PopulationNoSex.csv', index=False)
             Population_all_agesNoSex = Population_all_ages[Population_all_ages['SEX']=='Total']
             Population_all_agesNoSex = Population_all_agesNoSex.drop(['SEX'], axis=1)
             Population_all_agesNoSex = Population_all_agesNoSex.groupby(['DATE']).sum().reset_index()
             #to csv in Population folder
-            Population_all_agesNoSex.to_csv(f'/Users/yhanalucas/Desktop/Dash/Data/Population/Population_all_agesNoSex.csv', index=False)
+            Population_all_agesNoSex.to_csv(f'02-CODE/DATA/Population/Population_all_agesNoSex.csv', index=False)
 
 
             if 'AGE GROUP' in df.columns:
@@ -212,7 +212,7 @@ def merge_and_calculate(processed_dataframes, Population, Population_all_ages):
         merged_df = merged_df[cols]
 
         # Calculation for National and each region
-        merged_df['NATIONAL_PER_10,000'] = merged_df['NATIONAL'] / merged_df['NATIONAL_POPULATION'] * 10000
+        merged_df['NATIONAL_PER_10k'] = merged_df['NATIONAL'] / merged_df['NATIONAL_POPULATION'] * 10000
         for region in regions:
             population_column_name = f"{region}_POPULATION"
             per_10000_column = f"{region}_PER_10k"
@@ -222,7 +222,7 @@ def merge_and_calculate(processed_dataframes, Population, Population_all_ages):
             merged_df[proportion_of_national_column] = merged_df[region] / merged_df['NATIONAL']
 
             proportion_of_national_per_10000_column = f"{region}_PROPORTION_OF_NATIONAL_PER_10k"
-            merged_df[proportion_of_national_per_10000_column] = merged_df[per_10000_column] / merged_df['NATIONAL_PER_10,000']
+            merged_df[proportion_of_national_per_10000_column] = merged_df[per_10000_column] / merged_df['NATIONAL_PER_10k']
 
             prop_national_pop_column = f"{region}_PROPORTION_OF_NATIONAL_POPULATION"     
             merged_df[prop_national_pop_column] = merged_df[population_column_name] / merged_df['NATIONAL_POPULATION']
@@ -232,7 +232,7 @@ def merge_and_calculate(processed_dataframes, Population, Population_all_ages):
         # Store processed DataFrame back in the dictionary
         SHS_with_population_calcs[df_name] = merged_df
         #save to csv
-        merged_df.to_csv(f'/Users/yhanalucas/Desktop/Dash/Data/SHS/WithPopulation/{df_name}_WithPopulation.csv', index=False)
+        merged_df.to_csv(f'02-CODE/DATA/SHS/WithPopulation/{df_name}_WithPopulation.csv', index=False)
 
     return SHS_with_population_calcs
 
@@ -257,13 +257,13 @@ def long_formSHS(SHS_with_population_calcs):
         cols.insert(1, cols.pop(cols.index('STATE')))
         long_form_dfs[df_name] = long_form_dfs[df_name][cols]
                 
-        long_form_dfs[df_name].to_csv(f'/Users/yhanalucas/Desktop/Dash/Data/SHS/Long_Form/{df_name}_Long_Form.csv', index=False)
+        long_form_dfs[df_name].to_csv(f'02-CODE/DATA/SHS/Long_Form/{df_name}_Long_Form.csv', index=False)
         WA_only_df = long_form_dfs[df_name][long_form_dfs[df_name]['STATE'] == 'WA']
         WA_only_df = WA_only_df.drop(['STATE'], axis=1)
         WA_name = df_name.replace('SHS_', 'SHS_WA_')
         long_form_dfs[WA_name] = WA_only_df
 
-        WA_only_df.to_csv(f'/Users/yhanalucas/Desktop/Dash/Data/SHS/Long_Form/{df_name}_WA_Long_Form.csv', index=False)
+        WA_only_df.to_csv(f'02-CODE/DATA/SHS/Long_Form/{df_name}_WA_Long_Form.csv', index=False)
     
     return long_form_dfs
 
