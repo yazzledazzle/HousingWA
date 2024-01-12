@@ -70,7 +70,7 @@ def identify_ignore_columns(dataframes_dict):
 
 def load_and_preprocess_data():
     # Import Population.csv
-    Population = pd.read_csv('02-CODE/DATA/Population/Population_State_Sex_Age_to_65+.csv')
+    Population = pd.read_csv('DATA/PROCESSED DATA/Population/Population_State_Sex_Age_to_65+.csv')
     Population = convert_case(Population)
     # date is dd-mm-yyyy
     Population['DATE'] = pd.to_datetime(Population['DATE'], format='%Y-%m-%d')
@@ -167,7 +167,7 @@ def load_and_preprocess_data():
             datetime_cols = [col for col in total_df.columns if 'datetime64' in str(total_df[col].dtype)]
             numeric_cols = [col for col in total_df.columns if total_df[col].dtype in ['int64', 'float64']]
             total_df = total_df.groupby(object_cols + datetime_cols)[numeric_cols].sum().reset_index()
-            total_df.to_csv(f'02-CODE/DATA/SHS/DropSex/{total_df_name}.csv', index=False)
+            total_df.to_csv(f'DATA/PROCESSED DATA/SHS/DropSex/{total_df_name}.csv', index=False)
             processed_dataframes[total_df_name] = total_df
 
         processed_dataframes[df_name] = df
@@ -214,12 +214,12 @@ def merge_and_calculate(processed_dataframes, Population, Population_all_ages):
             PopulationNoSex = PopulationNoSex.drop(['SEX'], axis=1)
             PopulationNoSex = PopulationNoSex.groupby(['DATE', 'AGE GROUP']).sum().reset_index()
             #to csv in Population folder
-            PopulationNoSex.to_csv(f'02-CODE/DATA/Population/PopulationNoSex.csv', index=False)
+            PopulationNoSex.to_csv(f'DATA/PROCESSED DATA/Population/PopulationNoSex.csv', index=False)
             Population_all_agesNoSex = Population_all_ages[Population_all_ages['SEX']=='Total']
             Population_all_agesNoSex = Population_all_agesNoSex.drop(['SEX'], axis=1)
             Population_all_agesNoSex = Population_all_agesNoSex.groupby(['DATE']).sum().reset_index()
             #to csv in Population folder
-            Population_all_agesNoSex.to_csv(f'02-CODE/DATA/Population/Population_all_agesNoSex.csv', index=False)
+            Population_all_agesNoSex.to_csv(f'DATA/PROCESSED DATA/Population/Population_all_agesNoSex.csv', index=False)
 
 
             if 'AGE GROUP' in df.columns:
@@ -256,7 +256,7 @@ def merge_and_calculate(processed_dataframes, Population, Population_all_ages):
         # Store processed DataFrame back in the dictionary
         SHS_with_population_calcs[df_name] = merged_df
         #save to csv
-        merged_df.to_csv(f'02-CODE/DATA/SHS/WithPopulation/{df_name}_WithPopulation.csv', index=False)
+        merged_df.to_csv(f'DATA/PROCESSED DATA/SHS/WithPopulation/{df_name}_WithPopulation.csv', index=False)
 
     return SHS_with_population_calcs
 
@@ -281,13 +281,13 @@ def long_formSHS(SHS_with_population_calcs):
         cols.insert(1, cols.pop(cols.index('STATE')))
         long_form_dfs[df_name] = long_form_dfs[df_name][cols]
                 
-        long_form_dfs[df_name].to_csv(f'02-CODE/DATA/SHS/Long_Form/{df_name}_Long_Form.csv', index=False)
+        long_form_dfs[df_name].to_csv(f'DATA/PROCESSED DATA/SHS/Long_Form/{df_name}_Long_Form.csv', index=False)
         WA_only_df = long_form_dfs[df_name][long_form_dfs[df_name]['STATE'] == 'WA']
         WA_only_df = WA_only_df.drop(['STATE'], axis=1)
         WA_name = df_name.replace('SHS_', 'SHS_WA_')
         long_form_dfs[WA_name] = WA_only_df
 
-        WA_only_df.to_csv(f'02-CODE/DATA/SHS/Long_Form/{df_name}_WA_Long_Form.csv', index=False)
+        WA_only_df.to_csv(f'DATA/PROCESSED DATA/SHS/Long_Form/{df_name}_WA_Long_Form.csv', index=False)
     
     return long_form_dfs
 

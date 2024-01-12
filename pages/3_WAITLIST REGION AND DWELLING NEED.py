@@ -3,7 +3,7 @@ import streamlit as st
 import plotly.express as px
 import plotly.graph_objects as go
 
-source = pd.read_csv('Data/Public_housing/Waitlist_breakdowns.csv')
+source = pd.read_csv('DATA/SOURCE DATA/Public housing/Waitlist_breakdowns.csv')
 
 #initialize streamlit page
 st.title('Waitlist breakdown')
