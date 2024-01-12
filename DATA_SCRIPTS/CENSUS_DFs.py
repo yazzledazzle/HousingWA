@@ -1,8 +1,8 @@
 import pandas as pd
 from os import listdir
 
-path_to_dir = '02-CODE\DATA\Census\Multiyear'
-description_file = '02-CODE\DATA\Census\census_file_details.csv'
+path_to_dir = '02-CODE\DATA\PROCESSED DATA\Census\Multiyear'
+description_file = '02-CODE\DATA\Data descriptions\Census\census_file_details.csv'
 
 def find_csv_filenames(path_to_dir, suffix='.csv'):
     filenames = listdir(path_to_dir)
