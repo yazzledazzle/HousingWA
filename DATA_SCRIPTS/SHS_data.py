@@ -1,13 +1,13 @@
 import pandas as pd
 from os import listdir
 
-path_to_dir = "DATA\PROCESSED DATA\SHS"
+path_to_dir = "DATA/PROCESSED DATA/SHS"
 prefix = 'SHS_'
 suffix = '.csv'
 
 def get_SHS():
     # Load the Excel file
-    file_path = 'DATA\SOURCE DATA\ROGS and SHS\SHS.xlsx'
+    file_path = 'DATA/SOURCE DATA/ROGS and SHS/SHS.xlsx'
     xls = pd.ExcelFile(file_path)
 
     # Read all the sheets into a dictionary of DataFrames
@@ -26,7 +26,7 @@ def get_SHS():
                     sheet[col] = sheet[col].str.replace(chr(8211), "-").str.replace(chr(8212), "-")
 
             save_sheet_name = sheet_name.replace(' ', '_')
-            sheet.to_csv('DATA\PROCESSED DATA\SHS\SHS_' + save_sheet_name + '.csv', index=False)
+            sheet.to_csv('DATA/PROCESSED DATA/SHS/SHS_' + save_sheet_name + '.csv', index=False)
             all_sheets.update({sheet_name: sheet})
 
 def find_csv_filenames(prefix, path_to_dir, suffix):

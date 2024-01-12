@@ -1,6 +1,6 @@
 import pandas as pd
 
-Waitlist_trend_latest = pd.read_csv('DATA\PROCESSED DATA\PUBLIC HOUSING\Waitlist_trend_latest.csv')
+Waitlist_trend_latest = pd.read_csv('DATA/PROCESSED DATA/PUBLIC HOUSING/Waitlist_trend_latest.csv')
 
 #Use date and column value to make a line chart for me
 

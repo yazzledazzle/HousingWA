@@ -1,7 +1,7 @@
 import pandas as pd
 
 #import Data/CSV/Population_State_Sex_Age.csv
-Population_State_Sex_Age = pd.read_csv('DATA\Population\Population_State_Sex_Age.csv')
+Population_State_Sex_Age = pd.read_csv('DATA/SOURCE DATA/Population/Population_State_Sex_Age.csv')
 #date is dd-mm-yyyy
 Population_State_Sex_Age['Date'] = pd.to_datetime(Population_State_Sex_Age['Date'], format='%d-%m-%Y')
 # Set a multi-level index
@@ -46,4 +46,4 @@ Population_State_Sex_Age = Population_State_Sex_Age.groupby(['Age group', 'Sex',
 }).reset_index()
 
 #save to CSV Population_State_Sex_Age_to_65+.csv in Data/CSV folder
-Population_State_Sex_Age.to_csv('DATA\Population\Population_State_Sex_Age_to_65+.csv', index=False)
+Population_State_Sex_Age.to_csv('DATA/Population/Population_State_Sex_Age_to_65+.csv', index=False)
