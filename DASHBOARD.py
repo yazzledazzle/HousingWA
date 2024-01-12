@@ -1,5 +1,5 @@
 import streamlit as st
-from .DATA_SCRIPTS.Waitlist_latest import *
+from Waitlist_latest import *
 
 #initialize streamlit
 st.set_page_config(layout="wide")
