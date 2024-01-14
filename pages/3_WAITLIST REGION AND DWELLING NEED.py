@@ -5,8 +5,6 @@ import plotly.graph_objects as go
 
 source = pd.read_csv('DATA/SOURCE DATA/Public housing/Waitlist_breakdowns.csv')
 
-#initialize streamlit page
-st.title('Waitlist breakdown')
 data = source.copy()
 #filter data for Item = Dwelling need | New tenancies by region
 data = data[(data['Item'] == 'Dwelling need') | (data['Item'] == 'New tenancies by region') | (data['Item'] == 'Waiting time by region') | (data['Item'] == 'Waiting time by dwelling need')]
