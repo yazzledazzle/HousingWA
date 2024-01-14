@@ -184,7 +184,6 @@ def load_and_preprocess_data():
 
     return processed_dataframes, Population, Population_all_ages, filters_dict, filter_select
 
-
 def merge_and_calculate(processed_dataframes, Population, Population_all_ages):
 
     # Convert the 'Date' columns to datetime format for Population DataFrames
