@@ -29,14 +29,10 @@ df_latest_reasons['proportion'] = (df_latest_reasons['VALUE'] / df_latest_reason
 df_latest_reasons = df_latest_reasons.drop(columns=['Total clients'])
 nat_reasons = df_latest_reasons[df_latest_reasons['STATE'] == 'National']
 nat_reasons = nat_reasons.groupby('REASON').sum().reset_index().sort_values(by='proportion', ascending=False)
-
 top_reasons = nat_reasons['REASON'].head(3).tolist()
-
 wa_reasons = df_latest_reasons[df_latest_reasons['STATE'] == 'WA']
 wa_reasons = wa_reasons.groupby('REASON').sum().reset_index().sort_values(by='VALUE', ascending=False)
-
 top_reasons_wa = wa_reasons['REASON'].head(3).tolist()
-
 #combine top reasons for WA and National
 top_reasons = top_reasons + top_reasons_wa
 top_reasons = list(dict.fromkeys(top_reasons))
@@ -53,12 +49,8 @@ df_latest_reasons_count = df_latest_reasons_count.drop(columns=['proportion'])
 
 #pivot so each STATE is a column
 df_top_proportion = df_latest_reasons_prop.pivot_table(index=['STATE'], columns='REASON', values='proportion').reset_index()
-print(df_top_proportion)
 
-# Streamlit app layout
-st.title("SHS Clients by Reason for Seeking Assistance")
-
-states = st.multiselect('Show', ['National', 'WA', 'NSW', 'Vic', 'Qld', 'SA', 'Tas', 'NT', 'ACT'], default=['National', 'WA'])
+states = st.multiselect('Show', ['National', 'WA', 'NSW', 'Vic', 'Qld', 'SA', 'Tas', 'NT', 'ACT'], default=['National', 'WA', 'NSW', 'Vic', 'Qld', 'SA', 'Tas', 'NT', 'ACT'])
 
 
 #for each reason, category bar chart - proportion on y, state on x
@@ -68,8 +60,11 @@ df_top_proportion = df_top_proportion[df_top_proportion['STATE'].isin(states)]
 for reason in top_reasons:
     fig.add_trace(go.Bar(x=df_top_proportion['STATE'], y=df_top_proportion[reason], name=reason))
 fig.update_layout(barmode='group', xaxis={'categoryorder':'array', 'categoryarray': states})
-fig.update_layout(title={'text': 'Top 3 Reasons for Seeking Assistance by State', 'x': 0.5, 'xanchor': 'center'})
+fig.update_layout(title={'text': 'Proportion of clients reporting a top reason for seeking assistance', 'x': 0.5, 'xanchor': 'center'})
 fig.update_layout(legend={'title': 'Reason for Seeking Assistance'})
+#y label % of clients
+fig.update_layout(yaxis={'title': '% of clients'})
+
 st.plotly_chart(fig)
 
 

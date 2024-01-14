@@ -275,16 +275,16 @@ def merge_and_calculate(processed_dataframes, Population, Population_all_ages):
             merged_df[per_10000_column] = merged_df[region] / merged_df[population_column_name] * 10000
 
             proportion_of_national_column = f"{region}_PROPORTION_OF_NATIONAL"
-            merged_df[proportion_of_national_column] = merged_df[region] / merged_df['NATIONAL']
+            merged_df[proportion_of_national_column] = (merged_df[region] / merged_df['NATIONAL']) * 100
 
             proportion_of_national_per_10000_column = f"{region}_PROPORTION_OF_NATIONAL_PER_10k"
-            merged_df[proportion_of_national_per_10000_column] = merged_df[per_10000_column] / merged_df['NATIONAL_PER_10k']
+            merged_df[proportion_of_national_per_10000_column] = (merged_df[per_10000_column] / merged_df['NATIONAL_PER_10k']) * 100
 
             prop_national_pop_column = f"{region}_PROPORTION_OF_NATIONAL_POPULATION"     
-            merged_df[prop_national_pop_column] = merged_df[population_column_name] / merged_df['NATIONAL_POPULATION']
+            merged_df[prop_national_pop_column] = (merged_df[population_column_name] / merged_df['NATIONAL_POPULATION']) * 100
 
             prop_compared_prop_pop = f"{region}_PROPORTION_OF_NATIONAL_COMPARED_TO_PROP_POP"
-            merged_df[prop_compared_prop_pop] = merged_df[proportion_of_national_column] / merged_df[prop_national_pop_column]
+            merged_df[prop_compared_prop_pop] = (merged_df[proportion_of_national_column] / merged_df[prop_national_pop_column]) * 100
         # Store processed DataFrame back in the dictionary
         SHS_with_population_calcs[df_name] = merged_df
         #save to csv
@@ -343,3 +343,4 @@ def import_shs_data():
     except:
         pass
     return
+
