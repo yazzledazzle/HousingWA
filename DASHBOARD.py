@@ -1,12 +1,6 @@
 import streamlit as st
 from Waitlist_latest import *
-from Population import *
-from SHS import *
-from Waitlistcalcs import *
 
-import_waitlist_data()
-import_population_data()
-import_shs_data()
 
 
 st.set_page_config(layout="wide")
