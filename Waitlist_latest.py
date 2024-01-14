@@ -2,9 +2,6 @@ import pandas as pd
 
 Waitlist_trend_latest = pd.read_csv('DATA/PROCESSED DATA/PUBLIC HOUSING/Waitlist_trend_latest.csv')
 
-#Use date and column value to make a line chart for me
-
-
 class WaitlistUpdate:
     def __init__(self, Date, Category, Subcategory, Metric, MetricDetail, MetricAs, MetricCalc, MetricCalcAs, Estimate, Value, FontColor):
         self.Date = Date
