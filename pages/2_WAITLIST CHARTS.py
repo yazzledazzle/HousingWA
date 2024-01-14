@@ -39,9 +39,6 @@ for index, row in data.iterrows():
 
     )
     waitlist_trend.append(trend)   
-
-st.title('Waitlist')
-
 col1, col2, col3 = st.columns(3)
 
 with col1:
