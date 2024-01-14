@@ -211,7 +211,7 @@ def population_to_monthly(population_source_file, df_long):
     population = pd.read_csv(population_source_file)
     #convert columns to upper case
     population.columns = population.columns.str.upper()
-    population['DATE'] = pd.to_datetime(population['DATE'], dayfirst=True)
+    population['DATE'] = pd.to_datetime(population['DATE'])
     population.set_index('DATE', inplace=True)
     population = population.resample('M').mean()
     population = population.interpolate(method='linear')
