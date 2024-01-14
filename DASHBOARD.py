@@ -1,12 +1,15 @@
 import streamlit as st
 from Waitlist_latest import *
 from Population import *
+from SHS import *
+from Waitlistcalcs import *
+
+import_waitlist_data()
+import_population_data()
+import_shs_data()
 
 
-#initialize streamlit
 st.set_page_config(layout="wide")
-#title = Waitlist - Public housing waitlist data
-#sidebar success 'For optimal viewing, enable wide mode under Settings - click the 3 dots icon in the top right corner'
 st.sidebar.success('Navigate to other pages using the menu above')
 st.sidebar.markdown(f'*For optimal viewing, enable wide mode under Settings - click the 3 dots icon in the top right corner*')
       

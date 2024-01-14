@@ -22,12 +22,9 @@ def update_log(latest_date, update_date, dataset):
     update_log = pd.concat([update_log, new_row], ignore_index=True)
     update_log['Latest data point'] = pd.to_datetime(update_log['Latest data point'], format='%d/%m/%Y')
     update_log['Date last updated'] = pd.to_datetime(update_log['Date last updated'], format='%d/%m/%Y')
-    #sort by latest data point then by date last updated, both descending, then drop duplicates keeping the first instance of dataset
     update_log = update_log.sort_values(by=['Latest data point', 'Date last updated'], ascending=False).drop_duplicates(subset=['Dataset'], keep='first')
-    
     update_log['Latest data point'] = update_log['Latest data point'].dt.strftime('%d/%m/%Y')
-    update_log['Date last updated'] = update_log['Date last updated'].dt.strftime('%d/%m/%Y')
-                                        
+    update_log['Date last updated'] = update_log['Date last updated'].dt.strftime('%d/%m/%Y')                            
     update_log.to_excel('DATA/SOURCE DATA/update_log.xlsx', index=False)
     book = load_workbook('DATA/SOURCE DATA/update_log.xlsx')
     sheet = book.active
@@ -133,6 +130,18 @@ def new_pop_file(file):
         update_date = pd.to_datetime('today').strftime('%d/%m/%Y')
         update_log(latest_date, update_date, dataset)
     delete_source_file(source_file)
+    wa_total(Population_State_Sex_Age)
+    return
+
+def wa_total(df):
+    df = df[df['Sex'] == 'Total'] 
+    df = df[df['Age group'] == 'All ages']
+    columns = df.columns.tolist()
+    columns.remove('WA_Population')
+    columns.remove('Date')
+    df = df.drop(columns=columns)
+    df = df.rename(columns={'WA_Population': 'Population'})
+    df.to_csv('DATA/PROCESSED DATA/Population/Population_WA_Total.csv', index=False)
     return
 
 def import_population_data():
@@ -141,14 +150,3 @@ def import_population_data():
     except:
         pass
     return
-
-def wa_total():
-    df = pd.read_csv('DATA/PROCESSED DATA/Population/Population_State_Sex_Age_to_65+.csv')
-    #filter for Sex = Total, Age group = All ages
-    df = df[df['Sex'] == 'Total'] 
-    df = df[df['Age group'] == 'All ages']
-    columns = df.columns.tolist()
-    columns.remove('WA_Population', 'Date')
-    df = df.drop(columns=columns)
-    df.to_csv('DATA/PROCESSED DATA/Population/Population_WA_Total.csv', index=False)
-

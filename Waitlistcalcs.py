@@ -1,23 +1,35 @@
 import pandas as pd
+from openpyxl import load_workbook
 
-file_path = 'DATA/SOURCE DATA/Public housing/Waitlist_trend.csv'
-population_file_path = 'DATA/PROCESSED DATA/Population/Population_WA_Total.csv'
+source_file = 'DATA/SOURCE DATA/Public housing/Waitlist_trend.xlsx'
+current_file = 'DATA/PROCESSED DATA/PUBLIC HOUSING/Waitlist_trend.csv'
+population_source_file = 'DATA/PROCESSED DATA/Population/Population_WA_Total.csv'
 save = 'DATA/PROCESSED DATA/PUBLIC HOUSING/Waitlist_trend_long.csv'
 save_latest = 'DATA/PROCESSED DATA/PUBLIC HOUSING/Waitlist_trend_latest.csv'
 dataset = 'Waitlist trend - statewide'
 
-def load_data(file_path):
-    return pd.read_csv(file_path)
+def load_data(source_file):
+    new_waitlist = pd.read_excel(source_file)
+    current = pd.read_csv(current_file)
+    df = pd.concat([current, new_waitlist])
+    df = df.drop_duplicates()
+    return df
+
+def clear_new_data(source_file):
+    wb = load_workbook(source_file)
+    ws = wb.active
+    ws.delete_rows(2, ws.max_row)
+    wb.save(source_file)
+    return
 
 def convert_to_long_form(df):
     df_long = df.melt(id_vars=["Date"], 
                       var_name="Category", 
                       value_name="Number")
-    df_long['Date'] = pd.to_datetime(df_long['Date'])
+    df_long['Date'] = pd.to_datetime(df_long['Date'], dayfirst=True)
     df_long = df_long.sort_values(['Category', 'Date'], ascending=[True, True])
     df_long = df_long.dropna(subset=['Number'])
     return df_long
-
 
 def gap_filler(df_long):
     missing_dates = []
@@ -195,11 +207,11 @@ def add_quarter(df_long):
     df_long['Quarter'] = df_long['Date'].apply(date_to_quarter_end)
     return df_long
 
-def population_to_monthly(population_file_path, df_long):
-    population = pd.read_csv(population_file_path)
+def population_to_monthly(population_source_file, df_long):
+    population = pd.read_csv(population_source_file)
     #convert columns to upper case
     population.columns = population.columns.str.upper()
-    population['DATE'] = pd.to_datetime(population['DATE'])
+    population['DATE'] = pd.to_datetime(population['DATE'], dayfirst=True)
     population.set_index('DATE', inplace=True)
     population = population.resample('M').mean()
     population = population.interpolate(method='linear')
@@ -335,24 +347,52 @@ def final_long(df_long, save_latest, save):
         df_latest = pd.concat([df_latest, df_cat_latest])
     df_latest = df_latest.reset_index(drop=True)
     df_latest.to_csv(save_latest, index=False)
+    return max_date
 
+def update_log(latest_date, update_date, dataset):
+    try:
+        update_log = pd.read_excel('DATA/SOURCE DATA/update_log.xlsx')
+    except:
+        update_log = pd.DataFrame(columns=['Dataset', 'Latest data point', 'Date last updated'])
+    new_row = pd.DataFrame({'Dataset': [dataset], 'Latest data point': [latest_date], 'Date last updated': [update_date]})
+    update_log = pd.concat([update_log, new_row], ignore_index=True)
+    update_log['Latest data point'] = pd.to_datetime(update_log['Latest data point'], format='%d/%m/%Y')
+    update_log['Date last updated'] = pd.to_datetime(update_log['Date last updated'], format='%d/%m/%Y')
+    update_log = update_log.sort_values(by=['Latest data point', 'Date last updated'], ascending=False).drop_duplicates(subset=['Dataset'], keep='first')
+    update_log['Latest data point'] = update_log['Latest data point'].dt.strftime('%d/%m/%Y')
+    update_log['Date last updated'] = update_log['Date last updated'].dt.strftime('%d/%m/%Y')                            
+    update_log.to_excel('DATA/SOURCE DATA/update_log.xlsx', index=False)
+    book = load_workbook('DATA/SOURCE DATA/update_log.xlsx')
+    sheet = book.active
+    for column_cells in sheet.columns:
+        length = max(len(as_text(cell.value)) for cell in column_cells)
+        sheet.column_dimensions[column_cells[0].column_letter].width = length
+    book.save('DATA/SOURCE DATA/update_log.xlsx')
     return
+
+def as_text(value):
+    if value is None:
+        return ""
+    return str(value)
 
 def import_waitlist_data():
     try:
-        df = load_data(file_path)
+        df = load_data(source_file)
         df_long = convert_to_long_form(df)
         df_long = gap_filler(df_long)
         df_long = nonpriority(df_long)
         df_long = calculate_Priority_proportion(df_long)
-        population = population_to_monthly(population_file_path, df_long)
+        population = population_to_monthly(population_source_file, df_long)
         df_long = add_population(df_long, population)
         df_long = month_diff(df_long)
         df_long = year_diff(df_long)
         df_long = calculate_cydiff(df_long)
         df_long = calculate_12_month_average(df_long)
         df_long = FYtdchange(df_long)
-        final_long(df_long, save_latest, save)
+        max_date = final_long(df_long, save_latest, save)
+        update_date = pd.to_datetime('today').strftime('%d/%m/%Y')
+        clear_new_data(source_file)
+        update_log(max_date, update_date, dataset)
     except:
         pass
     return

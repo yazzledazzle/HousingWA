@@ -334,7 +334,7 @@ def long_formSHS(SHS_with_population_calcs):
 
     return 
 
-def import_SHS_data():
+def import_shs_data():
     try:
         get_SHS(source_file)
         processsed_dataframes, Population, Population_all_ages, filters_dict, filter_select = load_and_preprocess_data()
