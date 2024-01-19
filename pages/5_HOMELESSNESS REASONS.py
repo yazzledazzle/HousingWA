@@ -3,6 +3,8 @@ import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
 
+
+
 # Read the data
 df = pd.read_csv('DATA/PROCESSED DATA/SHS/Long_Form/SHS_Reasons_Long_Form.csv') 
 
@@ -50,8 +52,13 @@ df_latest_reasons_count = df_latest_reasons_count.drop(columns=['proportion'])
 #pivot so each STATE is a column
 df_top_proportion = df_latest_reasons_prop.pivot_table(index=['STATE'], columns='REASON', values='proportion').reset_index()
 
-states = st.multiselect('Show', ['National', 'WA', 'NSW', 'Vic', 'Qld', 'SA', 'Tas', 'NT', 'ACT'], default=['National', 'WA', 'NSW', 'Vic', 'Qld', 'SA', 'Tas', 'NT', 'ACT'])
 
+#latest date as mmmm yyyy
+latest_date = pd.to_datetime(latest_date, format='%Y-%m-%d').strftime('%B %Y')
+
+st.markdown(f'Source: <a href="https://www.aihw.gov.au/reports/homelessness-services/specialist-homelessness-services-monthly-data/data">Australian Institute of Health and Welfare - Specialist homelessness services, monthly data - last updated {latest_date} </a>', unsafe_allow_html=True)
+
+states = st.multiselect('Show', ['National', 'WA', 'NSW', 'Vic', 'Qld', 'SA', 'Tas', 'NT', 'ACT'], default=['National', 'WA', 'NSW', 'Vic', 'Qld', 'SA', 'Tas', 'NT', 'ACT'])
 
 #for each reason, category bar chart - proportion on y, state on x
 fig = go.Figure()

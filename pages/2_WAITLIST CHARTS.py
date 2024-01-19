@@ -7,6 +7,10 @@ import streamlit as st
 data = pd.read_csv('DATA/PROCESSED DATA/PUBLIC HOUSING/Waitlist_trend_long.csv')
 #make Date column datetime
 data['Date'] = pd.to_datetime(data['Date'])
+latest_date = data['Date'].max()
+latest_date = pd.to_datetime(latest_date, format='%Y-%m-%d').strftime('%B %Y')
+st.markdown(f'Source: <a href="https://www.parliament.wa.gov.au/Parliament/Pquest.nsf/(SearchResultsAllDesc)?SearchView&Query=(Housing%20waitlist)&Start=1&SearchOrder=4&SearchMax=1000">Parliamentary questions - last updated {latest_date} </a>', unsafe_allow_html=True)
+
 
 class WaitlistTrend:
     def __init__(self, Date, Category, Subcategory, Metric, MetricDetail, MetricAs, MetricCalc, MetricCalcAs, Estimate, Value, FontColor):

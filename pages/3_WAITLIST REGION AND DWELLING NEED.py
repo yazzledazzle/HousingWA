@@ -4,6 +4,8 @@ import plotly.express as px
 import plotly.graph_objects as go
 
 source = pd.read_csv('DATA/SOURCE DATA/Public housing/Waitlist_breakdowns.csv')
+st.markdown(f'Source: <a href="https://www.parliament.wa.gov.au/Parliament/Pquest.nsf/(SearchResultsAllDesc)?SearchView&Query=(Housing%20waitlist)&Start=1&SearchOrder=4&SearchMax=1000">Parliamentary questions</a>', unsafe_allow_html=True)
+
 
 data = source.copy()
 #filter data for Item = Dwelling need | New tenancies by region

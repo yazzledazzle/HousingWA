@@ -3,7 +3,7 @@ from openpyxl import load_workbook
 
 source_file = 'DATA/SOURCE DATA/Public housing/Waitlist_trend.xlsx'
 current_file = 'DATA/PROCESSED DATA/PUBLIC HOUSING/Waitlist_trend.csv'
-population_source_file = 'DATA/PROCESSED DATA/Population/Population_WA_Total.csv'
+population_source_file = 'DATA/PROCESSED DATA/Population/Population_WA_Total_monthly.csv'
 save = 'DATA/PROCESSED DATA/PUBLIC HOUSING/Waitlist_trend_long.csv'
 save_latest = 'DATA/PROCESSED DATA/PUBLIC HOUSING/Waitlist_trend_latest.csv'
 dataset = 'Waitlist trend - statewide'
@@ -207,24 +207,7 @@ def add_quarter(df_long):
     df_long['Quarter'] = df_long['Date'].apply(date_to_quarter_end)
     return df_long
 
-def population_to_monthly(population_source_file, df_long):
-    population = pd.read_csv(population_source_file)
-    #convert columns to upper case
-    population.columns = population.columns.str.upper()
-    population['DATE'] = pd.to_datetime(population['DATE'])
-    population.set_index('DATE', inplace=True)
-    population = population.resample('M').mean()
-    population = population.interpolate(method='linear')
-    population = population.reset_index()
-    date_list = df_long['Date'].unique()
-    population_date_list = population['DATE'].unique()
-    missing_dates = [date for date in date_list if date not in population_date_list]
-    population = population.sort_values('DATE', ascending=True)
-    for date in missing_dates:
-        new_row = population.iloc[[-1]].copy()
-        new_row['DATE'] = date
-        population = pd.concat([population, new_row])
-    return population
+
 
 def nonpriority(df_long):
     new_rows = pd.DataFrame()
@@ -382,8 +365,7 @@ def import_waitlist_data():
         df_long = gap_filler(df_long)
         df_long = nonpriority(df_long)
         df_long = calculate_Priority_proportion(df_long)
-        population = population_to_monthly(population_source_file, df_long)
-        df_long = add_population(df_long, population)
+        df_long = add_population(df_long, pd.read_csv(population_source_file))
         df_long = month_diff(df_long)
         df_long = year_diff(df_long)
         df_long = calculate_cydiff(df_long)

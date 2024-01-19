@@ -130,18 +130,61 @@ def new_pop_file(file):
         update_date = pd.to_datetime('today').strftime('%d/%m/%Y')
         update_log(latest_date, update_date, dataset)
     delete_source_file(source_file)
-    wa_total(Population_State_Sex_Age)
+    total(Population_State_Sex_Age)
     return
 
-def wa_total(df):
-    df = df[df['Sex'] == 'Total'] 
+def total(df):
     df = df[df['Age group'] == 'All ages']
+    df = df.drop(columns='Age group')
+    save_to = 'DATA/PROCESSED DATA/Population/Population_State_Sex_Total'
+    df.to_csv(save_to + '.csv', index=False)
+    population_to_monthly (save_to)
+    df = df[df['Sex'] == 'Total']
+    df = df.drop(columns='Sex')
+    save_to = 'DATA/PROCESSED DATA/Population/Population_State_Total'
+    df.to_csv(save_to + 'csv', index=False)
+    population_to_monthly (save_to)
     columns = df.columns.tolist()
     columns.remove('WA_Population')
     columns.remove('Date')
     df = df.drop(columns=columns)
     df = df.rename(columns={'WA_Population': 'Population'})
-    df.to_csv('DATA/PROCESSED DATA/Population/Population_WA_Total.csv', index=False)
+    save_to = 'DATA/PROCESSED DATA/Population/Population_WA_Total'
+    df.to_csv(save_to + '.csv', index=False)
+    population_to_monthly (save_to)
+    return
+
+
+def population_to_monthly(population_source_file):
+    population = pd.read_csv(population_source_file + '.csv')
+    #convert columns to upper case
+    population.columns = population.columns.str.upper()
+    population['DATE'] = pd.to_datetime(population['DATE'])
+    population = population.set_index('DATE')
+    for column in population.columns:
+        if population[column].dtype == 'float64':
+            population[column] = population[column].resample('M').mean()
+            population[column] = population[column].interpolate(method='linear')
+    population = population.reset_index()
+    #create list of EOmonth for each month between DATE min and max
+    date_list = pd.date_range(start=population['DATE'].min(), end=population['DATE'].max(), freq='M').tolist()
+    population_date_list = population['DATE'].unique()
+    missing_dates = [date for date in date_list if date not in population_date_list]
+    population = population.sort_values('DATE', ascending=True)
+    for date in missing_dates:
+        new_row = population.iloc[[-1]].copy()
+        new_row['DATE'] = date
+        population = pd.concat([population, new_row])
+    #date to string
+        #sort by date
+    population = population.sort_values('DATE', ascending=True)
+    population['DATE'] = population['DATE'].dt.strftime('%d/%m/%Y')
+    #if column is numeric, round to 0dp
+    for column in population.columns:
+        if population[column].dtype == 'float64':
+            population[column] = population[column].round(0)
+            population[column] = population[column].astype(int)
+    population.to_csv(population_source_file + '_monthly.csv', index=False)
     return
 
 def import_population_data():
