@@ -1,20 +1,3 @@
-FILE_NAME,FILE_DESCRIPTION1
-ATSIHouseState,Indigenous Household Indicator and state by homelessness measures
-ATSIState,Indigenous Status and state by homelessness measures
-CitState,Australian Citizenship and state by homelessness measures
-EALDState,Proficiency in Spoken English/Language and state by homelessness measures
-EALDState,Proficiency in Spoken English and state by homelessness measures
-FedElec,Federal electorates by homelessness measures
-HealthChildState,State and Count of Children with Selected Long-term Health Condition in Household by homelessness measures
-HealthState,Type of Long-term Health Condition and state by homelessness measures
-LAs,State electorates by homelessness measures
-LGA,LGA by homelessness measures
-MortgageStressStateIncome,Mortgage Affordability Indicator and state by Total Household Income (weekly)
-Mortgage,State and Mortgage Repayments (monthly) Ranges by Total Household Income (weekly)
-RentAffordability,Rent Affordability Indicator and state by Total Household Income (weekly)
-Rent,State and Rent (weekly) Ranges by Total Household Income (weekly)
-SA3,SA3 by homelessness measures
-SA4Income,Homelessness measures and geography (SA4) by Total Household Income (weekly)
-SA4Rel,Homelessness measures and geography (SA4) by Relationship in Household
-SexAgeState,"Sex, Age in Five Year Groups and state by homelessness measures"
-VetsState,Defence Force status and state by homelessness measures
+version https://git-lfs.github.com/spec/v1
+oid sha256:6f435838e06b8812c713d9d1aa4336677b093ec308e752b6d2eb754c67bf1f99
+size 1437

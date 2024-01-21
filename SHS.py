@@ -1,6 +1,7 @@
 import pandas as pd
 import os
 from os import listdir
+import openpyxl
 from openpyxl import load_workbook
 
 path_to_dir = "DATA/PROCESSED DATA/SHS"
@@ -8,8 +9,8 @@ prefix = 'SHS_'
 suffix = '.csv'
 source_file = 'DATA/SOURCE DATA/ROGS and SHS/SHS.xlsx'
 dataset = 'Monthly SHS data from AIHW'
-Population_Sex_Age = pd.read_csv('DATA\PROCESSED DATA\Population\Population_State_Sex_Age_to_65+_monthly.csv')
-Population_Sex = pd.read_csv('DATA\PROCESSED DATA\Population\Population_State_Sex_Total_monthly.csv')
+Population_Sex_Age = pd.read_csv('DATA\PROCESSED DATA\Population\Population_State_Sex_Age_to_65+.csv')
+Population_Sex = pd.read_csv('DATA\PROCESSED DATA\Population\Population_State_Sex_Total.csv')
 Population_Total = pd.read_csv('DATA\PROCESSED DATA\Population\Population_State_Total_monthly.csv')
 
 def delete_source_file(file):
@@ -152,14 +153,15 @@ def load_and_preprocess_data():
         processed_dataframes[df_name] = df
     return processed_dataframes
 
-
 def merge_and_calculate(processed_dataframes, Population_Sex_Age, Population_Sex, Population_Total):
 
     # Convert the 'Date' columns to datetime format for Population DataFrames
     pop_dfs = ['Population_Sex_Age', 'Population_Sex', 'Population_Total']
     for pop_df in pop_dfs:
+        #uppercase column names
+        globals()[pop_df] = convert_case(globals()[pop_df])
         # Convert the 'Date' column to datetime format
-        globals()[pop_df]['DATE'] = pd.to_datetime(globals()[pop_df]['DATE'], format='%d/%m/%Y', dayfirst=True)
+        globals()[pop_df]['DATE'] = pd.to_datetime(globals()[pop_df]['DATE'], format='%Y-%m-%d', dayfirst=True, errors='coerce')
         #reset index
         globals()[pop_df] = globals()[pop_df].set_index('DATE')
 
@@ -176,14 +178,35 @@ def merge_and_calculate(processed_dataframes, Population_Sex_Age, Population_Sex
         df['DATE'] = pd.to_datetime(df['DATE'], format='%d/%m/%Y', dayfirst=True)
 
         if 'AGE GROUP' in df.columns:
-                merged_df = pd.merge(df, Population_Sex_Age, left_on=['DATE', 'SEX', 'AGE GROUP'], right_on=['DATE', 'SEX', 'AGE GROUP'], how='left')
+            # Create 'JoinLeft' column which is string join of DATE, SEX, AGE GROUP
+            df['JoinLeft'] = df['DATE'].astype(str) + ' ' + df['SEX'].astype(str) + ' ' + df['AGE GROUP'].astype(str)
+            Population_Sex_Age['JoinRight'] = Population_Sex_Age['DATE'].astype(str) + ' ' + Population_Sex_Age['SEX'].astype(str) + ' ' + Population_Sex_Age['AGE GROUP'].astype(str)
+            merged_df = pd.merge(df, Population_Sex_Age, left_on=['JoinLeft'], right_on=['JoinRight'], how='left')
+            merged_df = merged_df.sort_values(by=['SEX_y', 'AGE GROUP_y', 'DATE_y'])
+            
         else:
             if 'SEX' in df.columns:
-                merged_df = pd.merge(df, Population_Sex, left_on=['DATE', 'SEX'], right_on = ['DATE', 'SEX'], how='left')
+                df['JoinLeft'] = df['DATE'].astype(str) + ' ' + df['SEX'].astype(str)
+                Population_Sex['JoinRight'] = Population_Sex['DATE'].astype(str) + ' ' + Population_Sex['SEX'].astype(str)
+                merged_df = pd.merge(df, Population_Sex, left_on=['JoinLeft'], right_on=['JoinRight'], how='left')
+                #sort by SEX then AGE GROUP
+                merged_df = merged_df.sort_values(by=['SEX_y', 'DATE_y']) 
             else:
-                merged_df = pd.merge(df, Population_Total, left_on=['DATE'], right_on = ['DATE'], how='left')
+                merged_df = pd.merge(df, Population_Total, left_on=['DATE'], right_on=['DATE'], how='left')
+                merged_df = merged_df.sort_values(by=['DATE_y'])
+            
+        #FORWARD FILL ANY NULL _POPULATION COLUMNS
+        pop_cols = [col for col in merged_df.columns if col.endswith('_POPULATION')]
+        merged_df[pop_cols] = merged_df[pop_cols].ffill(axis=1)
 
-        merged_df = merged_df.rename(columns={'DATE_x': 'DATE'})
+            
+        #drop JoinLeft and JoinRight columns
+        merged_df = merged_df.drop(columns=['JoinLeft', 'JoinRight'])
+        #IF ANY COLUMN NAMES END with _y, drop
+        merged_df = merged_df.loc[:,~merged_df.columns.str.endswith('_y')]
+        #IF ANY COLUMN NAMES end with _x, rename to remove _x
+        merged_df = merged_df.rename(columns=lambda x: x.replace('_x', '') if x.endswith('_x') else x)
+        
         #move Date column to front
         cols = list(merged_df.columns)
         cols.insert(0, cols.pop(cols.index('DATE')))
