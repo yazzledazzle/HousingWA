@@ -43,11 +43,12 @@ with col2:
 latest_date = filtered_data['Date'].max()
 #convert to dd mmmm yy
 latest_date = latest_date.strftime('%d %B %Y')
-
-st.markdown('<table style="background-color: yellow; font-weight: bold; font-style: italic"><tr><td>Series can be toggled on/off by clicking on the legend</td></tr></table>', unsafe_allow_html=True)
+with col2:
+    st.markdown('<table style="background-color: yellow; font-weight: bold; font-style: italic"><tr><td>Series can be toggled on/off by clicking on the legend</td></tr></table>', unsafe_allow_html=True)
 
 
 if view == 'Dwelling need':
+    datalabels = st.radio('Data labels on bars', ['On', 'Off'], index=1, key='datalabels', horizontal=True)
     if category == 'All':
         dwellingdata = data[data['Item'] == 'Dwelling need']
         categories = dwellingdata['Category'].unique()
@@ -58,6 +59,9 @@ if view == 'Dwelling need':
             piecat = pie1[pie1['Category'] == category]
             #pie chart of Value by Detail
             fig = px.pie(piecat, values='Value', names='Detail')
+            #label Value and %
+            if datalabels == 'On':
+                fig.update_traces(texttemplate='%{value:,.0f} (%{percent})', textposition='inside')
             st.plotly_chart(fig)
         for category in categories:
             st.markdown(f'**Dwelling demand by {category} over time**', unsafe_allow_html=True)
@@ -67,6 +71,8 @@ if view == 'Dwelling need':
                 fig2filtered_data = fig2cat[fig2cat['Detail'] == Detail]
                 fig2filtered_data['Date'] = fig2filtered_data['Date'].dt.strftime('%d %B %Y')
                 fig2.add_trace(go.Bar(x=fig2filtered_data['Date'], y=fig2filtered_data['Value'], name=Detail))
+            if datalabels == 'On':
+                fig2.update_traces(texttemplate='%{y:.0f}', textposition='inside')
             #barmode stack
             fig2.update_layout(barmode='stack', yaxis=dict(title=f'{subcategory}'))
             st.plotly_chart(fig2, use_container_width=True)
@@ -79,6 +85,8 @@ if view == 'Dwelling need':
                 fig3filtered_data = cat[cat['Date'] == date]
                 date = date.strftime('%d %B %Y')
                 fig3.add_trace(go.Bar(x=fig3filtered_data['Detail'], y=fig3filtered_data['Value'], name=date))
+            if datalabels == 'On':
+                fig3.update_traces(texttemplate='%{y:.0f}', textposition='inside')
             fig3.update_layout(yaxis=dict(title=f'{subcategory}'))
             st.plotly_chart(fig3)
     else:
@@ -94,6 +102,9 @@ if view == 'Dwelling need':
             fig2filtered_data = filtered_data[filtered_data['Detail'] == Detail]
             fig2filtered_data['Date'] = fig2filtered_data['Date'].dt.strftime('%d %B %Y')
             fig2.add_trace(go.Bar(x=fig2filtered_data['Date'], y=fig2filtered_data['Value'], name=Detail))
+            #label data inside top bar
+        if datalabels == 'On':
+            fig2.update_traces(texttemplate='%{y:.0f}', textposition='inside')
         #barmode stack
         fig2.update_layout(barmode='stack')
 
@@ -106,10 +117,13 @@ if view == 'Dwelling need':
             #convert date to string
             date = date.strftime('%d %B %Y')
             fig3.add_trace(go.Bar(x=fig3filtered_data['Detail'], y=fig3filtered_data['Value'], name=date))
+        if datalabels == 'On':
+            fig3.update_traces(texttemplate='%{y:.0f}', textposition='inside')
         st.plotly_chart(fig3)
        
 
 elif view == 'New tenancies by region':
+    datalabels = st.radio('Data labels on bars', ['On', 'Off'], index=1, key='datalabels', horizontal=True)
     dates = filtered_data['Date'].unique()
     if len(dates) < 2:
         st.markdown('Single data point only')
@@ -126,6 +140,10 @@ elif view == 'New tenancies by region':
         #print clean
         #create Priority and Total columns for each Region
         clean = clean.pivot_table(index='Region', columns='Category', values='Value', aggfunc='sum')
+    
+        #create WA total row
+        clean.loc['WA total'] = clean.sum()    
+
         clean['Priority %'] = clean['Priority'] / clean['Total'] * 100
         #proportion priority to .1f
         clean['Priority %'] = clean['Priority %'].round(1)
@@ -150,6 +168,8 @@ elif view == 'New tenancies by region':
         region_need = region_need.drop(columns=['Subcategory', 'Detail', 'Item', 'Newtenanciestime', 'Date'], axis=1)
         #pivot table
         region_need = region_need.pivot_table(index='Region', columns='Category', values='Value', aggfunc='sum')
+        #create WA total row
+        region_need.loc['WA total'] = region_need.sum()
         region_need['Priority %'] = region_need['Priority'] / region_need['Total'] * 100
         #proportion priority to .1f
         region_need['Priority %'] = region_need['Priority %'].round(1)
@@ -166,6 +186,9 @@ elif view == 'New tenancies by region':
         regionfig.add_trace(go.Bar(x=regionfigdata['Region'], y=regionfigdata[f'% housed - Priority'], name=f'% housed - Priority'))
         regionfig.add_trace(go.Bar(x=regionfigdata['Region'], y=regionfigdata[f'% housed - Total'], name=f'% housed - Total'))
         regionfig.update_layout(barmode='group', yaxis=dict(title='%'), title_text = f'Percentage of waitlist at {latest_date} housed in 12months to to {date} - group by region')
+        #data labels inside top bar
+        if datalabels == 'On':
+            regionfig.update_traces(texttemplate='%{y:.1f}', textposition='inside')
         st.plotly_chart(regionfig)
         regionlist = list(regionfigdata['Region'].unique())
         # plot a version with region as traces and % housed categories as y groups
@@ -185,6 +208,8 @@ elif view == 'New tenancies by region':
         for region in regionlist:
             regionfig2.add_trace(go.Bar(x=housed['Category'], y=housed[region], name=region))
         regionfig2.update_layout(barmode='group', yaxis=dict(title='%'), title_text = f'Percentage of waitlist at {latest_date} housed in 12 months to {date} - group by applicant type')
+        if datalabels == 'On':
+            regionfig2.update_traces(texttemplate='%{y:.1f}', textposition='inside')
         st.plotly_chart(regionfig2)
 
 
