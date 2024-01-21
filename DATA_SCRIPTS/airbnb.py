@@ -98,6 +98,7 @@ def state_total():
     for filename in filenames:
         df_name = filename[:10]
         df = pd.read_csv('DATA/SOURCE DATA/Summary/' + filename)
+        df['date'] = df_name
         dfs[df_name] = df
         all_details = pd.concat(dfs.values())
     for df_name, df in dfs.items():
@@ -139,6 +140,7 @@ def locs():
 
     #merge df_full neighbourhood & locs locality
     df_full = pd.merge(df_full, locs, left_on='neighbourhood', right_on='locality', how='left')
+    #drop columns name, host_name, neighbourhood_group, latitude, longitude, last_review, reviews_per_month, number_of_reviews, number_of_reviews_ltm, 'license'
 
     if df['neighbourhood'].isin(map_old).any():
         df['neighbourhood'] = df['neighbourhood'].replace(map_old, map['new'])
@@ -148,8 +150,23 @@ def locs():
     df.to_csv('DATA/PROCESSED DATA/Market and economy/airbnb_summary.csv', index=False)
     return
 
-locs()
+def full_clean():
+    df = pd.read_csv('DATA/PROCESSED DATA/Market and economy/Airbnb_full.csv')
+    df = df.drop(columns=['name', 'host_name', 'neighbourhood_group', 'latitude', 'longitude', 'last_review', 'reviews_per_month', 'number_of_reviews', 'number_of_reviews_ltm', 'license'])
 
+    try:
+        df = df.rename(columns={'postcode_y': 'postcode', 'locality_y': 'locality', 'SA2_NAME_2016_y': 'SA2_NAME_2016', 'SA3_NAME_2016_y': 'SA3_NAME_2016', 'SA4_NAME_2016_y': 'SA4_NAME_2016', 'ced_y': 'ced', 'phn_name_y': 'phn_name', 'lgaregion_y': 'lgaregion', 'lgacode_y': 'lgacode', 'electorate_y': 'electorate', 'electoraterating_y': 'electoraterating'})
+    except:
+        pass
+
+    df_allgeo = df.groupby(['date', 'room_type', 'SA2_NAME_2016', 'SA3_NAME_2016', 'SA4_NAME_2016', 'ced', 'lgaregion', 'lgacode', 'electorate', 'electoraterating']).agg({'id': 'count', 'price': ['mean', 'median'], 'availability_365': ['mean', 'median']})
+    df_allgeo.columns = ['_'.join(col) for col in df_allgeo.columns]
+    df_allgeo = df_allgeo.reset_index()
+
+    df_allgeo.to_csv('DATA/PROCESSED DATA/Market and economy/Airbnb_allgeo.csv', index=False)
+    return
+
+full_clean()
 
 
 
