@@ -198,6 +198,9 @@ def merge_and_calculate(processed_dataframes, Population_Sex_Age, Population_Sex
         #FORWARD FILL ANY NULL _POPULATION COLUMNS
         pop_cols = [col for col in merged_df.columns if col.endswith('_POPULATION')]
         merged_df[pop_cols] = merged_df[pop_cols].ffill(axis=1)
+        #sort by dfate, fill any nulls from previous row (ffill)
+        merged_df = merged_df.sort_values(by=['DATE_x'])
+        merged_df = merged_df.fillna(method='ffill')
 
             
         #drop JoinLeft and JoinRight columns
@@ -259,12 +262,6 @@ def long_formSHS(SHS_with_population_calcs):
         cols.insert(1, cols.pop(cols.index('STATE')))
         long_form_dfs[df_name] = long_form_dfs[df_name][cols]
         long_form_dfs[df_name].to_csv(f'DATA/PROCESSED DATA/SHS/Long_Form/{df_name}_Long_Form.csv', index=False)
-        WA_only_df = long_form_dfs[df_name][long_form_dfs[df_name]['STATE'] == 'WA']
-        WA_only_df = WA_only_df.drop(['STATE'], axis=1)
-        WA_name = df_name.replace('SHS_', 'SHS_WA_')
-        long_form_dfs[WA_name] = WA_only_df
-        WA_only_df.to_csv(f'DATA/PROCESSED DATA/SHS/Long_Form/{df_name}_WA_Long_Form.csv', index=False)
-        
         delete_source_file(source_file)
         latest_date = df['DATE'].max()
         latest_date = pd.to_datetime(latest_date)

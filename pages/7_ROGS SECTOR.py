@@ -15,6 +15,12 @@ Population['Date'] = pd.to_datetime(Population['Date'], format='%d/%m/%y', dayfi
 
 df = df.rename(columns={'Aust': 'National'})
 regions = ['National', 'WA', 'Vic', 'Qld', 'SA', 'NSW', 'Tas', 'NT', 'ACT']
+#df long = melt on regions, value_name='Value', var_name='Region'
+cols = df.columns.tolist()
+#remove regions from cols
+for region in regions:
+    cols.remove(region)
+dflong = pd.melt(df, id_vars=cols, value_vars=regions, var_name='Region', value_name='Value')
 
 st.title = "Sector overview - Report on Government Services"
 
@@ -69,27 +75,79 @@ if select_measure == "Low income rental households":
 if select_measure == "Housing affordability":
     ytitle = df['Description2'].unique()[0]
     charttitle = df['Description1'].unique()[0]
-    select_year = st.selectbox('Select year', df['Year'].unique())
-    dfHA = df[df['Year'] == select_year]
-    regions = st.multiselect('Select regions', regions, default=regions)
-    fig = go.Figure()
-    for region in regions:
-        fig.add_trace(go.Bar(x=dfHA['Year'], y=dfHA[region], name=region))
-    fig.update_layout(barmode='group', title=charttitle, xaxis_title="Year", yaxis_title=ytitle)
-    st.plotly_chart(fig)
+    compare = st.radio('Compare', ['States', 'Years', 'States & years'], horizontal=True)
+    if compare == 'States':
+        regions = st.multiselect('Select regions', regions, default=regions)
+        select_year = st.selectbox('Select year', df['Year'].unique())
+        dfHA = df[df['Year'] == select_year]
+        fig = go.Figure()
+        for region in regions:
+            fig.add_trace(go.Bar(x=dfHA['Year'], y=dfHA[region], name=region))
+        fig.update_layout(barmode='group', title=charttitle, xaxis_title="Year", yaxis_title=ytitle)
+        st.plotly_chart(fig)
+    if compare == 'Years':
+        regions = st.selectbox('Select region', regions)
+        years = st.multiselect('Select years', df['Year'].unique(), default=df['Year'].unique())
+        fig = go.Figure()
+        for year in years:
+            dfHA = df[df['Year'] == year]
+            fig.add_trace(go.Bar(x=dfHA['Year'], y=dfHA[regions], name=year))
+        fig.update_layout(barmode='group', title=charttitle, xaxis_title="Year", yaxis_title=ytitle)
+        st.plotly_chart(fig)
+    if compare == 'States & years':
+        regions = st.multiselect('Select regions', regions, default=regions)
+        years = st.multiselect('Select years', df['Year'].unique(), default=df['Year'].unique())
+        dfHA = df[df['Year'].isin(years)]
+        dflong = pd.melt(dfHA, id_vars=cols, value_vars=regions, var_name='Region', value_name='Value')
+        dflong = dflong[dflong['Region'].isin(regions)]
+        #sort dflong by Year ascending
+        dflong = dflong.sort_values(by=['Year'], ascending=True)
 
+        fig = go.Figure()
+        fig.add_trace(go.Bar(x=[dflong['Region'],dflong['Year']], y=dflong['Value']))
+        #add figure inside bar
+        fig.update_traces(texttemplate='%{y:.2s}', textposition='inside')
+        fig.update_layout(barmode='group', title=charttitle, yaxis_title=ytitle)
+        st.plotly_chart(fig)
 if select_measure == "Housing composition by tenure type":
     df['Description4'] = df['Description4'].fillna(df['Description3'])
+    compare = st.radio('Compare', ['States', 'Years', 'States & years'], horizontal=True)
     df = df[df['Description4'] != 'Total renters']
     df = df[df['Uncertainty'].isna()]
-    select_year = st.selectbox('Select year', df['Year'].unique())
-    df = df[df['Year'] == select_year]
-    regions = st.multiselect('Select regions', regions, default=regions)
-    fig = go.Figure()
-    for region in regions:
-        fig.add_trace(go.Bar(x=df['Description4'], y=df[region], name=region))
-    fig.update_layout(barmode='group', title='Proportion of renters by tenure type', xaxis_title="Tenure type", yaxis_title="Proportion")
-    st.plotly_chart(fig)
+    #sort year ascending
+    df = df.sort_values(by=['Year'], ascending=True)
+    if compare == 'States':
+        regions = st.multiselect('Select regions', regions, default=regions)
+        select_year = st.selectbox('Select year', df['Year'].unique())
+        df = df[df['Year'] == select_year]   
+        fig = go.Figure()
+        for region in regions:
+            fig.add_trace(go.Bar(x=df['Description4'], y=df[region], name=region))
+        fig.update_layout(barmode='group', title='Proportion of renters by tenure type', xaxis_title="Tenure type", yaxis_title="Proportion")
+        st.plotly_chart(fig)
+    if compare == 'Years':
+        regions = st.selectbox('Select region', regions)
+        years = st.multiselect('Select years', df['Year'].unique(), default=df['Year'].unique())
+        df = df[df['Year'].isin(years)]
+        #Bar of Year as string category on x, y=df[region] for region, use px
+        fig = px.bar(df, x='Year', y=regions, color='Description4', title='Proportion of renters by tenure type', barmode='group', labels={'Year': 'Year', regions: 'Proportion', 'Description4': 'Tenure type'})
+        st.plotly_chart(fig)
+    if compare == 'States & years':
+        regions = st.multiselect('Select regions', regions, default=regions)
+        years = st.multiselect('Select years', df['Year'].unique(), default=df['Year'].unique())
+        df = df[df['Year'].isin(years)]
+        dflong = pd.melt(df, id_vars=cols, value_vars=regions, var_name='Region', value_name='Value')
+        #for year in years, filter dflong for year, plotly express bar, x=Region, y=Value, color=Region, facet_col=Year
+        dflong['Year'] = dflong['Year'].astype(str)
+        #dflong Region in regions
+        dflong = dflong[dflong['Region'].isin(regions)]
+        fig = px.bar(dflong, x='Year', y='Value', color='Description4', facet_col='Region', facet_col_wrap=1, title='Proportion of renters by tenure type', barmode='group', labels={'Region': 'Region', 'Value': '%'})
+        #label y value inside bars
+        fig.update_traces(texttemplate='%{y:.2s}', textposition='inside')
+        #legend title Tenure type
+        fig.update_layout(legend_title_text='Tenure type')
+        #don't show fac
+        st.plotly_chart(fig)
 
 if select_measure == 'Income units receiving CRA':
     #fill blank Special_Need with 'No special need'
