@@ -90,10 +90,65 @@ def get_airbnb():
     return
 
 
-get_airbnb()
+def state_total():
+    filenames = listdir('DATA/SOURCE DATA/Summary')
+    dfs = {}
+    df_summaries = {}
+
+    for filename in filenames:
+        df_name = filename[:10]
+        df = pd.read_csv('DATA/SOURCE DATA/Summary/' + filename)
+        dfs[df_name] = df
+        all_details = pd.concat(dfs.values())
+    for df_name, df in dfs.items():
+        df_summary_name = f"{df_name}_summary"
+        #group by room_type, neighbourhood, column for count, calculate mean and median price, mean and median availability_365, store as row in df_summary
+        df = df.groupby(['room_type']).agg({'id': 'count', 'price': ['mean', 'median'], 'availability_365': ['mean', 'median']})
+        #rename 2 level column names - price mean to mean_price, price median to median_price, availability_365 mean to mean_availability_365, availability_365 median to median_availability_365
+        df.columns = ['_'.join(col) for col in df.columns]
+        #col1 name = neighbourhood, col2 name = room_type, col3 name = count
+        df = df.reset_index()
+        #rename count column to count_listings
+        df = df.rename(columns={'id_count': 'count_listings'})
+        #add column for date
+        df['date'] = df_name
+        #add df to df_summary
+        df_summaries[df_summary_name] = df
+    df_summary_wa = pd.concat(df_summaries.values())
+    
+    df_summary_wa.to_csv('DATA/PROCESSED DATA/Market and economy/Airbnb_WAtotals.csv', index=False)
+    all_details.to_csv('DATA/PROCESSED DATA/Market and economy/Airbnb_full.csv', index=False)
+    return
+
+def locs():
+    df = pd.read_csv('DATA/PROCESSED DATA/Market and economy/airbnb_summary.csv')
+    locs = pd.read_csv('DATA/Data descriptions/australian_postcodes.csv')
+    #filter locs to WA
+    locs = locs[locs['state'] == 'WA']
+    #drop any sa4name = Northern Territory - Outback
+    locs = locs[locs['sa4name'] != 'Northern Territory - Outback']
+    #drop locs columns id, dc, type, state, status, sa3, sa4, region, SA1_MAINCODE_2011,	SA1_MAINCODE_2016,	SA2_MAINCODE_2016, SA3_CODE_2016, SA4_CODE_2016,	RA_2011	RA_2016	MMM_2015	MMM_2019	ced	altitude	chargezone	phn_code	phn_name
+    locs = locs.drop(columns=['id', 'dc', 'type', 'state', 'status', 'sa3', 'sa4', 'sa3name', 'sa4name', 'region', 'SA1_MAINCODE_2011',	'SA1_MAINCODE_2016',	'SA2_MAINCODE_2016', 'SA3_CODE_2016', 'SA4_CODE_2016',	'RA_2011',	'RA_2016',	'MMM_2015',	'MMM_2019',	'altitude',	'chargezone',	'phn_code', 'long', 'lat', 'Lat_precise', 'Long_precise'])
+    map = pd.read_csv('DATA/PROCESSED DATA/Market and economy/Airbnb_map.csv')
+    map_old = map['old'].unique()
 
 
+    df_full = pd.read_csv('DATA/PROCESSED DATA/Market and economy/Airbnb_full.csv')
+    if df_full['neighbourhood'].isin(map_old).any():
+        df_full['neighbourhood'] = df_full['neighbourhood'].replace(map_old, map['new'])
 
+    #merge df_full neighbourhood & locs locality
+    df_full = pd.merge(df_full, locs, left_on='neighbourhood', right_on='locality', how='left')
+
+    if df['neighbourhood'].isin(map_old).any():
+        df['neighbourhood'] = df['neighbourhood'].replace(map_old, map['new'])
+    df = pd.merge(df, locs, left_on='neighbourhood', right_on='locality', how='left')
+
+    df_full.to_csv('DATA/PROCESSED DATA/Market and economy/Airbnb_full.csv', index=False)
+    df.to_csv('DATA/PROCESSED DATA/Market and economy/airbnb_summary.csv', index=False)
+    return
+
+locs()
 
 
 
